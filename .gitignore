@@ -1,0 +1,7 @@
+# Ignore configuration files (used for testing)
+*.cfg
+# Ignore hidden files except .gitignore
+.*
+!.gitignore
+# Ignore temporary files
+*.tmp
