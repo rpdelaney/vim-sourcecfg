@@ -19,8 +19,8 @@ endif
 syn case ignore
 
 " Numbers:
-syn match sourceNumber          "[0-9]"
-syn match sourceSteamID         "STEAM_(?<universe>[0-5]):(?<authserver>[0-1]):(?<accountid>\d+)"
+syn match sourceNumber          '[0-9]'
+syn match sourceSteamID         'STEAM_(?<universe>[0-5]):(?<authserver>[0-1]):(?<accountid>\d+)'
 
 " Todo:
 syn keyword sourceSpecialComment   contained TODO FIXME XXX DEBUG NOTE DEFAULT
