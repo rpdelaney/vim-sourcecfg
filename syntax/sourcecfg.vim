@@ -1481,7 +1481,7 @@ syn keyword sourceMod           sm_vote_progress_hintbox sm_vote_slay sm_voteall
 syn keyword sourceMod           sm_voteff sm_votegravity sm_votekick sm_votemap sm_voteslay sm_who
 
 " Syntax: Operators
-syn match sourceOperator        '+\|-'
+" syn match sourceOperator        '+\|-' transparent
 
 " Syntax: Delimiter
 syn match sourceDelimiter       ';\|"'
