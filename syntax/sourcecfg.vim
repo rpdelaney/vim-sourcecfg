@@ -19,7 +19,7 @@ endif
 syn case ignore
 
 " Numbers:
-syn match sourceNumber          '[0-9]'
+syn match sourceNumber          '\<\d\+\>'
 syn match sourceSteamID         'STEAM_(?<universe>[0-5]):(?<authserver>[0-1]):(?<accountid>\d+)'
 
 " Todo:
