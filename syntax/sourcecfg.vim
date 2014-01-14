@@ -43,7 +43,7 @@ syn keyword sourceBindableKey   KP_RIGHTARROW KP_END KP_ENTER KP_DOWNARROW KP_PG
 syn keyword sourceBindableKey   KP_INS KP_DEL KP_SLASH KP_MINUS KP_PLUS
 syn keyword sourceBindableKey   KP_MULTIPLY MOUSE1 MOUSE2 MOUSE3 MOUSE4
 syn keyword sourceBindableKey   MOUSE5 MWHEELUP MWHEELDOWN
-syn match sourceBindableKey     "`\|'\|-\|=\|]\|\\|,\|/"
+syn match sourceBindableKey     "^bind.*(\-\|'\|`\|=\|]\|\\|,\|/)"
 
 " Syntax: Commands
 syn match sourceCommand         '+alt1\|+alt2\|+attack\|+attack2\|+back'
@@ -125,7 +125,7 @@ syn keyword sourceCommand       ent_dump ent_fire ent_info ent_keyvalue ent_mess
 syn keyword sourceCommand       ent_name ent_orient ent_pause ent_pivot ent_rbox
 syn keyword sourceCommand       ent_remove ent_remove_all ent_rotate ent_setname ent_show_response_criteria
 syn keyword sourceCommand       ent_step ent_teleport ent_text ent_viewoffset envmap
-syn keyword sourceCommand       exec exit explode explodevector
+syn keyword sourceCommand       escape exec exit explode explodevector
 syn keyword sourceCommand       fadein fadeout find find_ent find_ent_index
 syn keyword sourceCommand       findflags firetarget firstperson flush flush_locked
 syn keyword sourceCommand       fly_add_keyframe fly_clear_all_keyframes fly_show_path fly_start fogui
@@ -600,23 +600,14 @@ syn keyword sourceVar           sixense_jump_sensitivity sixense_left_handed six
 syn keyword sourceVar           sixense_mouse_enabled sixense_mouse_sensitivity sixense_point_gesture_angle_threshold sixense_reload_sensitivity sixense_roll_correct_blend
 syn keyword sourceVar           sixense_sensitivity_level sixense_spring_view_enabled sixense_spring_view_max_angle sixense_spring_view_max_spring sixense_spring_view_min_angle
 syn keyword sourceVar           sixense_spring_view_min_spring sixense_tilt_gesture_angle_threshold sixense_trigger_threshold sixense_walking_dead_zone_percent sixense_walking_exponent
-syn keyword sourceVar           sixense_weapon_select_sensitivity sixense_zoom_momentary_time sk_autoaim_mode skill sm_basepath
-syn keyword sourceVar           sm_beacon_radius sm_burn_duration sm_chat_mode sm_corecfgfile sm_cvarlist_version
-syn keyword sourceVar           sm_datetime_format sm_deadtalk sm_firebomb_mode sm_firebomb_radius sm_firebomb_ticks
-syn keyword sourceVar           sm_flood_time sm_freeze_duration sm_freezebomb_mode sm_freezebomb_radius sm_freezebomb_ticks
-syn keyword sourceVar           sm_hide_slots sm_immunity_mode sm_menu_sounds sm_nextmap sm_reserve_kicktype
-syn keyword sourceVar           sm_reserve_maxadmins sm_reserve_type sm_reserved_slots sm_show_activity sm_time_adjustment
-syn keyword sourceVar           sm_timebomb_mode sm_timebomb_radius sm_timebomb_ticks sm_timeleft_interval sm_trigger_show
-syn keyword sourceVar           sm_vote_alltalk sm_vote_ban sm_vote_burn sm_vote_delay sm_vote_ff
-syn keyword sourceVar           sm_vote_gravity sm_vote_kick sm_vote_map sm_vote_progress_chat sm_vote_progress_client_console
-syn keyword sourceVar           sm_vote_progress_console sm_vote_progress_hintbox sm_vote_slay smoothstairs snd_ShowThreadFrameTime
+syn keyword sourceVar           sixense_weapon_select_sensitivity sixense_zoom_momentary_time sk_autoaim_mode skill smoothstairs
 syn keyword sourceVar           snd_async_fullyasync snd_async_minsize snd_async_spew_blocking snd_async_stream_fail snd_async_stream_spew
 syn keyword sourceVar           snd_cull_duplicates snd_debug_gaincurve snd_debug_gaincurvevol snd_defer_trace snd_delay_sound_shift
 syn keyword sourceVar           snd_disable_mixer_duck snd_disable_mixer_solo snd_duckerattacktime snd_duckerreleasetime snd_duckerthreshold
 syn keyword sourceVar           snd_ducktovolume snd_legacy_surround snd_list snd_lockpartial snd_max_same_sounds
 syn keyword sourceVar           snd_max_same_weapon_sounds snd_mergemethod snd_mix_async snd_mix_minframetime snd_mixahead
 syn keyword sourceVar           snd_mixer_master_dsp snd_mixer_master_level snd_moviefix snd_musicvolume snd_mute_losefocus
-syn keyword sourceVar           snd_noextraupdate snd_pitchquality snd_prefetch_common snd_profile snd_show
+syn keyword sourceVar           snd_noextraupdate snd_pitchquality snd_prefetch_common snd_profile snd_show snd_ShowThreadFrameTime
 syn keyword sourceVar           snd_show_maxchannels_errors snd_showclassname snd_showmixer snd_soundmixer snd_soundmixer_parse_debug
 syn keyword sourceVar           snd_soundmixer_version snd_spatialize_roundrobin snd_store_filepaths snd_surround_speakers snd_vox_captiontrace
 syn keyword sourceVar           snd_vox_globaltimeout snd_vox_sectimetout snd_vox_seqtimetout soundpatch_captionlength soundscape_message
@@ -1465,20 +1456,29 @@ syn keyword sourceCheat         z_witch_wander_personal_space z_witch_wander_per
 syn keyword sourceCheat         z_wound_particles z_zombie_knockoff_death z_zombie_lunge_push
 
 " Syntax: sourcemod commands
-syn keyword sourceMod           sm sm_addban sm_admin
-syn keyword sourceMod           sm_ban sm_banip sm_beacon sm_blind sm_burn
-syn keyword sourceMod           sm_cancelvote sm_chat sm_conhook_start sm_conhook_stop sm_cookies
-syn keyword sourceMod           sm_csay sm_cvar sm_cvarlist sm_drug sm_dump_admcache
+
+syn keyword sourceMod           sm sm_addban sm_admin sm_ban sm_banip sm_basepath
+syn keyword sourceMod           sm_beacon sm_beacon_radius sm_blind sm_burn sm_burn_duration
+syn keyword sourceMod           sm_cancelvote sm_chat sm_chat_mode sm_conhook_start sm_conhook_stop
+syn keyword sourceMod           sm_cookies sm_corecfgfile sm_csay sm_cvar sm_cvarlist
+syn keyword sourceMod           sm_cvarlist_version sm_datetime_format sm_deadtalk sm_drug sm_dump_admcache
 syn keyword sourceMod           sm_dump_classes sm_dump_datamaps sm_dump_handles sm_dump_netprops sm_dump_netprops_xml
-syn keyword sourceMod           sm_dump_teprops sm_execcfg sm_firebomb sm_freeze sm_freezebomb
-syn keyword sourceMod           sm_gag sm_gravity sm_help sm_hsay sm_kick
-syn keyword sourceMod           sm_map sm_maphistory sm_msay sm_mute sm_noclip
-syn keyword sourceMod           sm_play sm_print_telist sm_psay sm_rcon sm_reloadadmins
-syn keyword sourceMod           sm_rename sm_resetcvar sm_revote sm_say sm_searchcmd
-syn keyword sourceMod           sm_settings sm_silence sm_slap sm_slay sm_timebomb
-syn keyword sourceMod           sm_tsay sm_unban sm_ungag sm_unmute sm_unsilence
-syn keyword sourceMod           sm_vote sm_votealltalk sm_voteban sm_voteburn sm_voteff
-syn keyword sourceMod           sm_votegravity sm_votekick sm_votemap sm_voteslay sm_who
+syn keyword sourceMod           sm_dump_teprops sm_execcfg sm_firebomb sm_firebomb_mode sm_firebomb_radius
+syn keyword sourceMod           sm_firebomb_ticks sm_flood_time sm_freeze sm_freeze_duration sm_freezebomb
+syn keyword sourceMod           sm_freezebomb_mode sm_freezebomb_radius sm_freezebomb_ticks sm_gag sm_gravity
+syn keyword sourceMod           sm_help sm_hide_slots sm_hsay sm_immunity_mode sm_kick
+syn keyword sourceMod           sm_map sm_maphistory sm_menu_sounds sm_msay sm_mute
+syn keyword sourceMod           sm_nextmap sm_noclip sm_play sm_print_telist sm_psay
+syn keyword sourceMod           sm_rcon sm_reloadadmins sm_rename sm_reserve_kicktype sm_reserve_maxadmins
+syn keyword sourceMod           sm_reserve_type sm_reserved_slots sm_resetcvar sm_revote sm_say
+syn keyword sourceMod           sm_searchcmd sm_settings sm_show_activity sm_silence sm_slap
+syn keyword sourceMod           sm_slay sm_time_adjustment sm_timebomb sm_timebomb_mode sm_timebomb_radius
+syn keyword sourceMod           sm_timebomb_ticks sm_timeleft_interval sm_trigger_show sm_tsay sm_unban
+syn keyword sourceMod           sm_ungag sm_unmute sm_unsilence sm_vote sm_vote_alltalk
+syn keyword sourceMod           sm_vote_ban sm_vote_burn sm_vote_delay sm_vote_ff sm_vote_gravity
+syn keyword sourceMod           sm_vote_kick sm_vote_map sm_vote_progress_chat sm_vote_progress_client_console sm_vote_progress_console
+syn keyword sourceMod           sm_vote_progress_hintbox sm_vote_slay sm_votealltalk sm_voteban sm_voteburn
+syn keyword sourceMod           sm_voteff sm_votegravity sm_votekick sm_votemap sm_voteslay sm_who
 
 " Syntax: Operators
 syn match sourceOperator        '+\|-'
