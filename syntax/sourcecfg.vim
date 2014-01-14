@@ -45,30 +45,30 @@ syn keyword sourceBindableKey   KP_MULTIPLY MOUSE1 MOUSE2 MOUSE3 MOUSE4
 syn keyword sourceBindableKey   MOUSE5 MWHEELUP MWHEELDOWN
 
 " Syntax: Commands
-syn keyword sourceCommand       +alt1 +alt2 +attack +attack2 +back
-syn keyword sourceCommand       +break +camdistance +camin +cammousemove +camout
-syn keyword sourceCommand       +campitchdown +campitchup +camyawleft +camyawright +commandermousemove
-syn keyword sourceCommand       +demoui2 +duck +forward +graph +grenade1
-syn keyword sourceCommand       +grenade2 +invaction +jlook +jump +klook
-syn keyword sourceCommand       +left +lookdown +lookspin +lookup +mat_texture_list
-syn keyword sourceCommand       +menuAccept +menuDown +menuUp +mouse_menu +movedown
-syn keyword sourceCommand       +moveleft +moveright +moveup +posedebug +quickswitch
-syn keyword sourceCommand       +reload +right +score +showbudget +showbudget_texture
-syn keyword sourceCommand       +showbudget_texture_global +showscores +showstats +showvprof +sixense_left_point_gesture
-syn keyword sourceCommand       +sixense_ratchet +sixense_right_point_gesture +speed +strafe +use
-syn keyword sourceCommand       +use_action_slot_item +vgui_drawtree +voicerecord +walk +zoom
-syn keyword sourceCommand       -alt1 -alt2 -attack -attack2 -back
-syn keyword sourceCommand       -break -camdistance -camin -cammousemove -camout
-syn keyword sourceCommand       -campitchdown -campitchup -camyawleft -camyawright -commandermousemove
-syn keyword sourceCommand       -demoui2 -duck -forward -graph -grenade1
-syn keyword sourceCommand       -grenade2 -invaction -jlook -jump -klook
-syn keyword sourceCommand       -left -lookdown -lookspin -lookup -mat_texture_list
-syn keyword sourceCommand       -menuAccept -menuDown -menuUp -mouse_menu -movedown
-syn keyword sourceCommand       -moveleft -moveright -moveup -posedebug -quickswitch
-syn keyword sourceCommand       -reload -right -score -showbudget -showbudget_texture
-syn keyword sourceCommand       -showbudget_texture_global -showscores -showstats -showvprof -sixense_left_point_gesture
-syn keyword sourceCommand       -sixense_ratchet -sixense_right_point_gesture -speed -strafe -use
-syn keyword sourceCommand       -use_action_slot_item -vgui_drawtree -voicerecord -walk -zoom
+syn match sourceCommand '+alt1\|+alt2\|+attack\|+attack2\|+back'
+syn match sourceCommand '+break\|+camdistance\|+camin\|+cammousemove\|+camout'
+syn match sourceCommand '+campitchdown\|+campitchup\|+camyawleft\|+camyawright\|+commandermousemove'
+syn match sourceCommand '+demoui2\|+duck\|+forward\|+graph\|+grenade1'
+syn match sourceCommand '+grenade2\|+invaction\|+jlook\|+jump\|+klook'
+syn match sourceCommand '+left\|+lookdown\|+lookspin\|+lookup\|+mat_texture_list'
+syn match sourceCommand '+menuAccept\|+menuDown\|+menuUp\|+mouse_menu\|+movedown'
+syn match sourceCommand '+moveleft\|+moveright\|+moveup\|+posedebug\|+quickswitch'
+syn match sourceCommand '+reload\|+right\|+score\|+showbudget\|+showbudget_texture'
+syn match sourceCommand '+showbudget_texture_global\|+showscores\|+showstats\|+showvprof\|+sixense_left_point_gesture'
+syn match sourceCommand '+sixense_ratchet\|+sixense_right_point_gesture\|+speed\|+strafe\|+use'
+syn match sourceCommand '+use_action_slot_item\|+vgui_drawtree\|+voicerecord\|+walk\|+zoom'
+syn match sourceCommand '-alt1\|-alt2\|-attack\|-attack2\|-back'
+syn match sourceCommand '-break\|-camdistance\|-camin\|-cammousemove\|-camout'
+syn match sourceCommand '-campitchdown\|-campitchup\|-camyawleft\|-camyawright\|-commandermousemove'
+syn match sourceCommand '-demoui2\|-duck\|-forward\|-graph\|-grenade1'
+syn match sourceCommand '-grenade2\|-invaction\|-jlook\|-jump\|-klook'
+syn match sourceCommand '-left\|-lookdown\|-lookspin\|-lookup\|-mat_texture_list'
+syn match sourceCommand '-menuAccept\|-menuDown\|-menuUp\|-mouse_menu\|-movedown'
+syn match sourceCommand '-moveleft\|-moveright\|-moveup\|-posedebug\|-quickswitch'
+syn match sourceCommand '-reload\|-right\|-score\|-showbudget\|-showbudget_texture'
+syn match sourceCommand '-showbudget_texture_global\|-showscores\|-showstats\|-showvprof\|-sixense_left_point_gesture'
+syn match sourceCommand '-sixense_ratchet\|-sixense_right_point_gesture\|-speed\|-strafe\|-use'
+syn match sourceCommand '-use_action_slot_item\|-vgui_drawtree\|-voicerecord\|-walk\|-zoom'
 syn keyword sourceCommand       BindToggle CreateHairball OpenMatchmakingLobby OpenQuickplayDialog OpenSteamWorkshopDialog
 syn keyword sourceCommand       Print_Steam_Stats RefreshMatchmakingLobby Reset_Steam_Stats ShowSteamStatsSessionID Test_CreateEntity
 syn keyword sourceCommand       Test_EHandle Test_InitRandomEntitySpawner Test_Loop Test_LoopCount Test_LoopForNumSeconds
