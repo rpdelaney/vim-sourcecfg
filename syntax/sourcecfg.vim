@@ -5,7 +5,7 @@
 " Filenames:    *.cfg
 " URL:          https://github.com/rpdelaney/vim-sourcecfg
 " Notes:        Developed mainly with Left 4 Dead 2 game servers. Please send email or pull requests if you run into problems with configuration files for any Source engine games.
-" Legal:        Valve, the Valve logo, Source, and the Source logo are trademarks and/or registered trademarks of Valve Corporation. All other trademarks are property of their respective owners.
+" Legal:        Valve, the Valve logo, Steam, Source, and the Source logo are trademarks and/or registered trademarks of Valve Corporation. All other trademarks are property of their respective owners.
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -34,7 +34,6 @@ syn keyword sourceBindableKey   U V W X Y
 syn keyword sourceBindableKey   Z F1 F2 F3 F4
 syn keyword sourceBindableKey   F5 F6 F7 F8 F9
 syn keyword sourceBindableKey   F10 F11 F12
-syn keyword sourceBindableKey   ` ' - = ] \ , /
 syn keyword sourceBindableKey   SPACE ENTER ESCAPE PAUSE BACKSPACE
 syn keyword sourceBindableKey   TAB SEMICOLON SHIFT CTRL ALT
 syn keyword sourceBindableKey   UPARROW DOWNARROW LEFTARROW RIGHTARROW INS
@@ -44,32 +43,33 @@ syn keyword sourceBindableKey   KP_RIGHTARROW KP_END KP_ENTER KP_DOWNARROW KP_PG
 syn keyword sourceBindableKey   KP_INS KP_DEL KP_SLASH KP_MINUS KP_PLUS
 syn keyword sourceBindableKey   KP_MULTIPLY MOUSE1 MOUSE2 MOUSE3 MOUSE4
 syn keyword sourceBindableKey   MOUSE5 MWHEELUP MWHEELDOWN
+syn match sourceBindableKey     "`\|'\|-\|=\|]\|\\|,\|/"
 
 " Syntax: Commands
-syn match sourceCommand '+alt1\|+alt2\|+attack\|+attack2\|+back'
-syn match sourceCommand '+break\|+camdistance\|+camin\|+cammousemove\|+camout'
-syn match sourceCommand '+campitchdown\|+campitchup\|+camyawleft\|+camyawright\|+commandermousemove'
-syn match sourceCommand '+demoui2\|+duck\|+forward\|+graph\|+grenade1'
-syn match sourceCommand '+grenade2\|+invaction\|+jlook\|+jump\|+klook'
-syn match sourceCommand '+left\|+lookdown\|+lookspin\|+lookup\|+mat_texture_list'
-syn match sourceCommand '+menuAccept\|+menuDown\|+menuUp\|+mouse_menu\|+movedown'
-syn match sourceCommand '+moveleft\|+moveright\|+moveup\|+posedebug\|+quickswitch'
-syn match sourceCommand '+reload\|+right\|+score\|+showbudget\|+showbudget_texture'
-syn match sourceCommand '+showbudget_texture_global\|+showscores\|+showstats\|+showvprof\|+sixense_left_point_gesture'
-syn match sourceCommand '+sixense_ratchet\|+sixense_right_point_gesture\|+speed\|+strafe\|+use'
-syn match sourceCommand '+use_action_slot_item\|+vgui_drawtree\|+voicerecord\|+walk\|+zoom'
-syn match sourceCommand '-alt1\|-alt2\|-attack\|-attack2\|-back'
-syn match sourceCommand '-break\|-camdistance\|-camin\|-cammousemove\|-camout'
-syn match sourceCommand '-campitchdown\|-campitchup\|-camyawleft\|-camyawright\|-commandermousemove'
-syn match sourceCommand '-demoui2\|-duck\|-forward\|-graph\|-grenade1'
-syn match sourceCommand '-grenade2\|-invaction\|-jlook\|-jump\|-klook'
-syn match sourceCommand '-left\|-lookdown\|-lookspin\|-lookup\|-mat_texture_list'
-syn match sourceCommand '-menuAccept\|-menuDown\|-menuUp\|-mouse_menu\|-movedown'
-syn match sourceCommand '-moveleft\|-moveright\|-moveup\|-posedebug\|-quickswitch'
-syn match sourceCommand '-reload\|-right\|-score\|-showbudget\|-showbudget_texture'
-syn match sourceCommand '-showbudget_texture_global\|-showscores\|-showstats\|-showvprof\|-sixense_left_point_gesture'
-syn match sourceCommand '-sixense_ratchet\|-sixense_right_point_gesture\|-speed\|-strafe\|-use'
-syn match sourceCommand '-use_action_slot_item\|-vgui_drawtree\|-voicerecord\|-walk\|-zoom'
+syn match sourceCommand         '+alt1\|+alt2\|+attack\|+attack2\|+back'
+syn match sourceCommand         '+break\|+camdistance\|+camin\|+cammousemove\|+camout'
+syn match sourceCommand         '+campitchdown\|+campitchup\|+camyawleft\|+camyawright\|+commandermousemove'
+syn match sourceCommand         '+demoui2\|+duck\|+forward\|+graph\|+grenade1'
+syn match sourceCommand         '+grenade2\|+invaction\|+jlook\|+jump\|+klook'
+syn match sourceCommand         '+left\|+lookdown\|+lookspin\|+lookup\|+mat_texture_list'
+syn match sourceCommand         '+menuAccept\|+menuDown\|+menuUp\|+mouse_menu\|+movedown'
+syn match sourceCommand         '+moveleft\|+moveright\|+moveup\|+posedebug\|+quickswitch'
+syn match sourceCommand         '+reload\|+right\|+score\|+showbudget\|+showbudget_texture'
+syn match sourceCommand         '+showbudget_texture_global\|+showscores\|+showstats\|+showvprof\|+sixense_left_point_gesture'
+syn match sourceCommand         '+sixense_ratchet\|+sixense_right_point_gesture\|+speed\|+strafe\|+use'
+syn match sourceCommand         '+use_action_slot_item\|+vgui_drawtree\|+voicerecord\|+walk\|+zoom'
+syn match sourceCommand         '-alt1\|-alt2\|-attack\|-attack2\|-back'
+syn match sourceCommand         '-break\|-camdistance\|-camin\|-cammousemove\|-camout'
+syn match sourceCommand         '-campitchdown\|-campitchup\|-camyawleft\|-camyawright\|-commandermousemove'
+syn match sourceCommand         '-demoui2\|-duck\|-forward\|-graph\|-grenade1'
+syn match sourceCommand         '-grenade2\|-invaction\|-jlook\|-jump\|-klook'
+syn match sourceCommand         '-left\|-lookdown\|-lookspin\|-lookup\|-mat_texture_list'
+syn match sourceCommand         '-menuAccept\|-menuDown\|-menuUp\|-mouse_menu\|-movedown'
+syn match sourceCommand         '-moveleft\|-moveright\|-moveup\|-posedebug\|-quickswitch'
+syn match sourceCommand         '-reload\|-right\|-score\|-showbudget\|-showbudget_texture'
+syn match sourceCommand         '-showbudget_texture_global\|-showscores\|-showstats\|-showvprof\|-sixense_left_point_gesture'
+syn match sourceCommand         '-sixense_ratchet\|-sixense_right_point_gesture\|-speed\|-strafe\|-use'
+syn match sourceCommand         '-use_action_slot_item\|-vgui_drawtree\|-voicerecord\|-walk\|-zoom'
 syn keyword sourceCommand       BindToggle CreateHairball OpenMatchmakingLobby OpenQuickplayDialog OpenSteamWorkshopDialog
 syn keyword sourceCommand       Print_Steam_Stats RefreshMatchmakingLobby Reset_Steam_Stats ShowSteamStatsSessionID Test_CreateEntity
 syn keyword sourceCommand       Test_EHandle Test_InitRandomEntitySpawner Test_Loop Test_LoopCount Test_LoopForNumSeconds
@@ -125,7 +125,7 @@ syn keyword sourceCommand       ent_dump ent_fire ent_info ent_keyvalue ent_mess
 syn keyword sourceCommand       ent_name ent_orient ent_pause ent_pivot ent_rbox
 syn keyword sourceCommand       ent_remove ent_remove_all ent_rotate ent_setname ent_show_response_criteria
 syn keyword sourceCommand       ent_step ent_teleport ent_text ent_viewoffset envmap
-syn keyword sourceCommand       escape exec exit explode explodevector
+syn keyword sourceCommand       exec exit explode explodevector
 syn keyword sourceCommand       fadein fadeout find find_ent find_ent_index
 syn keyword sourceCommand       findflags firetarget firstperson flush flush_locked
 syn keyword sourceCommand       fly_add_keyframe fly_clear_all_keyframes fly_show_path fly_start fogui
@@ -222,7 +222,7 @@ syn keyword sourceCommand       rpt_start rr_debugresponseconcept_exclude rr_rel
 syn keyword sourceCommand       save_replay say say_team sb_add sb_move_to_cursor
 syn keyword sourceCommand       scavenge_set_round_limit scene_flush screenshot scripted_user_func server_game_time
 syn keyword sourceCommand       setang setang_exact setinfo setmaster setmodel
-syn keyword sourceCommand       setpause setpos setpos_exact shake shake_stop
+syn keyword sourceCommand       setpause setpos setpos_exact shake shake_stop messagemode messagemode2
 syn keyword sourceCommand       showGameSettings show_addon_load_order show_addon_metadata show_menu showbudget_texture_global_dumpstats
 syn keyword sourceCommand       showconsole showinfo showmapinfo showpanel showschemevisualizer
 syn keyword sourceCommand       showstatsdlg showtriggers_toggle simple_bot_add sixense_aim_freeaim_spin_disabled sixense_bind
@@ -1465,7 +1465,6 @@ syn keyword sourceCheat         z_witch_wander_personal_space z_witch_wander_per
 syn keyword sourceCheat         z_wound_particles z_zombie_knockoff_death z_zombie_lunge_push
 
 " Syntax: sourcemod commands
-syn region sourceMod            start="sm_" end="\_s"
 syn keyword sourceMod           sm sm_addban sm_admin
 syn keyword sourceMod           sm_ban sm_banip sm_beacon sm_blind sm_burn
 syn keyword sourceMod           sm_cancelvote sm_chat sm_conhook_start sm_conhook_stop sm_cookies
@@ -1482,10 +1481,10 @@ syn keyword sourceMod           sm_vote sm_votealltalk sm_voteban sm_voteburn sm
 syn keyword sourceMod           sm_votegravity sm_votekick sm_votemap sm_voteslay sm_who
 
 " Syntax: Operators
-"syn region sourceOperator keepend      start="[+-]" end="[\H;]"
+syn match sourceOperator        '+\|-'
 
 " Syntax: Delimiter
-syn keyword sourceDelimiter             ;
+syn match sourceDelimiter       ';\|"'
 
 " Syntax: Comments
 syn region sourceComment oneline        start="//" end="$"
