@@ -502,7 +502,7 @@ syn keyword sourceVar           net_scale net_showdrop net_showeventlisteners ne
 syn keyword sourceVar           net_showmsg net_showpeaks net_showsplits net_showtcp net_showudp
 syn keyword sourceVar           net_showudp_remoteonly net_showudp_wire net_showusercmd net_splitpacket_maxrate net_splitrate
 syn keyword sourceVar           net_steamcnx_allowrelay net_steamcnx_debug net_steamcnx_enabled net_udp_rcvbuf net_usesocketsforloopback
-syn keyword sourceVar           next_weapon_timer old_radiusdamage opt_EnumerateLeavesFastAlgorithm option_duck_method_default overview_alpha
+syn keyword sourceVar           netgraph_pos next_weapon_timer old_radiusdamage opt_EnumerateLeavesFastAlgorithm option_duck_method_default overview_alpha
 syn keyword sourceVar           overview_health overview_locked overview_names overview_tracks particle_sim_alt_cores
 syn keyword sourceVar           password perf_fire_bullet_firstpredictedonly perf_fire_bullet_single peril_notice_timer phonemedelay
 syn keyword sourceVar           phonemefilter phonemesnap phys2_air_density phys2_angular_damping phys2_angular_damping_in_water
