@@ -1,11 +1,15 @@
 " Vim syntax file
 " Language:     source engine configuration
-" Maintainer:   Ryan Delaney <ryan.delaney@ gmail.com>
-" Last Change:  $Sun Jan 12 13:14:36 PST 2014$
+" Maintainer:   Ryan Delaney <ryan.delaney at gmail.com>
+" Last Change:  $Sun Feb  2 18:39:54 PST 2014$
 " Filenames:    *.cfg
 " URL:          https://github.com/rpdelaney/vim-sourcecfg
-" Notes:        Developed mainly with Left 4 Dead 2 game servers. Please send email or pull requests if you run into problems with configuration files for any Source engine games.
-" Legal:        Valve, the Valve logo, Steam, Source, and the Source logo are trademarks and/or registered trademarks of Valve Corporation. All other trademarks are property of their respective owners.
+" Notes:        Developed mainly with Left 4 Dead 2 game servers. Please send
+"               email or pull requests if you run into problems with
+"               configuration files for any Source engine games.
+" Legal:        Valve, the Valve logo, Steam, Source, and the Source logo are
+"               trademarks and/or registered trademarks of Valve Corporation.
+"               All other trademarks are property of their respective owners.
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -26,14 +30,8 @@ syn match sourceSteamID         'STEAM_(?<universe>[0-5]):(?<authserver>[0-1]):(
 syn keyword sourceSpecialComment   contained TODO FIXME XXX DEBUG NOTE DEFAULT
 
 " Syntax: Keys
-syn keyword sourceBindableKey   A B C D E
-syn keyword sourceBindableKey   F G H I J
-syn keyword sourceBindableKey   K L M N O
-syn keyword sourceBindableKey   P Q R S T
-syn keyword sourceBindableKey   U V W X Y
-syn keyword sourceBindableKey   Z F1 F2 F3 F4
-syn keyword sourceBindableKey   F5 F6 F7 F8 F9
-syn keyword sourceBindableKey   F10 F11 F12
+syn keyword sourceBindableKey   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+syn keyword sourceBindableKey   F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12
 syn keyword sourceBindableKey   SPACE ENTER ESCAPE PAUSE BACKSPACE
 syn keyword sourceBindableKey   TAB SEMICOLON SHIFT CTRL ALT
 syn keyword sourceBindableKey   UPARROW DOWNARROW LEFTARROW RIGHTARROW INS
@@ -229,9 +227,7 @@ syn keyword sourceCommand       showstatsdlg showtriggers_toggle simple_bot_add 
 syn keyword sourceCommand       sixense_clear_bindings sixense_create_default_bindings sixense_delete_binding sixense_disable_gestures sixense_list_bindings
 syn keyword sourceCommand       sixense_select_grenade sixense_select_machinegun sixense_select_melee sixense_select_pistol sixense_set_base_offset
 syn keyword sourceCommand       sixense_set_filter_params sixense_show_frame sixense_write_bindings skip_next_map slot0
-syn keyword sourceCommand       slot1 slot10 slot11 slot12 slot2
-syn keyword sourceCommand       slot3 slot4 slot5 slot6 slot7
-syn keyword sourceCommand       slot8 slot9
+syn keyword sourceCommand       slot1 slot2 slot3 slot4 slot5 slot6 slot7 slot8 slot9 slot10 slot11 slot12
 syn keyword sourceCommand       snapto snd_async_flush snd_async_showmem snd_async_showmem_music snd_async_showmem_summary
 syn keyword sourceCommand       snd_buildsoundcachefordirectory snd_dump_filepaths snd_dumpclientsounds snd_getmixer snd_list_mix_groups
 syn keyword sourceCommand       snd_list_mixers snd_playsounds snd_rebuildaudiocache snd_rebuildlocalizedaudiocache snd_restart
@@ -259,8 +255,7 @@ syn keyword sourceCommand       thirdperson thirdperson_mayamode thirdpersonshou
 syn keyword sourceCommand       threadpool_cycle_reserve threadpool_run_tests timedemo timedemo_vprofrecord timedemoquit
 syn keyword sourceCommand       timeleft timerefresh toggle toggle_duck toggle_zoom
 syn keyword sourceCommand       toggleconsole togglescores toolload training_continue training_showdlg
-syn keyword sourceCommand       tv_clients tv_msg tv_record tv_relay tv_retry
-syn keyword sourceCommand       tv_status tv_stop tv_stoprecord tv_test_retry tv_test_start
+syn keyword sourceCommand       tv_clients tv_msg tv_record tv_relay tv_retry sv_status tv_stop tv_stoprecord tv_test_retry tv_test_start
 syn keyword sourceCommand       tv_test_stop ui_pump_dlc_mount_content ui_pump_dlc_mount_corrupt ui_pump_dlc_mount_stage ui_reloadscheme
 syn keyword sourceCommand       unbind unbind_mac unbindall unload_all_addons unpause
 syn keyword sourceCommand       update_addon_paths use user user_context user_property
@@ -1527,11 +1522,28 @@ let b:current_syntax = "sourcecfg"
 
 "    TERMS AND CONDITIONS
 "
-"THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+" THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE
+" LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+" OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER
+" EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+" MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE
+" QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE
+" DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 "
-"IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+" IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY
+" COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS
+" PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL,
+" INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE
+" THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED
+" INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE
+" PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY
+" HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 "
-"If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.
+" If the disclaimer of warranty and limitation of liability provided above cannot
+" be given local legal effect according to their terms, reviewing courts shall
+" apply local law that most closely approximates an absolute waiver of all civil
+" liability in connection with the Program, unless a warranty or assumption of
+" liability accompanies a copy of the Program in return for a fee.
 "
 "    END OF TERMS AND CONDITIONS
 "
