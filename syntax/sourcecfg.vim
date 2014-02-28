@@ -44,7 +44,7 @@ syn keyword sourceBindableKey   MOUSE5 MWHEELUP MWHEELDOWN
 syn match sourceBindableKey     "^bind.*(\-\|'\|`\|=\|]\|\\|,\|/)"
 
 " Syntax: Commands
-syn match sourceCommand         '+alt1\|+alt2\|+attack\|+attack2\|+back'
+syn match sourceCommand         '+alt1\|+alt2\|+attack2\|+attack\|+back'
 syn match sourceCommand         '+break\|+camdistance\|+camin\|+cammousemove\|+camout'
 syn match sourceCommand         '+campitchdown\|+campitchup\|+camyawleft\|+camyawright\|+commandermousemove'
 syn match sourceCommand         '+demoui2\|+duck\|+forward\|+graph\|+grenade1'
@@ -56,7 +56,7 @@ syn match sourceCommand         '+reload\|+right\|+score\|+showbudget\|+showbudg
 syn match sourceCommand         '+showbudget_texture_global\|+showscores\|+showstats\|+showvprof\|+sixense_left_point_gesture'
 syn match sourceCommand         '+sixense_ratchet\|+sixense_right_point_gesture\|+speed\|+strafe\|+use'
 syn match sourceCommand         '+use_action_slot_item\|+vgui_drawtree\|+voicerecord\|+walk\|+zoom'
-syn match sourceCommand         '-alt1\|-alt2\|-attack\|-attack2\|-back'
+syn match sourceCommand         '-alt1\|-alt2\|-attack2\|-attack\|-back'
 syn match sourceCommand         '-break\|-camdistance\|-camin\|-cammousemove\|-camout'
 syn match sourceCommand         '-campitchdown\|-campitchup\|-camyawleft\|-camyawright\|-commandermousemove'
 syn match sourceCommand         '-demoui2\|-duck\|-forward\|-graph\|-grenade1'
