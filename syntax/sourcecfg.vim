@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     source engine configuration
-" Maintainer:   Ryan Delaney <ryan.delaney at gmail.com>
-" Last Change:  $Sun Feb  2 18:39:54 PST 2014$
+" Maintainer:   Ryan Delaney <ryan delaney at gmail com> OpenGPG: 0D98863B4E1D07B6
+" Last Change:  $Wed Mar  5 14:11:20 PST 2014$
 " Filenames:    *.cfg
 " URL:          https://github.com/rpdelaney/vim-sourcecfg
 " Notes:        Developed mainly with Left 4 Dead 2 game servers. Please send
@@ -22,11 +22,11 @@ endif
 " Always ignore case
 syn case ignore
 
-" Numbers: {{{1
+" Syntax: Numbers {{{1
 syn match sourceNumber          '\<\d\+\>'
 syn match sourceSteamID         'STEAM_(?<universe>[0-5]):(?<authserver>[0-1]):(?<accountid>\d+)'
 
-" Todo: {{{1
+" Syntax: Todo {{{1
 syn keyword sourceSpecialComment   contained TODO FIXME XXX DEBUG NOTE DEFAULT
 
 " Syntax: Keys {{{1
