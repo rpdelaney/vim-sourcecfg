@@ -22,14 +22,14 @@ endif
 " Always ignore case
 syn case ignore
 
-" Numbers:
+" Numbers: {{{1
 syn match sourceNumber          '\<\d\+\>'
 syn match sourceSteamID         'STEAM_(?<universe>[0-5]):(?<authserver>[0-1]):(?<accountid>\d+)'
 
-" Todo:
+" Todo: {{{1
 syn keyword sourceSpecialComment   contained TODO FIXME XXX DEBUG NOTE DEFAULT
 
-" Syntax: Keys
+" Syntax: Keys {{{1
 syn keyword sourceBindableKey   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 syn keyword sourceBindableKey   F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12
 syn keyword sourceBindableKey   SPACE ENTER ESCAPE PAUSE BACKSPACE
@@ -43,7 +43,7 @@ syn keyword sourceBindableKey   KP_MULTIPLY MOUSE1 MOUSE2 MOUSE3 MOUSE4
 syn keyword sourceBindableKey   MOUSE5 MWHEELUP MWHEELDOWN
 syn match sourceBindableKey     "^bind.*(\-\|'\|`\|=\|]\|\\|,\|/)"
 
-" Syntax: Commands
+" Syntax: Commands {{{1
 syn match sourceCommand         '+alt1\|+alt2\|+attack2\|+attack\|+back'
 syn match sourceCommand         '+break\|+camdistance\|+camin\|+cammousemove\|+camout'
 syn match sourceCommand         '+campitchdown\|+campitchup\|+camyawleft\|+camyawright\|+commandermousemove'
@@ -276,7 +276,7 @@ syn keyword sourceCommand       wc_air_edit_further wc_air_edit_nearer wc_air_no
 syn keyword sourceCommand       wc_destroy_undo wc_link_edit wipe_nav_attributes writeid writeip
 syn keyword sourceCommand       xload xlook xmove xsave z_wind_dir
 
-" Syntax: Local variables
+" Syntax: Local variables {{{1
 syn keyword sourceVar           BlendBonesMode IgnoreReflectGlassFrustumCheck PhysPMC _cl_classmenuopen _fov
 syn keyword sourceVar           addons_eclipse_content adsp_alley_min adsp_courtyard_min adsp_debug adsp_door_height
 syn keyword sourceVar           adsp_duct_min adsp_hall_min adsp_low_ceiling adsp_opencourtyard_min adsp_openspace_min
@@ -689,7 +689,7 @@ syn keyword sourceVar           z_scrimmage_yardline_height z_scrimmage_yardline
 syn keyword sourceVar           z_splatter_delay_melee z_splatterdistance z_tracer_particles z_transitioning_player_addon_rebuild z_witch_rage_smoothing
 syn keyword sourceVar           z_wound_client_disabled zoom_sensitivity_ratio
 
-" Syntax: Server variables
+" Syntax: Server variables {{{1
 syn keyword sourceServerVar     ai_LOS_mode ai_actbusy_search_time ai_ally_manager_debug ai_auto_contact_solver ai_block_damage
 syn keyword sourceServerVar     ai_citizen_debug_commander ai_debug_assault ai_debug_avoidancebounds ai_debug_directnavprobe ai_debug_doors
 syn keyword sourceServerVar     ai_debug_dyninteractions ai_debug_efficiency ai_debug_enemies ai_debug_enemyfinders ai_debug_eventresponses
@@ -927,7 +927,7 @@ syn keyword sourceServerVar     z_tank_footstep_shake_interval z_tank_footstep_s
 syn keyword sourceServerVar     zombie_ambushdist zombie_basemax zombie_basemin zombie_changemax zombie_changemin
 syn keyword sourceServerVar     zombie_decaymax zombie_decaymin zombie_moanfreq zombie_stepfreq
 
-" Syntax: Cheats
+" Syntax: Cheats {{{1
 syn keyword sourceCheat         CreateHairball CreatePredictionError Smoker_escape_range Test_CreateEntity Test_EHandle
 syn keyword sourceCheat         Test_InitRandomEntitySpawner Test_ProxyToggle_EnableProxy Test_ProxyToggle_EnsureValue Test_ProxyToggle_SetValue Test_RandomPlayerPosition
 syn keyword sourceCheat         Test_RandomizeInPVS Test_RemoveAllRandomEntities Test_SpawnRandomEntities achievement_debug achievement_disable
@@ -1450,7 +1450,7 @@ syn keyword sourceCheat         z_witch_wander_hear_radius z_witch_wander_music_
 syn keyword sourceCheat         z_witch_wander_personal_space z_witch_wander_personal_time z_wound z_wound_all z_wound_offset_enabled
 syn keyword sourceCheat         z_wound_particles z_zombie_knockoff_death z_zombie_lunge_push
 
-" Syntax: sourcemod commands
+" Syntax: sourcemod commands {{{1
 
 syn keyword sourceMod           sm sm_addban sm_admin sm_ban sm_banip sm_basepath
 syn keyword sourceMod           sm_beacon sm_beacon_radius sm_blind sm_burn sm_burn_duration
@@ -1475,23 +1475,23 @@ syn keyword sourceMod           sm_vote_kick sm_vote_map sm_vote_progress_chat s
 syn keyword sourceMod           sm_vote_progress_hintbox sm_vote_slay sm_votealltalk sm_voteban sm_voteburn
 syn keyword sourceMod           sm_voteff sm_votegravity sm_votekick sm_votemap sm_voteslay sm_who
 
-" Syntax: Operators
+" Syntax: Operators {{{1
 " syn match sourceOperator        '+\|-' transparent
 
 " Syntax: Delimiter
 syn match sourceDelimiter       ';\|"'
 
-" Syntax: Comments
+" Syntax: Comments {{{1
 syn region sourceComment oneline        start="//" end="$"
 
-" Syntax: Strings
+" Syntax: Strings {{{1
 syntax region sourceString transparent  start=+"+  skip=+\\"+  end=+"+
 syntax region sourceQuote               start="say_team" end="$"
 
-" Syntax: Fold points (non-standard)
+" Syntax: Fold points (non-standard) {{{1
 syn region sourceFold                   start="//>" end="//<" fold transparent keepend extend
 
-" Define the default highlighting.
+" Default highlighting {{{1
 " For version 5.7 and earlier: only when not done already
 " For version 5.8 and later: only when an item doesn't have highlighting yet
 if version >= 508 || !exists("did_source_syn_inits")
@@ -1520,7 +1520,7 @@ endif
 
 let b:current_syntax = "sourcecfg"
 
-"    TERMS AND CONDITIONS
+" TERMS AND CONDITIONS {{{1
 "
 " THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE
 " LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
@@ -1547,3 +1547,6 @@ let b:current_syntax = "sourcecfg"
 "
 "    END OF TERMS AND CONDITIONS
 "
+" }}}
+
+" vim: foldmethod=marker filetype=vim
