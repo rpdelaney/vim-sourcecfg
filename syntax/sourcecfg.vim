@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     source engine configuration
 " Maintainer:   Ryan Delaney <ryan delaney at gmail com> OpenGPG: 0D98863B4E1D07B6
-" Last Change:  $Wed Mar  5 14:11:20 PST 2014$
+" Last Change:  $Wed Mar  5 16:00:07 PST 2014$
 " Filenames:    *.cfg
 " URL:          https://github.com/rpdelaney/vim-sourcecfg
 " Notes:        Developed mainly with Left 4 Dead 2 game servers. Please send
@@ -272,7 +272,7 @@ syn keyword sourceCommand       vprof_generate_report_map_load vprof_nextsibling
 syn keyword sourceCommand       vprof_playback_average vprof_playback_start vprof_playback_step vprof_playback_stepback vprof_playback_stop
 syn keyword sourceCommand       vprof_prevsibling vprof_record_start vprof_record_stop vprof_remote_start vprof_remote_stop
 syn keyword sourceCommand       vprof_reset vprof_reset_peaks vprof_to_csv vprof_vtune_group vtune vote
-syn keyword sourceCommand       wc_air_edit_further wc_air_edit_nearer wc_air_node_edit wc_create wc_destroy
+syn keyword sourceCommand       wait wc_air_edit_further wc_air_edit_nearer wc_air_node_edit wc_create wc_destroy
 syn keyword sourceCommand       wc_destroy_undo wc_link_edit wipe_nav_attributes writeid writeip
 syn keyword sourceCommand       xload xlook xmove xsave z_wind_dir
 
