@@ -1450,7 +1450,7 @@ syn keyword sourceCheat         z_witch_wander_hear_radius z_witch_wander_music_
 syn keyword sourceCheat         z_witch_wander_personal_space z_witch_wander_personal_time z_wound z_wound_all z_wound_offset_enabled
 syn keyword sourceCheat         z_wound_particles z_zombie_knockoff_death z_zombie_lunge_push
 
-" Syntax: sourcemod commands {{{1
+" Syntax: Sourcemod {{{1
 
 syn keyword sourceMod           sm sm_addban sm_admin sm_ban sm_banip sm_basepath
 syn keyword sourceMod           sm_beacon sm_beacon_radius sm_blind sm_burn sm_burn_duration
