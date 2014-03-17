@@ -1512,9 +1512,9 @@ if version >= 508 || !exists("did_source_syn_inits")
   HiLink sourceSpecialComment   SpecialComment
   HiLink sourceBindableKey      SpecialKey
   HiLink sourceCommand          Statement
-  HiLink sourceServerVar        Statement
-  HiLink sourceVar              Statement
-  HiLink sourceMod              Statement
+  HiLink sourceServerVar        Keyword
+  HiLink sourceVar              Identifier
+  HiLink sourceMod              StorageClass
   delcommand HiLink
 endif
 
