@@ -23,8 +23,8 @@ endif
 syn case ignore
 
 " Syntax: Numbers {{{1
+syn match sourceSteamID         '\vSTEAM_[0-5]\:[0-4]:\d+'
 syn match sourceNumber          '\<\d\+\>'
-syn match sourceSteamID         'STEAM_(?<universe>[0-5]):(?<authserver>[0-1]):(?<accountid>\d+)'
 
 " Syntax: Todo {{{1
 syn keyword sourceSpecialComment   contained TODO FIXME XXX DEBUG NOTE DEFAULT
@@ -1502,6 +1502,7 @@ if version >= 508 || !exists("did_source_syn_inits")
     command -nargs=+ HiLink hi def link <args>
   endif
 
+  HiLink sourceSteamID          Constant
   HiLink sourceComment          Comment
   HiLink sourceDelimiter        Delimiter
   HiLink sourceNumber           Number
