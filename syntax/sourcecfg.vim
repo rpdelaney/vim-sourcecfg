@@ -1476,7 +1476,7 @@ syn keyword sourceMod           sm_vote_progress_hintbox sm_vote_slay sm_voteall
 syn keyword sourceMod           sm_voteff sm_votegravity sm_votekick sm_votemap sm_voteslay sm_who
 
 " Syntax: Operators {{{1
-" syn match sourceOperator        '+\|-' transparent
+" syn match sourceOperator        '+\|-'
 
 " Syntax: Delimiter
 syn match sourceDelimiter       ';\|"'
@@ -1486,10 +1486,11 @@ syn region sourceComment oneline        start="//" end="$"
 
 " Syntax: Strings {{{1
 syntax region sourceString transparent  start=+"+  skip=+\\"+  end=+"+
-syntax region sourceQuote               start="say_team" end="$"
+syntax region sourceQuote               start="say_team" end='$\|;\"'
 
 " Syntax: Fold points (non-standard) {{{1
 syn region sourceFold                   start="//>" end="//<" fold transparent keepend extend
+syn region sourceFold                   start="//[" end="//]" fold transparent keepend extend
 
 " Default highlighting {{{1
 " For version 5.7 and earlier: only when not done already
@@ -1546,7 +1547,7 @@ let b:current_syntax = "sourcecfg"
 " liability in connection with the Program, unless a warranty or assumption of
 " liability accompanies a copy of the Program in return for a fee.
 "
-"    END OF TERMS AND CONDITIONS
+" END OF TERMS AND CONDITIONS
 "
 " }}}
 
