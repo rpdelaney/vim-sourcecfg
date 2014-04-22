@@ -68,6 +68,8 @@ syn match sourceCommand         '-reload\|-right\|-score\|-showbudget\|-showbudg
 syn match sourceCommand         '-showbudget_texture_global\|-showscores\|-showstats\|-showvprof\|-sixense_left_point_gesture'
 syn match sourceCommand         '-sixense_ratchet\|-sixense_right_point_gesture\|-speed\|-strafe\|-use'
 syn match sourceCommand         '-use_action_slot_item\|-vgui_drawtree\|-voicerecord\|-walk\|-zoom'
+syn match sourceCommand         'quit'
+syn match sourceCommand         'quit prompt'
 syn keyword sourceCommand       BindToggle CreateHairball OpenMatchmakingLobby OpenQuickplayDialog OpenSteamWorkshopDialog
 syn keyword sourceCommand       Print_Steam_Stats RefreshMatchmakingLobby Reset_Steam_Stats ShowSteamStatsSessionID Test_CreateEntity
 syn keyword sourceCommand       Test_EHandle Test_InitRandomEntitySpawner Test_Loop Test_LoopCount Test_LoopForNumSeconds
@@ -203,7 +205,7 @@ syn keyword sourceCommand       playdemo player_ready_toggle playflush playgames
 syn keyword sourceCommand       playvideo playvideo_exitcommand playvol plugin_load plugin_notify_non_valid
 syn keyword sourceCommand       plugin_pause plugin_pause_all plugin_print plugin_unload plugin_unpause
 syn keyword sourceCommand       plugin_unpause_all print_colorcorrection progress_enable prop_crosshair prop_debug
-syn keyword sourceCommand       prop_dynamic_create prop_physics_create quit r_3dnow r_cheapwaterend
+syn keyword sourceCommand       prop_dynamic_create prop_physics_create r_3dnow r_cheapwaterend
 syn keyword sourceCommand       r_cheapwaterstart r_cleardecals r_flushlod r_printdecalinfo r_ropes_holiday_light_color
 syn keyword sourceCommand       r_screenoverlay r_shadowangles r_shadowblobbycutoff r_shadowcolor r_shadowdir
 syn keyword sourceCommand       r_shadowdist r_skyboxfogfactor r_sse2 radialmenu randommap
