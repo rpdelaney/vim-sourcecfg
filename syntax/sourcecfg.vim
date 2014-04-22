@@ -623,7 +623,7 @@ syn keyword sourceVar           telemetry_pause telemetry_resume telemetry_serve
 syn keyword sourceVar           texture_budget_panel_bottom_of_history_fraction texture_budget_panel_global texture_budget_panel_height texture_budget_panel_width texture_budget_panel_x
 syn keyword sourceVar           texture_budget_panel_y tf_arena_max_streak tf_arena_preround_time tf_arena_round_time tf_arena_use_queue
 syn keyword sourceVar           tf_build_menu_controller_mode tf_chargedfriends tf_clientsideeye_lookats tf_coach_min_time_played tf_coach_request_nevershowagain
-syn keyword sourceVar           tf_colorblindassist tf_dingaling_pitchmaxdmg tf_dingaling_pitchmindmg tf_dingaling_volume tf_dingalingaling
+syn keyword sourceVar           tf_colorblindassist tf_dingaling tf_dingaling_pitchmaxdmg tf_dingaling_pitchmindmg tf_dingaling_volume tf_dingalingaling
 syn keyword sourceVar           tf_dingalingaling_repeat_delay tf_disguise_menu_controller_mode tf_explanations_backpackpanel tf_explanations_charinfo_armory_panel tf_explanations_charinfopanel
 syn keyword sourceVar           tf_explanations_craftingpanel tf_explanations_discardpanel tf_explanations_store tf_explanations_tradingpanel tf_highfive_hintcount
 syn keyword sourceVar           tf_hud_no_crosshair_on_scope_zoom tf_hud_notification_duration tf_hud_num_building_alert_beeps tf_last_store_pricesheet_version tf_matchgroups
