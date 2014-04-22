@@ -123,7 +123,7 @@ syn keyword sourceCommand       ent_dump ent_fire ent_info ent_keyvalue ent_mess
 syn keyword sourceCommand       ent_name ent_orient ent_pause ent_pivot ent_rbox
 syn keyword sourceCommand       ent_remove ent_remove_all ent_rotate ent_setname ent_show_response_criteria
 syn keyword sourceCommand       ent_step ent_teleport ent_text ent_viewoffset envmap
-syn keyword sourceCommand       escape exec exit explode explodevector
+syn keyword sourceCommand       exec exit explode explodevector
 syn keyword sourceCommand       fadein fadeout find find_ent find_ent_index
 syn keyword sourceCommand       findflags firetarget firstperson flush flush_locked
 syn keyword sourceCommand       fly_add_keyframe fly_clear_all_keyframes fly_show_path fly_start fogui
@@ -195,7 +195,7 @@ syn keyword sourceCommand       npc_steering_all npc_task_text npc_tasks npc_tel
 syn keyword sourceCommand       npc_viewcone obj_dump_damage open_charinfo open_charinfo_armory open_charinfo_backpack
 syn keyword sourceCommand       open_charinfo_crafting open_charinfo_direct open_replaybrowser open_replayinputpanel open_store
 syn keyword sourceCommand       openserverbrowser opentf2options outtro_stats_done overview_mode overview_zoom
-syn keyword sourceCommand       particle_test_start particle_test_stop path pause perfui
+syn keyword sourceCommand       particle_test_start particle_test_stop path perfui
 syn keyword sourceCommand       perfvisualbenchmark perfvisualbenchmark_abort personalstats phys_swap physics_budget
 syn keyword sourceCommand       physics_constraints physics_debug_entity physics_highlight_active physics_report_active physics_select
 syn keyword sourceCommand       picker ping pingserver pixelvis_debug play
