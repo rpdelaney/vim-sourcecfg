@@ -101,7 +101,7 @@ syn keyword sourceCommand       cl_destroy_ragdolls cl_dump_particle_stats cl_du
 syn keyword sourceCommand       cl_ent_bbox cl_ent_rbox cl_find_ent cl_find_ent_index cl_fullupdate
 syn keyword sourceCommand       cl_gameserver_create_identity cl_gameserver_list cl_gameserver_reset_identity cl_panelanimation cl_particles_dump_effects
 syn keyword sourceCommand       cl_particles_dumplist cl_precacheinfo cl_pred_track cl_predictioncopy_describe cl_print_consistency_list
-syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_showents cl_show_market_data_on_items cl_soundemitter_flush cl_soundemitter_reload
+syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_showents cl_show_market_data_on_items cl_software_cursor cl_soundemitter_flush cl_soundemitter_reload
 syn keyword sourceCommand       cl_soundscape_flush cl_soundscape_printdebuginfo cl_ss_origin cl_trade cl_trade_steamid
 syn keyword sourceCommand       cl_training_class_unlock_all cl_trigger_first_notification cl_updatevisibility cl_view clear
 syn keyword sourceCommand       clear_debug_overlays cmd cmd1 cmd2 cmd3
@@ -413,8 +413,8 @@ syn keyword sourceVar           ifm_steadycam_sensitivity ifm_steadycam_zoomdamp
 syn keyword sourceVar           inferno_entity_flame_scale inferno_fire ip joy_accel_filter joy_accelmax
 syn keyword sourceVar           joy_accelscale joy_advanced joy_advaxisr joy_advaxisu joy_advaxisv
 syn keyword sourceVar           joy_advaxisx joy_advaxisy joy_advaxisz joy_autoaimdampen joy_autoaimdampenrange
-syn keyword sourceVar           joy_autosprint joy_axisbutton_threshold joy_cfg_preset joy_cfg_preset2 joy_circle_correct
-syn keyword sourceVar           joy_diagonalpov joy_display_input joy_forwardsensitivity joy_forwardthreshold joy_inverty
+syn keyword sourceVar           joy_autosprint joy_axisbutton_threshold joy_axis_deadzone joy_cfg_preset joy_cfg_preset2 joy_circle_correct
+syn keyword sourceVar           joy_diagonalpov joy_display_input joy_forwardsensitivity joy_forwardthreshold joy_gamecontroller_config joy_inverty
 syn keyword sourceVar           joy_inverty2 joy_inverty_default joy_legacy joy_legacy2 joy_lookspin_default
 syn keyword sourceVar           joy_lowend joy_lowmap joy_movement_stick joy_movement_stick2 joy_movement_stick_default
 syn keyword sourceVar           joy_name joy_pegged joy_pitchsensitivity joy_pitchsensitivity2 joy_pitchsensitivity_default
@@ -1055,7 +1055,7 @@ syn keyword sourceCheat         mat_showcamerarendertarget mat_showframebufferte
 syn keyword sourceCheat         mat_slopescaledepthbias_decal mat_slopescaledepthbias_normal mat_slopescaledepthbias_shadowmap mat_softwareskin mat_stub
 syn keyword sourceCheat         mat_supportflashlight mat_suppress mat_surfaceid mat_surfacemat mat_tessellation_accgeometrytangents
 syn keyword sourceCheat         mat_tessellation_cornertangents mat_tessellation_update_buffers mat_tessellationlevel mat_tessellationmode mat_tonemap_algorithm
-syn keyword sourceCheat         mat_tonemap_min_avglum mat_tonemap_percent_bright_pixels mat_tonemap_percent_target mat_viewportscale mat_visualize_dof
+syn keyword sourceCheat         mat_tonemap_min_avglum mat_tonemap_percent_bright_pixels mat_tonemap_percent_target mat_viewportscale mat_viewportupscale mat_visualize_dof
 syn keyword sourceCheat         mat_wireframe mat_yuv melee_collateral_shove_count melee_combo_reset_time melee_dump_weapons
 syn keyword sourceCheat         melee_dump_weapons_server melee_force_scalar melee_force_scalar_combat_character melee_range melee_reload_info
 syn keyword sourceCheat         melee_reload_info_server melee_show_swing mem_dumpvballocs mem_force_flush mem_incremental_compact_rate
