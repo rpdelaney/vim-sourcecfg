@@ -261,7 +261,7 @@ syn keyword sourceCommand       unbind unbind_mac unbindall unload_all_addons un
 syn keyword sourceCommand       update_addon_paths use user user_context user_property
 syn keyword sourceCommand       users vehicle_flushscript version vgui_drawtree_clear vgui_dump_panels
 syn keyword sourceCommand       vgui_spew_fonts vgui_togglepanel viewanim_addkeyframe viewanim_create viewanim_load
-syn keyword sourceCommand       viewanim_reset viewanim_save viewanim_test voice_menu_1 voice_menu_2
+syn keyword sourceCommand       viewanim_reset viewanim_save viewanim_test voicemenu voice_menu_1 voice_menu_2
 syn keyword sourceCommand       voice_menu_3 voice_mute voice_printtalkers voice_reset_mutelist voice_show_mute
 syn keyword sourceCommand       voice_unmute voicerecord_toggle vox_reload voxeltree_box voxeltree_playerview
 syn keyword sourceCommand       voxeltree_sphere voxeltree_view vphys_sleep_timeout vprof vprof_adddebuggroup1
@@ -1490,7 +1490,7 @@ syntax region sourceQuote               start="say_team" end='$\|;\"'
 
 " Syntax: Fold points (non-standard) {{{1
 syn region sourceFold                   start="//>" end="//<" fold transparent keepend extend
-syn region sourceFold                   start="//[" end="//]" fold transparent keepend extend
+syn region sourceFold                   start="//\[" end="//\]" fold transparent keepend extend
 
 " Default highlighting {{{1
 " For version 5.7 and earlier: only when not done already
