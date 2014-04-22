@@ -650,7 +650,7 @@ syn keyword sourceVar           tv_timeout tv_title tv_transmitall ui_blogpost_s
 syn keyword sourceVar           ui_blogpost_upload_version ui_blogpost_vote_test ui_foundgames_fake_content ui_foundgames_fake_count ui_foundgames_spinner_time
 syn keyword sourceVar           ui_foundgames_update_time ui_game_allow_create_public ui_game_allow_create_random ui_l4d_debug ui_loading_tip_f1
 syn keyword sourceVar           ui_loading_tip_f2 ui_loading_tip_refresh ui_lobby_idle_time ui_lobby_noresults_create_msg_time ui_lobby_start_enabled
-syn keyword sourceVar           ui_lobby_stat_switch_time ui_lobby_stat_team_search_max ui_mainmenu_blogpost_animation ui_mainmenu_challenge ui_old_options_menu
+syn keyword sourceVar           ui_lobby_stat_switch_time ui_lobby_stat_team_search_max ui_mainmenu_blogpost_animation ui_mainmenu_challenge ui_modes_filter_modetype ui_modes_filter_players ui_old_options_menu
 syn keyword sourceVar           ui_play_online_browser ui_public_lobby_filter_campaign ui_public_lobby_filter_difficulty2 ui_public_lobby_filter_status ui_start_dlc_time_corrupt
 syn keyword sourceVar           ui_start_dlc_time_loaded ui_start_dlc_time_pump ui_volume_max v_centermove v_centerspeed
 syn keyword sourceVar           v_ipitch_cycle v_ipitch_level v_iroll_cycle v_iroll_level v_iyaw_cycle
