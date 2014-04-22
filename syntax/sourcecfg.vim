@@ -103,7 +103,7 @@ syn keyword sourceCommand       cl_destroy_ragdolls cl_dump_particle_stats cl_du
 syn keyword sourceCommand       cl_ent_bbox cl_ent_rbox cl_find_ent cl_find_ent_index cl_fullupdate
 syn keyword sourceCommand       cl_gameserver_create_identity cl_gameserver_list cl_gameserver_reset_identity cl_panelanimation cl_particles_dump_effects
 syn keyword sourceCommand       cl_particles_dumplist cl_precacheinfo cl_pred_track cl_predictioncopy_describe cl_print_consistency_list
-syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_showents cl_show_market_data_on_items cl_software_cursor cl_soundemitter_flush cl_soundemitter_reload
+syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_showents cl_show_market_data_on_items cl_soundemitter_flush cl_soundemitter_reload
 syn keyword sourceCommand       cl_soundscape_flush cl_soundscape_printdebuginfo cl_ss_origin cl_trade cl_trade_steamid
 syn keyword sourceCommand       cl_training_class_unlock_all cl_trigger_first_notification cl_updatevisibility cl_view clear
 syn keyword sourceCommand       clear_debug_overlays cmd cmd1 cmd2 cmd3
@@ -357,7 +357,7 @@ syn keyword sourceVar           cl_show_bounds_errors cl_show_num_particle_syste
 syn keyword sourceVar           cl_showbackpackrarities cl_showbattery cl_showcrit cl_showdemooverlay cl_showerror
 syn keyword sourceVar           cl_showfps cl_showhelp cl_showpausedimage cl_showpluginmessages cl_showpos
 syn keyword sourceVar           cl_showtextmsg cl_simdbones cl_simulate_no_quicktime cl_smoke_alpha cl_smoke_far
-syn keyword sourceVar           cl_smoke_near cl_smooth cl_smoothtime cl_soundfile cl_spec_carrieditems
+syn keyword sourceVar           cl_smoke_near cl_smooth cl_smoothtime cl_software_cursor cl_soundfile cl_spec_carrieditems
 syn keyword sourceVar           cl_spec_mode cl_spoof_official_ip cl_starfield_diameter cl_starfield_distance cl_steamscreenshots
 syn keyword sourceVar           cl_survivor_light_brightness cl_survivor_light_cone cl_survivor_light_debug cl_survivor_light_enable cl_survivor_light_offset_x
 syn keyword sourceVar           cl_survivor_light_offset_y cl_survivor_light_offset_z cl_survivor_light_radius cl_survivor_light_rot cl_team
