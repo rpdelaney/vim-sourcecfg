@@ -250,7 +250,7 @@ syn keyword sourceCommand       tf_bot_debug_stuck_log tf_bot_kick tf_bot_kill t
 syn keyword sourceCommand       tf_crashclient tf_debugsentrydamage tf_dumpplayerstats tf_halloween_force_boss_spawn tf_invite_debug
 syn keyword sourceCommand       tf_lobby_debug tf_mark tf_mvm_checkpoint tf_mvm_checkpoint_clear tf_mvm_force_victory
 syn keyword sourceCommand       tf_mvm_jump_to_wave tf_mvm_tank_health tf_mvm_tank_kill tf_party_debug tf_select_ambush_areas
-syn keyword sourceCommand       tf_select_with_attribute tf_server_lobby_debug tf_testrr tf_testvcd tf_wipe_attributes
+syn keyword sourceCommand       tf_select_with_attribute tf_server_lobby_debug tf_store_stamp_donation_add_timestamp tf_testrr tf_testvcd tf_wipe_attributes
 syn keyword sourceCommand       thirdperson thirdperson_mayamode thirdpersonshoulder thread_test_tslist thread_test_tsqueue
 syn keyword sourceCommand       threadpool_cycle_reserve threadpool_run_tests timedemo timedemo_vprofrecord timedemoquit
 syn keyword sourceCommand       timeleft timerefresh toggle toggle_duck toggle_zoom
