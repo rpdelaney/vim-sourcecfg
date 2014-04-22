@@ -101,7 +101,7 @@ syn keyword sourceCommand       cl_destroy_ragdolls cl_dump_particle_stats cl_du
 syn keyword sourceCommand       cl_ent_bbox cl_ent_rbox cl_find_ent cl_find_ent_index cl_fullupdate
 syn keyword sourceCommand       cl_gameserver_create_identity cl_gameserver_list cl_gameserver_reset_identity cl_panelanimation cl_particles_dump_effects
 syn keyword sourceCommand       cl_particles_dumplist cl_precacheinfo cl_pred_track cl_predictioncopy_describe cl_print_consistency_list
-syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_showents cl_soundemitter_flush cl_soundemitter_reload
+syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_showents cl_show_market_data_on_items cl_soundemitter_flush cl_soundemitter_reload
 syn keyword sourceCommand       cl_soundscape_flush cl_soundscape_printdebuginfo cl_ss_origin cl_trade cl_trade_steamid
 syn keyword sourceCommand       cl_training_class_unlock_all cl_trigger_first_notification cl_updatevisibility cl_view clear
 syn keyword sourceCommand       clear_debug_overlays cmd cmd1 cmd2 cmd3
