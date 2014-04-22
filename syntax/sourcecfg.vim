@@ -303,7 +303,7 @@ syn keyword sourceVar           cc_linger_time cc_minvisibleitems cc_predisplay_
 syn keyword sourceVar           cc_smallfontlength cc_subtitles cl_SetupAllBones cl_ShowBoneSetupEnts cl_ShowSunVectors
 syn keyword sourceVar           cl__ragdoll_max_remove_per_frame cl_addon_debug cl_addon_fade_max cl_addon_fade_min cl_aggregate_particles
 syn keyword sourceVar           cl_allowdownload cl_allowupload cl_anglespeedkey cl_ask_blacklist_for_any_server cl_ask_blacklist_max_session_duration
-syn keyword sourceVar           cl_ask_blacklist_opt_out cl_ask_favorite_for_any_server cl_ask_favorite_min_session_duration cl_ask_favorite_opt_out cl_autohelp
+syn keyword sourceVar           cl_ask_blacklist_opt_out cl_ask_bigpicture_controller_opt_out cl_ask_favorite_for_any_server cl_ask_favorite_min_session_duration cl_ask_favorite_opt_out cl_autohelp
 syn keyword sourceVar           cl_autoreload cl_autorezoom cl_blobbyshadows cl_blurClearAlpha cl_blurDebug
 syn keyword sourceVar           cl_blurPasses cl_blurTapSize cl_bob cl_bobcycle cl_bobup
 syn keyword sourceVar           cl_boss_show_stun cl_burninggibs cl_buy_favorite_nowarn cl_buy_favorite_quiet cl_c4dynamiclight
