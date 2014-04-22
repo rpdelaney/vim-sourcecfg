@@ -103,7 +103,7 @@ syn keyword sourceCommand       cl_destroy_ragdolls cl_dump_particle_stats cl_du
 syn keyword sourceCommand       cl_ent_bbox cl_ent_rbox cl_find_ent cl_find_ent_index cl_fullupdate
 syn keyword sourceCommand       cl_gameserver_create_identity cl_gameserver_list cl_gameserver_reset_identity cl_panelanimation cl_particles_dump_effects
 syn keyword sourceCommand       cl_particles_dumplist cl_precacheinfo cl_pred_track cl_predictioncopy_describe cl_print_consistency_list
-syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_showents cl_show_market_data_on_items cl_soundemitter_flush cl_soundemitter_reload
+syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_showents cl_soundemitter_flush cl_soundemitter_reload
 syn keyword sourceCommand       cl_soundscape_flush cl_soundscape_printdebuginfo cl_ss_origin cl_trade cl_trade_steamid
 syn keyword sourceCommand       cl_training_class_unlock_all cl_trigger_first_notification cl_updatevisibility cl_view clear
 syn keyword sourceCommand       clear_debug_overlays cmd cmd1 cmd2 cmd3
@@ -252,7 +252,7 @@ syn keyword sourceCommand       tf_bot_debug_stuck_log tf_bot_kick tf_bot_kill t
 syn keyword sourceCommand       tf_crashclient tf_debugsentrydamage tf_dumpplayerstats tf_halloween_force_boss_spawn tf_invite_debug
 syn keyword sourceCommand       tf_lobby_debug tf_mark tf_mvm_checkpoint tf_mvm_checkpoint_clear tf_mvm_force_victory
 syn keyword sourceCommand       tf_mvm_jump_to_wave tf_mvm_tank_health tf_mvm_tank_kill tf_party_debug tf_select_ambush_areas
-syn keyword sourceCommand       tf_select_with_attribute tf_server_lobby_debug tf_store_stamp_donation_add_timestamp tf_testrr tf_testvcd tf_wipe_attributes
+syn keyword sourceCommand       tf_select_with_attribute tf_server_lobby_debug tf_testrr tf_testvcd tf_wipe_attributes
 syn keyword sourceCommand       thirdperson thirdperson_mayamode thirdpersonshoulder thread_test_tslist thread_test_tsqueue
 syn keyword sourceCommand       threadpool_cycle_reserve threadpool_run_tests timedemo timedemo_vprofrecord timedemoquit
 syn keyword sourceCommand       timeleft timerefresh toggle toggle_duck toggle_zoom
@@ -353,7 +353,7 @@ syn keyword sourceVar           cl_ragdoll_maxcount_survivor cl_ragdoll_physics_
 syn keyword sourceVar           cl_resend cl_retire_low_priority_lights cl_ricochet_percent cl_ricochet_percent_shotgun cl_rosetta_debug
 syn keyword sourceVar           cl_rosetta_line_inner_radius cl_rosetta_line_outer_radius cl_rumblescale cl_savescreenshotstosteam cl_scalecrosshair
 syn keyword sourceVar           cl_sceneentity_debug cl_screenshotlocation cl_screenshotname cl_screenshotusertag cl_session
-syn keyword sourceVar           cl_show_bounds_errors cl_show_num_particle_systems cl_show_path cl_show_splashes cl_show_tickets
+syn keyword sourceVar           cl_show_bounds_errors cl_show_market_data_on_items cl_show_num_particle_systems cl_show_path cl_show_splashes cl_show_tickets
 syn keyword sourceVar           cl_showbackpackrarities cl_showbattery cl_showcrit cl_showdemooverlay cl_showerror
 syn keyword sourceVar           cl_showfps cl_showhelp cl_showpausedimage cl_showpluginmessages cl_showpos
 syn keyword sourceVar           cl_showtextmsg cl_simdbones cl_simulate_no_quicktime cl_smoke_alpha cl_smoke_far
@@ -638,7 +638,7 @@ syn keyword sourceVar           tf_max_separation_force tf_medieval_thirdperson 
 syn keyword sourceVar           tf_mvm_tabs_discovered tf_particles_disable_weather tf_quickplay_beta_ask_percentage tf_quickplay_beta_preference tf_quickplay_lastviewedmode
 syn keyword sourceVar           tf_recent_achievements tf_remember_activeweapon tf_remember_lastswitched tf_replay_pyrovision tf_respawn_on_loadoutchanges
 syn keyword sourceVar           tf_roundinfo_pause tf_show_preset_explanation_in_class_loadout tf_simple_disguise_menu tf_sniper_fullcharge_bell tf_spectate_pyrovision
-syn keyword sourceVar           tf_spectator_target_location tf_stats_track tf_steam_workshop_query_timeout tf_test_hat_bodygroup tf_testitem_recent
+syn keyword sourceVar           tf_spectator_target_location tf_stats_track tf_steam_workshop_query_timeout tf_store_stamp_donation_add_timestamp tf_test_hat_bodygroup tf_testitem_recent
 syn keyword sourceVar           tf_training_has_prompted_for_forums tf_training_has_prompted_for_loadout tf_training_has_prompted_for_offline_practice tf_training_has_prompted_for_options tf_training_has_prompted_for_training
 syn keyword sourceVar           tf_weapon_select_demo_start_delay tf_weapon_select_demo_time think_limit thirdperson_platformer thirdperson_screenspace
 syn keyword sourceVar           threadpool_affinity threadpool_reserve timedemo_runcount tir_start tir_stop
