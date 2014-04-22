@@ -399,7 +399,7 @@ syn keyword sourceVar           host_profile host_showcachemiss host_speeds host
 syn keyword sourceVar           host_threaded_sound host_timer_spin_ms host_timescale host_xbox_e3_restart hostip
 syn keyword sourceVar           hostname hostport hud_achievement_count hud_achievement_count_engineer hud_achievement_description
 syn keyword sourceVar           hud_achievement_glowtime hud_achievement_tracker hud_autoaim_method hud_autoaim_scale_icon hud_autoreloadscript
-syn keyword sourceVar           hud_classautokill hud_combattext hud_combattext_healing hud_deathnotice_bots hud_deathnotice_threats
+syn keyword sourceVar           hud_classautokill hud_combattext hud_combattext_batching hud_combattext_healing hud_deathnotice_bots hud_deathnotice_threats
 syn keyword sourceVar           hud_deathnotice_time hud_dmgrecord_persisttime_deaths hud_dmgrecord_persisttime_other hud_draw_active_reticle hud_draw_fixed_reticle
 syn keyword sourceVar           hud_drawhistory_time hud_escort_interp hud_escort_test_progress hud_escort_test_speed hud_fastswitch
 syn keyword sourceVar           hud_freezecamhide hud_lowammowarning_maxposadjust hud_lowammowarning_threshold hud_magnetism hud_medicautocallers
