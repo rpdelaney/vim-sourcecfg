@@ -354,7 +354,7 @@ syn keyword sourceCommand       vprof_reset vprof_reset_peaks vprof_to_csv vprof
 syn keyword sourceCommand       wc_air_edit_further wc_air_edit_nearer wc_air_node_edit wc_create wc_destroy
 syn keyword sourceCommand       wc_destroy_undo wc_link_edit weapon_reload_database whitelistcmd
 syn keyword sourceCommand       wipe_nav_attributes workshop_publish workshop_start_map workshop_workbench
-syn keyword sourceCommand       syn keyword sourceCommand       syn keyword sourceCommand       syn keyword sourceCommand       syn keyword sourceCommand       syn keyword sourceCommand       writeid writeip xload xlook xmove xsave z_wind_dir
+syn keyword sourceCommand       writeid writeip xload xlook xmove xsave z_wind_dir
 
 " Syntax: Variables {{{1
 syn keyword sourceVar           BlendBonesMode IgnoreReflectGlassFrustumCheck PhysPMC _cl_classmenuopen _fov
