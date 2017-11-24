@@ -1336,25 +1336,30 @@ syn keyword sourceServerVar     zombie_basemin zombie_changemax zombie_changemin
 syn keyword sourceServerVar     zombie_decaymin zombie_moanfreq zombie_stepfreq
 
 " Syntax: Cheats {{{1
-syn keyword sourceCheat         CreateHairball CreatePredictionError Smoker_escape_range Test_CreateEntity
-syn keyword sourceCheat         Test_EHandle Test_InitRandomEntitySpawner Test_ProxyToggle_EnableProxy
-syn keyword sourceCheat         Test_ProxyToggle_EnsureValue Test_ProxyToggle_SetValue
-syn keyword sourceCheat         Test_RandomPlayerPosition Test_RandomizeInPVS Test_RemoveAllRandomEntities
-syn keyword sourceCheat         Test_SpawnRandomEntities achievement_debug achievement_disable
-syn keyword sourceCheat         achievement_notification_test action_progress_reset_interval
-syn keyword sourceCheat         adrenaline_backpack_speedup adrenaline_duration adrenaline_health_buffer
-syn keyword sourceCheat         adrenaline_revive_speedup adrenaline_run_speed ai_debug_actbusy ai_debug_los
-syn keyword sourceCheat         ai_debug_shoot_positions ai_drawbattlelines ai_inhibit_spawners
-syn keyword sourceCheat         ai_talk_idle_enabled ai_vehicle_avoidance air_density allow_weapon_fire_to_use
-syn keyword sourceCheat         ammo_pack_use_duration anim_dumpstate anim_showmainactivity anim_showstate
-syn keyword sourceCheat         anim_showstatelog bench_end bench_start bench_upload
-syn keyword sourceCheat         boomer_exposed_time_tolerance boomer_leaker_chance boomer_pz_claw_dmg
-syn keyword sourceCheat         boomer_vomit_delay bot_com_meleerange bot_com_viewrange bot_com_wpnrange
-syn keyword sourceCheat         bot_crouch bot_debug bot_dontmove bot_freeze bot_jump bot_mimic
-syn keyword sourceCheat         bot_mimic_spec_buttons bot_mimic_yaw_offset bot_nav_offsetpathinset
-syn keyword sourceCheat         bot_nav_recomputetime bot_nav_simplifypaths bot_nav_turnspeed
-syn keyword sourceCheat         bot_nav_usefeelers bot_nav_useoffsetpaths bot_nav_wpdeceldistance
-syn keyword sourceCheat         bot_nav_wpdistance bot_randomnames bot_saveme bot_selectweaponslot box buddha
+" syn keyword sourceCheat
+"
+syn keyword sourceCheat         CS_WarnFriendlyDamageInterval CreateHairball CreatePredictionError
+syn keyword sourceCheat         Smoker_escape_range Test_CreateEntity Test_EHandle Test_InitRandomEntitySpawner
+syn keyword sourceCheat         Test_ProxyToggle_EnableProxy Test_ProxyToggle_EnsureValue
+syn keyword sourceCheat         Test_ProxyToggle_SetValue Test_RandomPlayerPosition Test_RandomizeInPVS
+syn keyword sourceCheat         Test_RemoveAllRandomEntities Test_SpawnRandomEntities achievement_debug
+syn keyword sourceCheat         achievement_disable achievement_notification_test
+syn keyword sourceCheat         action_progress_reset_interval adrenaline_backpack_speedup adrenaline_duration
+syn keyword sourceCheat         adrenaline_health_buffer adrenaline_revive_speedup adrenaline_run_speed
+syn keyword sourceCheat         ai_debug_actbusy ai_debug_los ai_debug_shoot_positions ai_drawbattlelines
+syn keyword sourceCheat         ai_inhibit_spawners ai_talk_idle_enabled ai_vehicle_avoidance air_density
+syn keyword sourceCheat         allow_weapon_fire_to_use ammo_pack_use_duration anim_dumpstate
+syn keyword sourceCheat         anim_showmainactivity anim_showstate anim_showstatelog bench_end bench_start
+syn keyword sourceCheat         bench_upload boomer_exposed_time_tolerance boomer_leaker_chance
+syn keyword sourceCheat         boomer_pz_claw_dmg boomer_vomit_delay bot_com_meleerange bot_com_viewrange
+syn keyword sourceCheat         bot_com_wpnrange bot_crouch bot_debug bot_debug_target bot_dont_shoot
+syn keyword sourceCheat         bot_dontmove bot_freeze bot_ignore_players bot_jump bot_loadout
+syn keyword sourceCheat         bot_max_vision_distance_override bot_mimic bot_mimic_spec_buttons
+syn keyword sourceCheat         bot_mimic_yaw_offset bot_nav_offsetpathinset bot_nav_recomputetime
+syn keyword sourceCheat         bot_nav_simplifypaths bot_nav_turnspeed bot_nav_usefeelers
+syn keyword sourceCheat         bot_nav_useoffsetpaths bot_nav_wpdeceldistance bot_nav_wpdistance bot_randombuy
+syn keyword sourceCheat         bot_randomnames bot_saveme bot_selectweaponslot bot_show_battlefront
+syn keyword sourceCheat         bot_show_nav bot_show_occupy_time bot_stop bot_traceview bot_zombie box buddha
 syn keyword sourceCheat         bug_swap c_maxdistance c_maxpitch c_maxyaw c_mindistance c_minpitch c_minyaw
 syn keyword sourceCheat         c_orthoheight c_orthowidth cam_collision cam_command cam_idealdelta
 syn keyword sourceCheat         cam_idealdist cam_idealdistright cam_idealdistup cam_ideallag cam_idealpitch
@@ -1363,18 +1368,20 @@ syn keyword sourceCheat         ccs_write_convars ch_createairboat ch_createjeep
 syn keyword sourceCheat         chainsaw_attack_distance chainsaw_attack_force chainsaw_attract_distance
 syn keyword sourceCheat         chainsaw_damage chainsaw_debug chainsaw_hit_interval
 syn keyword sourceCheat         chainsaw_startup_fadeout_time changelevel_inhibit changelevel_pause_interval
-syn keyword sourceCheat         chet_debug_idle cl_backspeed cl_bob cl_bobcycle cl_bobup
-syn keyword sourceCheat         cl_camera_follow_bone_index cl_cinematiclight_b cl_cinematiclight_g
-syn keyword sourceCheat         cl_cinematiclight_r cl_cinematiclight_scale cl_cinematiclight_tonemap
-syn keyword sourceCheat         cl_clock_correction cl_clock_correction_adjustment_max_amount
+syn keyword sourceCheat         chet_debug_idle cl_backspeed cl_bob cl_bob_version cl_bobcycle cl_bobup
+syn keyword sourceCheat         cl_brushfastpath cl_camera_follow_bone_index cl_cinematiclight_b
+syn keyword sourceCheat         cl_cinematiclight_g cl_cinematiclight_r cl_cinematiclight_scale
+syn keyword sourceCheat         cl_cinematiclight_tonemap cl_clock_correction
+syn keyword sourceCheat         cl_clock_correction_adjustment_max_amount
 syn keyword sourceCheat         cl_clock_correction_adjustment_max_offset
 syn keyword sourceCheat         cl_clock_correction_adjustment_min_offset cl_clock_correction_force_server_tick
 syn keyword sourceCheat         cl_clock_showdebuginfo cl_clockdrift_max_ms cl_clockdrift_max_ms_threadmode
-syn keyword sourceCheat         cl_crash cl_detail_multiplier cl_disable_ragdolls cl_draw_airboat_wake
-syn keyword sourceCheat         cl_drawhud cl_drawleaf cl_drawmaterial cl_drawshadowtexture cl_dumpplayer
-syn keyword sourceCheat         cl_ent_absbox cl_ent_bbox cl_ent_rbox cl_entityreport cl_entityreport_sorted
-syn keyword sourceCheat         cl_extrapolate cl_extrapolate_amount cl_eyeball_boss_debug cl_fastdetailsprites
-syn keyword sourceCheat         cl_find_ent cl_find_ent_index cl_flag_return_height cl_flag_return_size
+syn keyword sourceCheat         cl_crash cl_custommaterial_debug_graph cl_detail_multiplier cl_disable_ragdolls
+syn keyword sourceCheat         cl_draw_airboat_wake cl_draw_only_deathnotices cl_drawhud cl_drawleaf
+syn keyword sourceCheat         cl_drawmaterial cl_drawshadowtexture cl_dumpplayer cl_ent_absbox cl_ent_bbox
+syn keyword sourceCheat         cl_ent_rbox cl_entityreport cl_entityreport_sorted cl_extrapolate
+syn keyword sourceCheat         cl_extrapolate_amount cl_eyeball_boss_debug cl_fastdetailsprites cl_find_ent
+syn keyword sourceCheat         cl_find_ent_index cl_flag_return_height cl_flag_return_size
 syn keyword sourceCheat         cl_flushentitypacket cl_force_3rd_strike cl_forwardspeed cl_fullupdate
 syn keyword sourceCheat         cl_glow_blur_scale cl_glow_brightness cl_glow_force
 syn keyword sourceCheat         cl_glow_it_timer_ratio_reduction cl_glow_los_delay cl_glow_los_fade_in_time
@@ -1384,42 +1391,46 @@ syn keyword sourceCheat         cl_jiggle_bone_debug_yaw_constraints cl_jiggle_b
 syn keyword sourceCheat         cl_leveloverview cl_leveloverviewmarker cl_max_shadow_renderable_dist
 syn keyword sourceCheat         cl_maxrenderable_dist cl_obj_test_building_damage cl_overdraw_test
 syn keyword sourceCheat         cl_particle_retire_cost cl_particleeffect_aabb_buffer cl_particles_show_bbox
-syn keyword sourceCheat         cl_pclass cl_pdump cl_phys2_stats cl_phys_timescale cl_pitchdown cl_pitchup
-syn keyword sourceCheat         cl_predict cl_predictionlist cl_querycache_stats cl_ragdoll_gravity
-syn keyword sourceCheat         cl_reloadpostprocessparams cl_removedecals cl_shadowtextureoverlaysize
-syn keyword sourceCheat         cl_showanimstate cl_showanimstate_activities cl_showanimstate_log cl_showents
-syn keyword sourceCheat         cl_showevents cl_sidespeed cl_skipfastpath cl_skipslowpath
-syn keyword sourceCheat         cl_smoke_color_percent cl_smoke_fog_percent cl_soundscape_flush
-syn keyword sourceCheat         cl_sporeclipdistance cl_sun_decay_rate cl_upspeed cl_use_update_interval
-syn keyword sourceCheat         cl_view cl_viewtarget_debug cl_viewtarget_offset cl_viewtarget_player
-syn keyword sourceCheat         cl_winddir cl_windspeed cl_witch_light_brightness cl_witch_light_color_b
-syn keyword sourceCheat         cl_witch_light_color_g cl_witch_light_color_r cl_witch_light_cone
-syn keyword sourceCheat         cl_witch_light_debug cl_witch_light_enable cl_witch_light_offset_x
-syn keyword sourceCheat         cl_witch_light_offset_y cl_witch_light_offset_z cl_witch_light_offset_z_max
-syn keyword sourceCheat         cl_witch_light_radius cl_wpn_sway_interp cl_wpn_sway_scale claw_force
-syn keyword sourceCheat         claw_range claw_range_down claw_swing_duration claw_swing_interval
-syn keyword sourceCheat         claw_swing_miss_interval clear_attribute cola_bottles_use_duration
+syn keyword sourceCheat         cl_particles_show_controlpoints cl_pclass cl_pdump cl_phys2_stats
+syn keyword sourceCheat         cl_phys_show_active cl_phys_timescale cl_pitchdown cl_pitchup
+syn keyword sourceCheat         cl_portal_use_new_dissolve cl_predict cl_predictionlist cl_querycache_stats
+syn keyword sourceCheat         cl_ragdoll_gravity cl_reloadpostprocessparams cl_removedecals
+syn keyword sourceCheat         cl_shadowtextureoverlaysize cl_showanimstate cl_showanimstate_activities
+syn keyword sourceCheat         cl_showanimstate_log cl_showents cl_showevents cl_sidespeed cl_skipfastpath
+syn keyword sourceCheat         cl_skipslowpath cl_smoke_color_percent cl_smoke_fog_percent cl_soundscape_flush
+syn keyword sourceCheat         cl_sporeclipdistance cl_sun_decay_rate cl_sunlight_ortho_size
+syn keyword sourceCheat         cl_teamid_overhead cl_teamid_overhead_maxdist cl_teamid_overhead_maxdist_spec
+syn keyword sourceCheat         cl_upspeed cl_use_new_headbob cl_use_update_interval cl_view
+syn keyword sourceCheat         cl_viewtarget_debug cl_viewtarget_offset cl_viewtarget_player
+syn keyword sourceCheat         cl_weapon_debug_print_accuracy cl_winddir cl_windspeed
+syn keyword sourceCheat         cl_witch_light_brightness cl_witch_light_color_b cl_witch_light_color_g
+syn keyword sourceCheat         cl_witch_light_color_r cl_witch_light_cone cl_witch_light_debug
+syn keyword sourceCheat         cl_witch_light_enable cl_witch_light_offset_x cl_witch_light_offset_y
+syn keyword sourceCheat         cl_witch_light_offset_z cl_witch_light_offset_z_max cl_witch_light_radius
+syn keyword sourceCheat         cl_wpn_sway_interp cl_wpn_sway_scale claw_force claw_range claw_range_down
+syn keyword sourceCheat         claw_swing_duration claw_swing_interval claw_swing_miss_interval
+syn keyword sourceCheat         clear_attribute cloth_windage_multiplier cola_bottles_use_duration
 syn keyword sourceCheat         cola_bottles_use_range cola_bottles_use_tolerance collect_entity_model_name
 syn keyword sourceCheat         collision_test colorcorrectionui crash create_flashlight
-syn keyword sourceCheat         cs_ShowStateTransitions current_flow_distance debug_visibility_monitor
-syn keyword sourceCheat         debug_zombie_panel debugsystemui default_fov defibrillator_return_to_life_time
-syn keyword sourceCheat         defibrillator_use_duration demo_recordcommands director_adrenaline_density
-syn keyword sourceCheat         director_ai_tanks director_always_allow_wanderers director_ammo_density
-syn keyword sourceCheat         director_begin_script director_build_up_min_interval director_clear_count
-syn keyword sourceCheat         director_clear_timeout director_configurable_weapon_spawn_density
-syn keyword sourceCheat         director_convert_pills director_convert_pills_critical_health
-syn keyword sourceCheat         director_convert_pills_to_defib_health director_custom_finale_tank_spacing
-syn keyword sourceCheat         director_debug director_debug_revisit director_debug_scavenge_items
-syn keyword sourceCheat         director_debug_threat_placement director_defibrillator_density
-syn keyword sourceCheat         director_end_script director_finale_item_cluster_count
-syn keyword sourceCheat         director_finale_panic_waves director_finale_stage_delay
-syn keyword sourceCheat         director_force_background director_force_panic_event
-syn keyword sourceCheat         director_force_scripted_panic_event director_force_tank
-syn keyword sourceCheat         director_force_versus_start director_force_witch director_gas_can_density
-syn keyword sourceCheat         director_gauntlet_movement_bonus director_gauntlet_movement_bonus_max
-syn keyword sourceCheat         director_gauntlet_movement_threshold director_gauntlet_movement_timer_length
-syn keyword sourceCheat         director_gauntlet_tank_kite_distance director_ingress_range
-syn keyword sourceCheat         director_intensity_relax_allow_wanderers_threshold
+syn keyword sourceCheat         cs_ShowStateTransitions cs_hostage_near_rescue_music_distance
+syn keyword sourceCheat         current_flow_distance debug_visibility_monitor debug_zombie_panel debugsystemui
+syn keyword sourceCheat         default_fov defibrillator_return_to_life_time defibrillator_use_duration
+syn keyword sourceCheat         demo_recordcommands director_adrenaline_density director_ai_tanks
+syn keyword sourceCheat         director_always_allow_wanderers director_ammo_density director_begin_script
+syn keyword sourceCheat         director_build_up_min_interval director_clear_count director_clear_timeout
+syn keyword sourceCheat         director_configurable_weapon_spawn_density director_convert_pills
+syn keyword sourceCheat         director_convert_pills_critical_health director_convert_pills_to_defib_health
+syn keyword sourceCheat         director_custom_finale_tank_spacing director_debug director_debug_revisit
+syn keyword sourceCheat         director_debug_scavenge_items director_debug_threat_placement
+syn keyword sourceCheat         director_defibrillator_density director_end_script
+syn keyword sourceCheat         director_finale_item_cluster_count director_finale_panic_waves
+syn keyword sourceCheat         director_finale_stage_delay director_force_background
+syn keyword sourceCheat         director_force_panic_event director_force_scripted_panic_event
+syn keyword sourceCheat         director_force_tank director_force_versus_start director_force_witch
+syn keyword sourceCheat         director_gas_can_density director_gauntlet_movement_bonus
+syn keyword sourceCheat         director_gauntlet_movement_bonus_max director_gauntlet_movement_threshold
+syn keyword sourceCheat         director_gauntlet_movement_timer_length director_gauntlet_tank_kite_distance
+syn keyword sourceCheat         director_ingress_range director_intensity_relax_allow_wanderers_threshold
 syn keyword sourceCheat         director_intensity_relax_allow_wanderers_threshold_expert
 syn keyword sourceCheat         director_intensity_relax_allow_wanderers_threshold_hard
 syn keyword sourceCheat         director_intensity_relax_threshold director_intensity_threshold
@@ -1470,26 +1481,29 @@ syn keyword sourceCheat         first_aid_kit_use_duration fish_debug fish_dorma
 syn keyword sourceCheat         fog_2dskyboxfogfactor fog_color fog_colorskybox fog_enable fog_enable_water_fog
 syn keyword sourceCheat         fog_enableskybox fog_end fog_endskybox fog_hdrcolorscale
 syn keyword sourceCheat         fog_hdrcolorscaleskybox fog_maxdensity fog_maxdensityskybox fog_override
-syn keyword sourceCheat         fog_start fog_startskybox force_disablex360 fuel_barrel_damage_amount
+syn keyword sourceCheat         fog_start fog_startskybox force_disablex360 fov_cs_debug
+syn keyword sourceCheat         fps_screenshot_frequency fps_screenshot_threshold fuel_barrel_damage_amount
 syn keyword sourceCheat         fuel_barrel_damage_radius fuel_barrel_debug fuel_barrel_flame_instances
 syn keyword sourceCheat         fuel_barrel_health fuel_barrel_screen_shake_amplitude
 syn keyword sourceCheat         fuel_barrel_screen_shake_duration fuel_barrel_screen_shake_frequency
-syn keyword sourceCheat         fuel_barrel_screen_shake_radius g_cannon_damageandradius g_cannon_debug
-syn keyword sourceCheat         g_cannon_max_traveltime g_cannon_reloadtime g_debug_angularsensor
-syn keyword sourceCheat         g_debug_antlionmaker g_debug_basehelicopter g_debug_basescanner
-syn keyword sourceCheat         g_debug_constraint_sounds g_debug_gunship g_debug_headcrab g_debug_physcannon
-syn keyword sourceCheat         g_debug_ragdoll_removal g_debug_ragdoll_visualize g_debug_trackpather
-syn keyword sourceCheat         g_debug_vehiclebase g_debug_vehicledriver g_debug_vehicleexit
-syn keyword sourceCheat         g_debug_vehiclesound g_jeepexitspeed gameinstructor_dump_open_lessons
-syn keyword sourceCheat         gameinstructor_find_errors gameinstructor_verbose gameinstructor_verbose_lesson
-syn keyword sourceCheat         gas_can_use_duration gascan_spit_time gascan_throw_force gascan_use_range
-syn keyword sourceCheat         gascan_use_tolerance give givecurrentammo gl_clear_gray gl_clear_randomcolor
-syn keyword sourceCheat         global_set glow_outline_width glow_use_tolerance god grenadelauncher_damage
+syn keyword sourceCheat         fuel_barrel_screen_shake_radius fx_new_sparks g_cannon_damageandradius
+syn keyword sourceCheat         g_cannon_debug g_cannon_max_traveltime g_cannon_reloadtime
+syn keyword sourceCheat         g_debug_angularsensor g_debug_antlionmaker g_debug_basehelicopter
+syn keyword sourceCheat         g_debug_basescanner g_debug_constraint_sounds g_debug_gunship g_debug_headcrab
+syn keyword sourceCheat         g_debug_physcannon g_debug_ragdoll_removal g_debug_ragdoll_visualize
+syn keyword sourceCheat         g_debug_trackpather g_debug_vehiclebase g_debug_vehicledriver
+syn keyword sourceCheat         g_debug_vehicleexit g_debug_vehiclesound g_jeepexitspeed
+syn keyword sourceCheat         gameinstructor_dump_open_lessons gameinstructor_find_errors
+syn keyword sourceCheat         gameinstructor_save_restore_lessons gameinstructor_verbose
+syn keyword sourceCheat         gameinstructor_verbose_lesson gas_can_use_duration gascan_spit_time
+syn keyword sourceCheat         gascan_throw_force gascan_use_range gascan_use_tolerance give givecurrentammo
+syn keyword sourceCheat         gl_clear_gray gl_clear_randomcolor global_event_log_enabled global_set
+syn keyword sourceCheat         glow_outline_width glow_use_tolerance god grenadelauncher_damage
 syn keyword sourceCheat         grenadelauncher_ff_scale grenadelauncher_ff_scale_self
 syn keyword sourceCheat         grenadelauncher_force_kill grenadelauncher_radius_kill
 syn keyword sourceCheat         grenadelauncher_radius_stumble grenadelauncher_show_radius
 syn keyword sourceCheat         grenadelauncher_velocity hack_elevator_z_offset hidehud host_sleep
-syn keyword sourceCheat         host_timescale hud_targetid_rangefinder hunk_print_allocations
+syn keyword sourceCheat         host_timescale hostage_debug hud_targetid_rangefinder hunk_print_allocations
 syn keyword sourceCheat         hunk_track_allocation_types hunter_committed_attack_range
 syn keyword sourceCheat         hunter_leap_away_give_up_range hunter_pounce_air_speed hunter_pounce_loft_rate
 syn keyword sourceCheat         hunter_pounce_max_loft_angle hunter_pounce_ready_range hunter_pz_claw_dmg
@@ -1508,29 +1522,31 @@ syn keyword sourceCheat         ipc_console_enable jockey jockey_pounce_air_spee
 syn keyword sourceCheat         jockey_pounce_max_loft_angle jockey_pz_claw_dmg jockeyme kdtree_test kill
 syn keyword sourceCheat         killvector l4d2_snd_adrenaline leaderboard_duplicate_entries light_crosshair
 syn keyword sourceCheat         lightcache_maxmiss linefile locator_split_len locator_split_maxwide_percent
-syn keyword sourceCheat         lower_body_debug mark mat_accelerate_adjust_exposure_down mat_bloomamount_rate
-syn keyword sourceCheat         mat_bumpbasis mat_camerarendertargetoverlaysize
-syn keyword sourceCheat         mat_colcorrection_forceentitiesclientside mat_crosshair mat_crosshair_edit
-syn keyword sourceCheat         mat_crosshair_explorer mat_crosshair_printmaterial mat_crosshair_reloadmaterial
-syn keyword sourceCheat         mat_debug mat_debug_autoexposure mat_debug_bloom mat_debug_process_halfscreen
+syn keyword sourceCheat         loopsingleplayermaps lower_body_debug mark mat_accelerate_adjust_exposure_down
+syn keyword sourceCheat         mat_ambient_light_b mat_ambient_light_g mat_ambient_light_r mat_aniso_disable
+syn keyword sourceCheat         mat_autoexposure_max_multiplier mat_bloomamount_rate mat_bumpbasis
+syn keyword sourceCheat         mat_camerarendertargetoverlaysize mat_colcorrection_forceentitiesclientside
+syn keyword sourceCheat         mat_crosshair mat_crosshair_edit mat_crosshair_explorer
+syn keyword sourceCheat         mat_crosshair_printmaterial mat_crosshair_reloadmaterial mat_debug
+syn keyword sourceCheat         mat_debug_autoexposure mat_debug_bloom mat_debug_process_halfscreen
 syn keyword sourceCheat         mat_debugalttab mat_depthbias_decal mat_depthbias_normal
-syn keyword sourceCheat         mat_depthbias_shadowmap mat_diffuse mat_drawflat mat_drawwater
-syn keyword sourceCheat         mat_dynamic_tonemapping mat_dynamiclightmaps mat_edit
-syn keyword sourceCheat         mat_exposure_center_region_x mat_exposure_center_region_x_flashlight
-syn keyword sourceCheat         mat_exposure_center_region_y mat_exposure_center_region_y_flashlight
-syn keyword sourceCheat         mat_fastclip mat_fastnobump mat_fillrate mat_force_bloom
-syn keyword sourceCheat         mat_force_tonemap_min_avglum mat_force_tonemap_percent_bright_pixels
-syn keyword sourceCheat         mat_force_tonemap_percent_target mat_force_tonemap_scale mat_forcedynamic
-syn keyword sourceCheat         mat_forcemanagedtextureintohardware mat_frame_sync_enable
-syn keyword sourceCheat         mat_frame_sync_force_texture mat_fullbright mat_hdr_tonemapscale
-syn keyword sourceCheat         mat_hdr_uncapexposure mat_hsv mat_leafvis mat_leafvisforceleaf mat_loadtextures
-syn keyword sourceCheat         mat_lpreview_mode mat_luxels mat_measurefillrate mat_morphstats mat_norendering
-syn keyword sourceCheat         mat_normalmaps mat_normals mat_postprocess_enable mat_proxy
-syn keyword sourceCheat         mat_reloadallmaterials mat_reloadmaterial mat_reloadtextures
-syn keyword sourceCheat         mat_remoteshadercompile mat_reporthwmorphmemory mat_reversedepth
-syn keyword sourceCheat         mat_show_texture_memory_usage mat_showcamerarendertarget
-syn keyword sourceCheat         mat_showframebuffertexture mat_showlowresimage mat_showmiplevels
-syn keyword sourceCheat         mat_showwatertextures mat_slopescaledepthbias_decal
+syn keyword sourceCheat         mat_depthbias_shadowmap mat_diffuse mat_displacementmap mat_drawflat
+syn keyword sourceCheat         mat_drawgray mat_drawwater mat_dynamicPaintmaps mat_dynamic_tonemapping
+syn keyword sourceCheat         mat_dynamiclightmaps mat_edit mat_exposure_center_region_x
+syn keyword sourceCheat         mat_exposure_center_region_x_flashlight mat_exposure_center_region_y
+syn keyword sourceCheat         mat_exposure_center_region_y_flashlight mat_fastclip mat_fastnobump
+syn keyword sourceCheat         mat_fillrate mat_force_bloom mat_force_tonemap_min_avglum
+syn keyword sourceCheat         mat_force_tonemap_percent_bright_pixels mat_force_tonemap_percent_target
+syn keyword sourceCheat         mat_force_tonemap_scale mat_forcedynamic mat_forcemanagedtextureintohardware
+syn keyword sourceCheat         mat_frame_sync_enable mat_frame_sync_force_texture mat_fullbright
+syn keyword sourceCheat         mat_hdr_tonemapscale mat_hdr_uncapexposure mat_hsv mat_leafvis
+syn keyword sourceCheat         mat_leafvisforceleaf mat_loadtextures mat_lpreview_mode mat_luxels
+syn keyword sourceCheat         mat_measurefillrate mat_morphstats mat_norendering mat_normalmaps mat_normals
+syn keyword sourceCheat         mat_postprocess_enable mat_proxy mat_reloadallmaterials mat_reloadmaterial
+syn keyword sourceCheat         mat_reloadtextures mat_remoteshadercompile mat_rendered_faces_count
+syn keyword sourceCheat         mat_reporthwmorphmemory mat_reversedepth mat_show_texture_memory_usage
+syn keyword sourceCheat         mat_showcamerarendertarget mat_showframebuffertexture mat_showlowresimage
+syn keyword sourceCheat         mat_showmiplevels mat_showwatertextures mat_slopescaledepthbias_decal
 syn keyword sourceCheat         mat_slopescaledepthbias_normal mat_slopescaledepthbias_shadowmap
 syn keyword sourceCheat         mat_softwareskin mat_stub mat_supportflashlight mat_suppress mat_surfaceid
 syn keyword sourceCheat         mat_surfacemat mat_tessellation_accgeometrytangents
@@ -1545,7 +1561,7 @@ syn keyword sourceCheat         melee_reload_info melee_reload_info_server melee
 syn keyword sourceCheat         mem_force_flush mem_incremental_compact_rate memory_diff memory_list
 syn keyword sourceCheat         memory_mark memory_status mix_dynamic_cull_max_CI_emitters mix_dynamic_debug_CI
 syn keyword sourceCheat         mix_dynamic_max_CI_emitters mix_dynamic_num_attack_vox_CI mod_dynamicloadpause
-syn keyword sourceCheat         mod_dynamicloadthrottle mounted_gun_cooldown_time
+syn keyword sourceCheat         mod_dynamicloadthrottle molotov_throw_detonate_time mounted_gun_cooldown_time
 syn keyword sourceCheat         mounted_gun_mount_cooldown_time mounted_gun_overheat_penalty_time
 syn keyword sourceCheat         mounted_gun_overheat_time mounted_gun_rate_of_fire mp_feetmaxyawrate
 syn keyword sourceCheat         mp_forceactivityset mp_forcerespawnplayers mp_forcewin mp_showcleanedupents
@@ -1657,53 +1673,60 @@ syn keyword sourceCheat         nb_stuck_dump_filter_min_duration nb_stuck_dump_
 syn keyword sourceCheat         nb_stuck_dump_filter_time_start nb_stuck_dump_show_details nb_update_debug
 syn keyword sourceCheat         nb_update_framelimit nb_update_frequency nb_update_maxslide
 syn keyword sourceCheat         nb_vision_ignore_survivors nb_vision_notice_hidden_range nb_warp_selected_here
-syn keyword sourceCheat         nb_yaw_rate net_blockmsg net_droppackets net_fakejitter net_fakelag
-syn keyword sourceCheat         net_fakeloss net_showevents net_showreliablesounds net_showusermessages next
-syn keyword sourceCheat         next_scavenge_cluster noclip noclip_fixup notarget npc_ally_deathmessage
-syn keyword sourceCheat         obj_child_damage_factor obj_damage_factor object_verbose pain_pills_decay_rate
-syn keyword sourceCheat         pain_pills_health_threshold pain_pills_health_value panel_test_title_safe
-syn keyword sourceCheat         particle_simulateoverflow particle_test_attach_attachment
+syn keyword sourceCheat         nb_yaw_rate net_blockmsg net_droppackets net_earliertempents net_fakejitter
+syn keyword sourceCheat         net_fakelag net_fakeloss net_showevents net_showreliablesounds
+syn keyword sourceCheat         net_showusermessages next next_scavenge_cluster noclip noclip_fixup notarget
+syn keyword sourceCheat         npc_ally_deathmessage obj_child_damage_factor obj_damage_factor object_verbose
+syn keyword sourceCheat         occlusion_test_async_jitter occlusion_test_async_move_tolerance
+syn keyword sourceCheat         pain_pills_decay_rate pain_pills_health_threshold pain_pills_health_value
+syn keyword sourceCheat         paintsplat_bias paintsplat_max_alpha_noise paintsplat_noise_enabled
+syn keyword sourceCheat         panel_test_title_safe particle_simulateoverflow particle_test_attach_attachment
 syn keyword sourceCheat         particle_test_attach_mode particle_test_file particle_test_start
 syn keyword sourceCheat         particle_test_stop perfui phys2_debug_wireframe phys2_default_max_velocity
 syn keyword sourceCheat         phys2_dump_runtime_sizes phys2_load phys2_max_length_constraint_anchor
 syn keyword sourceCheat         phys2_mem_debug phys2_preload_models phys2_ragdoll_drive_type phys2_save
 syn keyword sourceCheat         phys2_save_client phys2_save_server phys2_scheduler_manual_pools
 syn keyword sourceCheat         phys2_shadow_port phys2_shoot phys2_stats phys2_vdb phys2_vdb_host phys2ui
-syn keyword sourceCheat         phys_enable_PIX_counters phys_explosion_force phys_shoot
+syn keyword sourceCheat         phys_enable_PIX_counters phys_explosion_force phys_shoot phys_show_active
 syn keyword sourceCheat         physcannon_mega_enabled physx_debug_dll physx_valve_dll picker
 syn keyword sourceCheat         player_debug_print_damage player_incap_use_radius player_throwforce
-syn keyword sourceCheat         player_use_radius playsoundscape posedebug precache_all_survivors
-syn keyword sourceCheat         print_colorcorrection prop_crosshair prop_debug prop_dynamic_create
-syn keyword sourceCheat         prop_physics_create pwatchent pwatchvar pz_damages r_3dskyonly
-syn keyword sourceCheat         r_AirboatPitchCurveLinear r_AirboatPitchCurveZero r_AirboatRollCurveLinear
-syn keyword sourceCheat         r_AirboatRollCurveZero r_AirboatViewBlendTo r_AirboatViewBlendToScale
-syn keyword sourceCheat         r_AirboatViewBlendToTime r_AirboatViewDampenDamp r_AirboatViewDampenFreq
-syn keyword sourceCheat         r_AirboatViewZHeight r_ClipAreaPortals r_DispBuildable r_DispWalkable
-syn keyword sourceCheat         r_DrawBeams r_DrawDisp r_DrawModelLightOrigin r_DrawPortals r_DrawRain
-syn keyword sourceCheat         r_JeepFOV r_JeepViewBlendTo r_JeepViewBlendToScale r_JeepViewBlendToTime
-syn keyword sourceCheat         r_JeepViewDampenDamp r_JeepViewDampenFreq r_JeepViewZHeight r_PortalTestEnts
-syn keyword sourceCheat         r_RainCheck r_RainDebugDuration r_RainHack r_RainProfile r_RainRadius
-syn keyword sourceCheat         r_RainSideVel r_RainSimulate r_RainSplashPercentage r_SnowColorBlue
-syn keyword sourceCheat         r_SnowColorGreen r_SnowColorRed r_SnowDebugBox r_SnowEnable r_SnowEndAlpha
-syn keyword sourceCheat         r_SnowEndSize r_SnowFallSpeed r_SnowInsideRadius r_SnowOutsideRadius
-syn keyword sourceCheat         r_SnowParticles r_SnowPosScale r_SnowRayEnable r_SnowRayLength r_SnowRayRadius
-syn keyword sourceCheat         r_SnowSpeedScale r_SnowStartAlpha r_SnowStartSize r_SnowWindScale
-syn keyword sourceCheat         r_SnowZoomOffset r_SnowZoomRadius r_VehicleViewClamp r_VehicleViewDampen
+syn keyword sourceCheat         player_use_radius playsoundscape posedebug post_jump_crouch
+syn keyword sourceCheat         precache_all_survivors print_colorcorrection prop_crosshair prop_debug
+syn keyword sourceCheat         prop_dynamic_create prop_physics_create pwatchent pwatchvar pz_damages
+syn keyword sourceCheat         r_3dskyonly r_AirboatPitchCurveLinear r_AirboatPitchCurveZero
+syn keyword sourceCheat         r_AirboatRollCurveLinear r_AirboatRollCurveZero r_AirboatViewBlendTo
+syn keyword sourceCheat         r_AirboatViewBlendToScale r_AirboatViewBlendToTime r_AirboatViewDampenDamp
+syn keyword sourceCheat         r_AirboatViewDampenFreq r_AirboatViewZHeight r_ClipAreaFrustums
+syn keyword sourceCheat         r_ClipAreaPortals r_DispBuildable r_DispWalkable r_DrawBeams r_DrawDisp
+syn keyword sourceCheat         r_DrawModelLightOrigin r_DrawPortals r_DrawRain r_JeepFOV r_JeepViewBlendTo
+syn keyword sourceCheat         r_JeepViewBlendToScale r_JeepViewBlendToTime r_JeepViewDampenDamp
+syn keyword sourceCheat         r_JeepViewDampenFreq r_JeepViewZHeight r_PortalTestEnts r_RainCheck
+syn keyword sourceCheat         r_RainDebugDuration r_RainHack r_RainProfile r_RainRadius r_RainSideVel
+syn keyword sourceCheat         r_RainSimulate r_RainSplashPercentage r_SnowColorBlue r_SnowColorGreen
+syn keyword sourceCheat         r_SnowColorRed r_SnowDebugBox r_SnowEnable r_SnowEndAlpha r_SnowEndSize
+syn keyword sourceCheat         r_SnowFallSpeed r_SnowInsideRadius r_SnowOutsideRadius r_SnowParticles
+syn keyword sourceCheat         r_SnowPosScale r_SnowRayEnable r_SnowRayLength r_SnowRayRadius r_SnowSpeedScale
+syn keyword sourceCheat         r_SnowStartAlpha r_SnowStartSize r_SnowWindScale r_SnowZoomOffset
+syn keyword sourceCheat         r_SnowZoomRadius r_VehicleViewClamp r_VehicleViewDampen r_alphafade_usefov
 syn keyword sourceCheat         r_ambientfraction r_ambientlightingonly r_aspectratio r_avglight r_avglightmap
-syn keyword sourceCheat         r_clip3Dskyboxneartoworldfar r_clip3Dskyboxneartoworldfarfudge
-syn keyword sourceCheat         r_colorstaticprops r_debugcheapwater r_debugrandomstaticlighting r_depthoverlay
-syn keyword sourceCheat         r_drawallrenderables r_drawbrushmodels r_drawclipbrushes r_drawdecals
-syn keyword sourceCheat         r_drawentities r_drawfuncdetail r_drawleaf r_drawlightcache r_drawlightinfo
-syn keyword sourceCheat         r_drawlights r_drawmodelstatsoverlay r_drawmodelstatsoverlaydistance
+syn keyword sourceCheat         r_brush_queue_mode r_clip3Dskyboxneartoworldfar
+syn keyword sourceCheat         r_clip3Dskyboxneartoworldfarfudge r_colorstaticprops r_debugcheapwater
+syn keyword sourceCheat         r_debugrandomstaticlighting r_depthoverlay r_disable_distance_fade_on_big_props
+syn keyword sourceCheat         r_disable_distance_fade_on_big_props_thresh r_disable_update_shadow
+syn keyword sourceCheat         r_dlightsenable r_drawallrenderables r_drawbrushmodels r_drawclipbrushes
+syn keyword sourceCheat         r_drawdecals r_drawentities r_drawfuncdetail r_drawleaf r_drawlightcache
+syn keyword sourceCheat         r_drawlightinfo r_drawlights r_drawmodelstatsoverlay
+syn keyword sourceCheat         r_drawmodelstatsoverlaydistance r_drawmodelstatsoverlayfilter
 syn keyword sourceCheat         r_drawopaquerenderables r_drawopaqueworld r_drawothermodels r_drawparticles
-syn keyword sourceCheat         r_drawrenderboxes r_drawropes r_drawskybox r_drawsprites r_drawstaticprops
-syn keyword sourceCheat         r_drawtracers r_drawtranslucentrenderables r_drawtranslucentworld r_drawvgui
-syn keyword sourceCheat         r_drawviewmodel r_drawworld r_dscale_basefov r_dscale_fardist r_dscale_farscale
-syn keyword sourceCheat         r_dscale_neardist r_dscale_nearscale r_dynamiclighting r_entity
-syn keyword sourceCheat         r_eyeglintlodpixels r_eyewaterepsilon r_farz r_flashlight_attach_to_viewmodel
-syn keyword sourceCheat         r_flashlight_version2 r_flashlightambient r_flashlightbacktraceoffset
-syn keyword sourceCheat         r_flashlightbrightness r_flashlightclip r_flashlightconstant
-syn keyword sourceCheat         r_flashlightdrawclip r_flashlightfar r_flashlightfov
+syn keyword sourceCheat         r_drawrenderboxes r_drawropes r_drawscreenoverlay r_drawskybox r_drawsprites
+syn keyword sourceCheat         r_drawstaticprops r_drawtracers r_drawtracers_movetonotintersect
+syn keyword sourceCheat         r_drawtranslucentrenderables r_drawtranslucentworld r_drawunderwateroverlay
+syn keyword sourceCheat         r_drawvgui r_drawviewmodel r_drawworld r_dscale_basefov r_dscale_fardist
+syn keyword sourceCheat         r_dscale_farscale r_dscale_neardist r_dscale_nearscale r_dynamiclighting
+syn keyword sourceCheat         r_entity r_eyeglintlodpixels r_eyewaterepsilon r_farz
+syn keyword sourceCheat         r_flashlight_attach_to_viewmodel r_flashlight_version2 r_flashlightambient
+syn keyword sourceCheat         r_flashlightbacktraceoffset r_flashlightbrightness r_flashlightclip
+syn keyword sourceCheat         r_flashlightconstant r_flashlightdrawclip r_flashlightfar r_flashlightfov
 syn keyword sourceCheat         r_flashlightinfectedtexture r_flashlightladderdist r_flashlightlinear
 syn keyword sourceCheat         r_flashlightlockposition r_flashlightmuzzleflashfov r_flashlightnear
 syn keyword sourceCheat         r_flashlightnearoffsetscale r_flashlightoffsetforward
@@ -1716,26 +1739,29 @@ syn keyword sourceCheat         r_flashlightvisualizetrace r_hwmorph r_itemblink
 syn keyword sourceCheat         r_lightcache_invalidate r_lightcache_numambientsamples
 syn keyword sourceCheat         r_lightcache_radiusfactor r_lightcachecenter r_lightcachemodel r_lightinterp
 syn keyword sourceCheat         r_lightmap r_lightstyle r_lightwarpidentity r_lockpvs r_mapextents
-syn keyword sourceCheat         r_modelwireframedecal r_newflashlight r_nohw r_nosw r_novis r_occlusionspew
-syn keyword sourceCheat         r_oldlightselection r_particle_timescale r_partition_level r_portalscloseall
-syn keyword sourceCheat         r_portalsopenall r_proplightingpooling r_radiosity r_rainalpha r_rainalphapow
-syn keyword sourceCheat         r_raindensity r_rainlength r_rainspeed r_rainwidth r_randomflex r_rimlight
-syn keyword sourceCheat         r_screenfademaxsize r_screenfademinsize r_screenoverlay r_shadow_debug_spew
-syn keyword sourceCheat         r_shadowangles r_shadowblobbycutoff r_shadowcolor r_shadowdir r_shadowdist
+syn keyword sourceCheat         r_modelAmbientMin r_modelwireframedecal r_newflashlight r_nohw r_nosw r_novis
+syn keyword sourceCheat         r_occlusionspew r_oldlightselection r_particle_demo r_particle_timescale
+syn keyword sourceCheat         r_partition_level r_portalscloseall r_portalsopenall r_proplightingpooling
+syn keyword sourceCheat         r_radiosity r_rainalpha r_rainalphapow r_raindensity r_rainlength r_rainspeed
+syn keyword sourceCheat         r_rainwidth r_randomflex r_rimlight r_screenfademaxsize r_screenfademinsize
+syn keyword sourceCheat         r_screenoverlay r_shadow_debug_spew r_shadow_deferred r_shadowangles
+syn keyword sourceCheat         r_shadowblobbycutoff r_shadowcolor r_shadowdir r_shadowdist
 syn keyword sourceCheat         r_shadowfromanyworldlight r_shadowfromworldlights_debug r_shadowids
 syn keyword sourceCheat         r_shadows_gamecontrol r_shadowwireframe r_showenvcubemap r_showz_power r_skin
 syn keyword sourceCheat         r_skybox r_slowpathwireframe r_studio_stats r_studio_stats_lock
 syn keyword sourceCheat         r_studio_stats_mode r_swingflashlight r_unloadlightmaps r_updaterefracttexture
 syn keyword sourceCheat         r_vehicleBrakeRate r_visocclusion r_visualizelighttraces
-syn keyword sourceCheat         r_visualizelighttracesshowfulltrace r_visualizetraces radius_damage_show_hits
+syn keyword sourceCheat         r_visualizelighttracesshowfulltrace r_visualizetraces radarvisdistance
+syn keyword sourceCheat         radarvismaxdot radarvismethod radarvispow radius_damage_show_hits
 syn keyword sourceCheat         ragdoll_velocity_multiplier rangefinder recompute_speed report_cliententitysim
 syn keyword sourceCheat         report_clientthinklist rescue_distance rescue_finale_ignore_distance
 syn keyword sourceCheat         rescue_finale_spawn_range rescue_ignore_distance rescue_interval
 syn keyword sourceCheat         rescue_min_dead_time rescue_range rescue_show rescue_show_blocked
 syn keyword sourceCheat         rescue_spawn_flow rescue_spawn_range rescue_update_nav rescue_yell_delay
 syn keyword sourceCheat         rescue_yell_interval reset_gameconvars respawn_entities rope_min_pixel_diameter
-syn keyword sourceCheat         rr_followup_maxdist rr_forceconcept rr_remarkable_maxdist
-syn keyword sourceCheat         rr_remarkable_world_entities_replay_limit rr_thenany_score_slop sb_all_bot_game
+syn keyword sourceCheat         rr_followup_maxdist rr_forceconcept rr_remarkable_max_distance
+syn keyword sourceCheat         rr_remarkable_maxdist rr_remarkable_world_entities_replay_limit
+syn keyword sourceCheat         rr_remarkables_enabled rr_thenany_score_slop sb_all_bot_game
 syn keyword sourceCheat         sb_allow_shoot_through_survivors sb_battlestation_give_up_range_from_human
 syn keyword sourceCheat         sb_battlestation_human_hold_time sb_close_checkpoint_door_interval
 syn keyword sourceCheat         sb_close_threat_range sb_combat_saccade_speed sb_crouch
@@ -1787,13 +1813,27 @@ syn keyword sourceCheat         shout_threat_range shout_view_motion_threshold s
 syn keyword sourceCheat         showbudget showbudget_texture showbudget_texture_global showtriggers
 syn keyword sourceCheat         showtriggers_toggle singlestep sixense_aim_freeaim_switch_blend_time_enter
 syn keyword sourceCheat         sixense_teleport_metroid_blend_time sixense_teleport_wait_to_blend_time
-syn keyword sourceCheat         smoker_pz_claw_dmg smoker_tongue_delay snd_filter snd_foliage_db_loss snd_gain
-syn keyword sourceCheat         snd_gain_max snd_gain_min snd_obscured_gain_dB snd_play_in_out
-syn keyword sourceCheat         snd_pre_gain_dist_falloff snd_refdb snd_refdist snd_set_custom_zombat_suffix
-syn keyword sourceCheat         snd_show snd_showstart snd_visualize soundscape_debug soundscape_dumpclient
-syn keyword sourceCheat         soundscape_fadetime soundscape_radius_debug spawn_behind_survivors_distance
-syn keyword sourceCheat         spec_freeze_distance_max spec_freeze_distance_min spec_freeze_time
-syn keyword sourceCheat         spec_freeze_traveltime spec_keep_team_cc spec_keep_team_glows spike
+syn keyword sourceCheat         smoker_pz_claw_dmg smoker_tongue_delay snd_debug_panlaw snd_dvar_dist_max
+syn keyword sourceCheat         snd_dvar_dist_min snd_filter snd_foliage_db_loss snd_gain snd_gain_max
+syn keyword sourceCheat         snd_gain_min snd_obscured_gain_dB snd_op_test_convar snd_pause_all
+syn keyword sourceCheat         snd_play_in_out snd_pre_gain_dist_falloff snd_rear_speaker_scale snd_refdb
+syn keyword sourceCheat         snd_refdist snd_report_format_sound snd_report_loop_sound
+syn keyword sourceCheat         snd_report_start_sound snd_report_stop_sound snd_report_verbose_error
+syn keyword sourceCheat         snd_set_custom_zombat_suffix snd_show snd_show_filter snd_show_print
+syn keyword sourceCheat         snd_showstart snd_sos_list_operator_updates snd_sos_show_block_debug
+syn keyword sourceCheat         snd_sos_show_client_rcv snd_sos_show_client_xmit
+syn keyword sourceCheat         snd_sos_show_operator_entry_filter snd_sos_show_operator_init
+syn keyword sourceCheat         snd_sos_show_operator_parse snd_sos_show_operator_prestart
+syn keyword sourceCheat         snd_sos_show_operator_shutdown snd_sos_show_operator_start
+syn keyword sourceCheat         snd_sos_show_operator_stop_entry snd_sos_show_operator_updates
+syn keyword sourceCheat         snd_sos_show_queuetotrack snd_sos_show_server_xmit snd_sos_show_startqueue
+syn keyword sourceCheat         snd_visualize soundscape_debug soundscape_dumpclient soundscape_fadetime
+syn keyword sourceCheat         soundscape_radius_debug spawn_behind_survivors_distance spec_allow_roaming
+syn keyword sourceCheat         spec_freeze_cinematiclight_b spec_freeze_cinematiclight_g
+syn keyword sourceCheat         spec_freeze_cinematiclight_r spec_freeze_cinematiclight_scale
+syn keyword sourceCheat         spec_freeze_distance_max spec_freeze_distance_min spec_freeze_target_fov
+syn keyword sourceCheat         spec_freeze_target_fov_long spec_freeze_time spec_freeze_traveltime
+syn keyword sourceCheat         spec_freeze_traveltime_long spec_keep_team_cc spec_keep_team_glows spike
 syn keyword sourceCheat         spitter_pz_claw_dmg ss_debug_draw_player ss_mimic ss_teleport stats_show_empty
 syn keyword sourceCheat         stopsound stopsoundscape surfaceprop survival_boomer_limit_increase
 syn keyword sourceCheat         survival_charger_limit_increase survival_generate_fake_times
@@ -1844,21 +1884,24 @@ syn keyword sourceCheat         survivor_unstoppable_speed survivor_vision_range
 syn keyword sourceCheat         sv_always_full_flush sv_anim_dumpstate sv_crash sv_creationtickcheck
 syn keyword sourceCheat         sv_cycle_latch_timer sv_demo_entity_record_rate sv_disable_querycache
 syn keyword sourceCheat         sv_doors_push_players sv_dumpstringtables sv_fallen_survivor_health_multiplier
-syn keyword sourceCheat         sv_footstepinterval sv_force_time_of_day sv_force_transmit_ents
-syn keyword sourceCheat         sv_healing_gnome_replenish_rate sv_infected_ceda_vomitjar_probability
+syn keyword sourceCheat         sv_footstep_sound_frequency sv_footstepinterval sv_force_time_of_day
+syn keyword sourceCheat         sv_force_transmit_ents sv_grenade_trajectory sv_healing_gnome_replenish_rate
+syn keyword sourceCheat         sv_infected_ceda_vomitjar_probability
 syn keyword sourceCheat         sv_infected_riot_control_tonfa_probability sv_infinite_ammo
-syn keyword sourceCheat         sv_infinite_aux_power sv_infinite_primary_ammo sv_lagcompensation_teleport_dist
-syn keyword sourceCheat         sv_lagcompensationforcerestore sv_memlimit sv_netvisdist sv_no_navmesh
-syn keyword sourceCheat         sv_noclipduringpause sv_permawipe sv_phys2_stats sv_play_music
-syn keyword sourceCheat         sv_player_stuck_tolerance sv_prop_door_max_close_attempts
+syn keyword sourceCheat         sv_infinite_aux_power sv_infinite_primary_ammo sv_lagcompensateself
+syn keyword sourceCheat         sv_lagcompensation_teleport_dist sv_lagcompensationforcerestore sv_memlimit
+syn keyword sourceCheat         sv_netvisdist sv_no_navmesh sv_noclipduringpause sv_permawipe sv_phys2_stats
+syn keyword sourceCheat         sv_play_music sv_player_stuck_tolerance sv_prop_door_max_close_attempts
+syn keyword sourceCheat         sv_pushaway_hostage_force sv_pushaway_max_hostage_force
 syn keyword sourceCheat         sv_pushaway_max_player_force sv_pushaway_player_force sv_regeneration_force_on
-syn keyword sourceCheat         sv_showanimstate sv_showanimstate_activities sv_showanimstate_log
-syn keyword sourceCheat         sv_showfootsteps sv_showhitboxes sv_showhitboxes_cursor sv_showlagcompensation
-syn keyword sourceCheat         sv_showonlyhitbox sv_shutdown sv_soundscape_printdebuginfo sv_spectatoridletime
-syn keyword sourceCheat         sv_stop_music sv_suppress_viewpunch sv_sync_anims_spawn sv_tankpropfade
+syn keyword sourceCheat         sv_server_verify_blood_on_player sv_showanimstate sv_showanimstate_activities
+syn keyword sourceCheat         sv_showanimstate_log sv_showfootsteps sv_showhitboxes sv_showhitboxes_cursor
+syn keyword sourceCheat         sv_showlagcompensation sv_showonlyhitbox sv_shutdown
+syn keyword sourceCheat         sv_soundscape_printdebuginfo sv_spectatoridletime sv_stop_music
+syn keyword sourceCheat         sv_suppress_viewpunch sv_sync_anims_spawn sv_tankpropfade
 syn keyword sourceCheat         sv_turbophysics_shadow sv_vote_creation_timer sv_vote_plr_map_limit
-syn keyword sourceCheat         sv_vote_show_caller sv_zombie_touch_trigger_delay tank_attack_range
-syn keyword sourceCheat         tank_auto_swing tank_burn_duration tank_burn_duration_expert
+syn keyword sourceCheat         sv_vote_show_caller sv_zombie_touch_trigger_delay sys_sound_quality
+syn keyword sourceCheat         tank_attack_range tank_auto_swing tank_burn_duration tank_burn_duration_expert
 syn keyword sourceCheat         tank_burn_duration_hard tank_fist_radius tank_ground_pound_duration
 syn keyword sourceCheat         tank_ground_pound_reveal_distance tank_raffle_debug tank_run_spawn_delay
 syn keyword sourceCheat         tank_stasis_time_suicide tank_stuck_failsafe tank_stuck_time_choose_new_target
@@ -2024,22 +2067,29 @@ syn keyword sourceCheat         versus_tank_chance_intro versus_tank_flow_team_v
 syn keyword sourceCheat         versus_wandering_zombie_density versus_winning_team_goes_last
 syn keyword sourceCheat         versus_witch_chance versus_witch_chance_finale versus_witch_chance_intro
 syn keyword sourceCheat         versus_witch_flow_team_variation vgui_drawtree view_offset_down
-syn keyword sourceCheat         view_offset_forward view_offset_up viewanim_addkeyframe viewanim_reset
-syn keyword sourceCheat         viewmodel_fov vis_debug vis_force vismon_poll_frequency vismon_trace_limit
-syn keyword sourceCheat         vm_debug vomitjar_duration_infected_bot vomitjar_duration_infected_pz
-syn keyword sourceCheat         vomitjar_duration_survivor vomitjar_radius vomitjar_radius_survivors
-syn keyword sourceCheat         vortex_book_offset vortex_fade_fraction_denom vortex_float_amp
-syn keyword sourceCheat         vortex_float_osc_speed vox_reload voxeltree_box voxeltree_playerview
-syn keyword sourceCheat         voxeltree_sphere voxeltree_view vs_defib_penalty vs_incap_bonus
-syn keyword sourceCheat         vs_max_team_switches vs_survival_bonus vs_survivor_damage_reduction
-syn keyword sourceCheat         vs_tank_damage vs_threat_initial_distance_first_map_max
+syn keyword sourceCheat         view_offset_forward view_offset_up view_punch_decay view_recoil_tracking
+syn keyword sourceCheat         viewanim_addkeyframe viewanim_reset viewmodel_fov vis_debug vis_force
+syn keyword sourceCheat         vismon_poll_frequency vismon_trace_limit vm_debug
+syn keyword sourceCheat         voice_player_speaking_delay_threshold vomitjar_duration_infected_bot
+syn keyword sourceCheat         vomitjar_duration_infected_pz vomitjar_duration_survivor vomitjar_radius
+syn keyword sourceCheat         vomitjar_radius_survivors vortex_book_offset vortex_fade_fraction_denom
+syn keyword sourceCheat         vortex_float_amp vortex_float_osc_speed vox_reload voxeltree_box
+syn keyword sourceCheat         voxeltree_playerview voxeltree_sphere voxeltree_view vs_defib_penalty
+syn keyword sourceCheat         vs_incap_bonus vs_max_team_switches vs_survival_bonus
+syn keyword sourceCheat         vs_survivor_damage_reduction vs_tank_damage
+syn keyword sourceCheat         vs_threat_initial_distance_first_map_max
 syn keyword sourceCheat         vs_threat_initial_distance_first_map_min vs_threat_initial_distance_max
 syn keyword sourceCheat         vs_threat_initial_distance_min vs_threat_radius vs_tiebreak_bonus
 syn keyword sourceCheat         warp_all_survivors_here warp_all_survivors_to_battlefield
 syn keyword sourceCheat         warp_all_survivors_to_checkpoint warp_all_survivors_to_finale
-syn keyword sourceCheat         warp_far_survivor_here warp_to_start_area weapon_medigun_charge_rate
+syn keyword sourceCheat         warp_far_survivor_here warp_to_start_area weapon_accuracy_nospread
+syn keyword sourceCheat         weapon_debug_spread_gap weapon_debug_spread_show weapon_medigun_charge_rate
 syn keyword sourceCheat         weapon_medigun_chargerelease_rate weapon_medigun_construction_rate
-syn keyword sourceCheat         weapon_medigun_damage_modifier weapon_reparse_client weapon_reparse_server
+syn keyword sourceCheat         weapon_medigun_damage_modifier weapon_recoil_cooldown weapon_recoil_decay1_exp
+syn keyword sourceCheat         weapon_recoil_decay2_exp weapon_recoil_decay2_lin weapon_recoil_scale
+syn keyword sourceCheat         weapon_recoil_scale_motion_controller weapon_recoil_suppression_factor
+syn keyword sourceCheat         weapon_recoil_suppression_shots weapon_recoil_variance weapon_recoil_vel_decay
+syn keyword sourceCheat         weapon_recoil_view_punch_extra weapon_reparse_client weapon_reparse_server
 syn keyword sourceCheat         wipe_attributes wipe_nav_attributes witch_force_wander
 syn keyword sourceCheat         workshop_filter_items_by_history z_Infected_debug z_acquire_far_range
 syn keyword sourceCheat         z_acquire_far_time z_acquire_near_range z_acquire_near_time
