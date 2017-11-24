@@ -95,9 +95,9 @@ syn keyword sourceCommand       bot_add_t bot_all_weapons bot_changeteams bot_co
 syn keyword sourceCommand       bot_goto_selected bot_hurt bot_kick bot_kill bot_knives_only bot_moveto
 syn keyword sourceCommand       bot_pistols_only bot_place bot_refill bot_snipers_only bot_teleport bot_whack
 syn keyword sourceCommand       box buddha budget_toggle_group bug bug_swap buildcubemaps buildmodelforworld
-syn keyword sourceCommand       buy_stamps buymenu buyrandom cache_print cache_print_lru cache_print_summary
-syn keyword sourceCommand       callvote camortho cancelselect cast_hull cast_ray cc_bot_selectweapon cc_emit
-syn keyword sourceCommand       cc_findsound cc_flush cc_random cc_showblocks centerview ch_createairboat
+syn keyword sourceCommand       buy buyammo1 buyammo2 buy_stamps buymenu buyrandom cache_print cache_print_lru
+syn keyword sourceCommand       cache_print_summary callvote camortho cancelselect cast_hull cast_ray cc_bot_selectweapon
+syn keyword sourceCommand       cc_emit cc_findsound cc_flush cc_random cc_showblocks centerview ch_createairboat
 syn keyword sourceCommand       ch_createjeep changeclass changelevel changelevel2 changelevel_next changeteam
 syn keyword sourceCommand       chooseteam cl_animationinfo cl_benchmark_particle_system cl_buy_favorite
 syn keyword sourceCommand       cl_buy_favorite_reset cl_buy_favorite_set cl_clearhinthistory
@@ -127,7 +127,7 @@ syn keyword sourceCommand       demo_togglepause demolist demos demoui demoui2 d
 syn keyword sourceCommand       devshots_screenshot differences director_log_scavenge_items
 syn keyword sourceCommand       director_print_player_counts disconnect disguise disp_list_all_collideable
 syn keyword sourceCommand       dlight_debug dm_reset_spawns dm_togglerandomweapons drawcross drawline
-syn keyword sourceCommand       drawoverviewmap drawradar dropitem dropprimary ds_get_newest_subscribed_files
+syn keyword sourceCommand       drawoverviewmap drawradar drop dropitem dropprimary ds_get_newest_subscribed_files
 syn keyword sourceCommand       dsp_reload dti_flush dump_avatar_info dump_entity_sizes dump_globals
 syn keyword sourceCommand       dump_panels dump_particlemanifest dump_pz_data dump_server_demo dump_x360_cfg
 syn keyword sourceCommand       dump_x360_saves dumpentityfactories dumpeventqueue dumpgamestringtable
@@ -1084,7 +1084,7 @@ syn keyword sourceVar           scene_forcecombined scene_maxcaptionradius scene
 syn keyword sourceVar           scene_showlook scene_showmoveto scene_showunlock scene_vcdautosave
 syn keyword sourceVar           scr_centertime script_attach_debugger_at_startup
 syn keyword sourceVar           script_break_in_native_debugger_on_error sdl_speaker_channels sensitivity
-syn keyword sourceVar           servercfgfile sf_ui_tint sfm_record_hz shake_show shotgun_reload_cancel_delay
+syn keyword sourceVar           servercfgfile sfcrosshair sf_ui_tint sfm_record_hz shake_show shotgun_reload_cancel_delay
 syn keyword sourceVar           showbudget_texture_global_sum showhitlocation showparticlecounts showsniperdist
 syn keyword sourceVar           showsniperlines sixense_aim_1to1_heading_multiplier
 syn keyword sourceVar           sixense_aim_1to1_pitch_multiplier sixense_aim_1to1_ratchet_vertical
@@ -1468,11 +1468,11 @@ syn keyword sourceVar           voice_all_icons voice_avggain voice_caster_enabl
 syn keyword sourceVar           voice_clientdebug voice_debugfeedback voice_debugfeedbackfrom voice_dsound
 syn keyword sourceVar           voice_enable voice_fadeouttime voice_forcemicrecord voice_head_icon_height
 syn keyword sourceVar           voice_head_icon_size voice_inputfromfile voice_local_icon voice_loopback
-syn keyword sourceVar           voice_maxgain voice_minimum_gain voice_modenable voice_overdrive
-syn keyword sourceVar           voice_overdrivefadetime voice_profile voice_recordtofile voice_scale
-syn keyword sourceVar           voice_serverdebug voice_showchannels voice_showincoming voice_spatialize
-syn keyword sourceVar           voice_steal voice_system_enable voice_threshold voice_vox voice_writevoices
-syn keyword sourceVar           voice_xsend_debug volume vphysics_client_threaded
+syn keyword sourceVar           voice_maxgain voice_minimum_gain voice_mixer_boost voice_mixer_mute voice_mixer_volume
+syn keyword sourceVar           voice_modenable voice_overdrive voice_overdrivefadetime voice_profile
+syn keyword sourceVar           voice_recordtofile voice_scale voice_serverdebug voice_showchannels voice_showincoming
+syn keyword sourceVar           voice_spatialize voice_steal voice_system_enable voice_threshold voice_vox
+syn keyword sourceVar           voice_writevoices voice_xsend_debug volume vphysics_client_threaded
 syn keyword sourceVar           vphysics_client_threaded_min_cpus vprof_counters vprof_counters_show_minmax
 syn keyword sourceVar           vprof_dump_oninterval vprof_dump_spikes vprof_dump_spikes_budget_group
 syn keyword sourceVar           vprof_dump_spikes_hiearchy vprof_dump_spikes_node vprof_dump_spikes_terse
@@ -1480,9 +1480,9 @@ syn keyword sourceVar           vprof_graph vprof_graphheight vprof_graphwidth v
 syn keyword sourceVar           vprof_scope_entity_gamephys vprof_scope_entity_thinks
 syn keyword sourceVar           vprof_server_spike_threshold vprof_server_thread vprof_think_limit
 syn keyword sourceVar           vprof_unaccounted_limit vprof_verbose vprof_warningmsec vs_score_pp_health
-syn keyword sourceVar           vs_score_pp_healthbuffer weapon_reticle_knife_show weapon_showproficiency
-syn keyword sourceVar           weapon_spawn_fade_distance windows_speaker_config witch_rage_ramp_duration
-syn keyword sourceVar           x360_audio_english x360_resolution_height x360_resolution_interlaced
+syn keyword sourceVar           vs_score_pp_healthbuffer weapon_accuracy_logging weapon_reticle_knife_show
+syn keyword sourceVar           weapon_showproficiency weapon_spawn_fade_distance windows_speaker_config
+syn keyword sourceVar           witch_rage_ramp_duration x360_audio_english x360_resolution_height x360_resolution_interlaced
 syn keyword sourceVar           x360_resolution_widescreen_mode x360_resolution_width xbox_autothrottle
 syn keyword sourceVar           xbox_steering_deadzone xbox_throttlebias xbox_throttlespoof xc_crouch_debounce
 syn keyword sourceVar           xc_crouch_range xc_uncrouch_on_jump xc_use_crouch_limiter youtube_http_proxy
