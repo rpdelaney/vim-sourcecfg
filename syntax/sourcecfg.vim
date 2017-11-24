@@ -44,30 +44,27 @@ syn keyword sourceBindableKey   MOUSE5 MWHEELUP MWHEELDOWN
 syn match sourceBindableKey     "^bind.*(\-\|'\|`\|=\|]\|\\|,\|/)"
 
 " Syntax: Commands {{{1
-syn match sourceCommand         '+alt1\|+alt2\|+attack2\|+attack\|+back'
-syn match sourceCommand         '+break\|+camdistance\|+camin\|+cammousemove\|+camout'
-syn match sourceCommand         '+campitchdown\|+campitchup\|+camyawleft\|+camyawright\|+commandermousemove'
-syn match sourceCommand         '+demoui2\|+duck\|+forward\|+graph\|+grenade1'
-syn match sourceCommand         '+grenade2\|+invaction\|+jlook\|+jump\|+klook'
-syn match sourceCommand         '+left\|+lookdown\|+lookspin\|+lookup\|+mat_texture_list'
-syn match sourceCommand         '+menuAccept\|+menuDown\|+menuUp\|+mouse_menu\|+movedown'
-syn match sourceCommand         '+moveleft\|+moveright\|+moveup\|+posedebug\|+quickswitch'
+syn match sourceCommand         '+alt1\|+alt2\|+attack\|+attack2\|+back\|+break\|+camdistance\|+camin\|+cammousemove'
+syn match sourceCommand         '+camout\|+campitchdown\|+campitchup\|+camyawleft\|+camyawright\|+commandermousemove'
+syn match sourceCommand         '+csm_rot_x_neg\|+csm_rot_x_plus\|+csm_rot_y_neg\|+csm_rot_y_plus\|+demoui2\|+duck'
+syn match sourceCommand         '+forward\|+graph\|+grenade1\|+grenade2\|+invaction\|+jlook\|+jump\|+klook\|+left'
+syn match sourceCommand         '+lookdown\|+lookspin\|+lookup\|+mat_texture_list\|+menuAccept\|+menuDown\|+menuUp'
+syn match sourceCommand         '+mouse_menu\|+movedown\|+moveleft\|+moveright\|+moveup\|+posedebug\|+quickswitch'
 syn match sourceCommand         '+reload\|+right\|+score\|+showbudget\|+showbudget_texture'
-syn match sourceCommand         '+showbudget_texture_global\|+showscores\|+showstats\|+showvprof\|+sixense_left_point_gesture'
-syn match sourceCommand         '+sixense_ratchet\|+sixense_right_point_gesture\|+speed\|+strafe\|+use'
-syn match sourceCommand         '+use_action_slot_item\|+vgui_drawtree\|+voicerecord\|+walk\|+zoom'
-syn match sourceCommand         '-alt1\|-alt2\|-attack2\|-attack\|-back'
-syn match sourceCommand         '-break\|-camdistance\|-camin\|-cammousemove\|-camout'
-syn match sourceCommand         '-campitchdown\|-campitchup\|-camyawleft\|-camyawright\|-commandermousemove'
-syn match sourceCommand         '-demoui2\|-duck\|-forward\|-graph\|-grenade1'
-syn match sourceCommand         '-grenade2\|-invaction\|-jlook\|-jump\|-klook'
-syn match sourceCommand         '-left\|-lookdown\|-lookspin\|-lookup\|-mat_texture_list'
-syn match sourceCommand         '-menuAccept\|-menuDown\|-menuUp\|-mouse_menu\|-movedown'
-syn match sourceCommand         '-moveleft\|-moveright\|-moveup\|-posedebug\|-quickswitch'
-syn match sourceCommand         '-reload\|-right\|-score\|-showbudget\|-showbudget_texture'
-syn match sourceCommand         '-showbudget_texture_global\|-showscores\|-showstats\|-showvprof\|-sixense_left_point_gesture'
-syn match sourceCommand         '-sixense_ratchet\|-sixense_right_point_gesture\|-speed\|-strafe\|-use'
-syn match sourceCommand         '-use_action_slot_item\|-vgui_drawtree\|-voicerecord\|-walk\|-zoom'
+syn match sourceCommand         '+showbudget_texture_global\|+showscores\|+showstats\|+showvprof'
+syn match sourceCommand         '+sixense_left_point_gesture\|+sixense_ratchet\|+sixense_right_point_gesture'
+syn match sourceCommand         '+speed\|+strafe\|+use\|+use_action_slot_item\|+vgui_drawtree\|+voicerecord\|+walk'
+syn match sourceCommand         '+zoom\|+zoom_in\|+zoom_out\|-alt1\|-alt2\|-attack\|-attack2\|-back\|-break\|-camdistance'
+syn match sourceCommand         '-camin\|-cammousemove\|-camout\|-campitchdown\|-campitchup\|-camyawleft\|-camyawright'
+syn match sourceCommand         '-commandermousemove\|-csm_rot_x_neg\|-csm_rot_x_plus\|-csm_rot_y_neg'
+syn match sourceCommand         '-csm_rot_y_plus\|-demoui2\|-duck\|-forward\|-graph\|-grenade1\|-grenade2\|-invaction'
+syn match sourceCommand         '-jlook\|-jump\|-klook\|-left\|-lookdown\|-lookspin\|-lookup\|-mat_texture_list'
+syn match sourceCommand         '-menuAccept\|-menuDown\|-menuUp\|-mouse_menu\|-movedown\|-moveleft\|-moveright'
+syn match sourceCommand         '-moveup\|-posedebug\|-quickswitch\|-reload\|-right\|-score\|-showbudget'
+syn match sourceCommand         '-showbudget_texture\|-showbudget_texture_global\|-showscores\|-showstats'
+syn match sourceCommand         '-showvprof\|-sixense_left_point_gesture\|-sixense_ratchet'
+syn match sourceCommand         '-sixense_right_point_gesture\|-speed\|-strafe\|-use\|-use_action_slot_item'
+syn match sourceCommand         '-vgui_drawtree\|-voicerecord\|-walk\|-zoom\|-zoom_in\|-zoom_out'
 syn match sourceCommand         'quit'
 syn match sourceCommand         'quit prompt'
 syn keyword sourceCommand       BindToggle CreateHairball OpenMatchmakingLobby OpenQuickplayDialog
@@ -83,186 +80,239 @@ syn keyword sourceCommand       _autosave _autosavedangerous _bugreporter_restar
 syn keyword sourceCommand       _restart abuse_report_queue abuse_report_submit achievement_evaluate
 syn keyword sourceCommand       achievement_mark_dirty achievement_reset achievement_reset_all
 syn keyword sourceCommand       achievement_status achievement_test_clan_count achievement_test_friend_count
-syn keyword sourceCommand       achievement_unlock achievement_unlock_all addip ai_clear_bad_links
-syn keyword sourceCommand       ai_debug_node_connect ai_disable ai_drop_hint ai_dump_hints ai_hull
-syn keyword sourceCommand       ai_next_hull ai_nodes ai_resume ai_set_move_height_epsilon ai_show_connect
-syn keyword sourceCommand       ai_show_connect_fly ai_show_connect_jump ai_show_graph_connect ai_show_grid
-syn keyword sourceCommand       ai_show_hints ai_show_hull ai_show_node ai_show_visibility ai_step ai_test_los
+syn keyword sourceCommand       achievement_unlock achievement_unlock_all addip adsp_reset_nodes
+syn keyword sourceCommand       ai_clear_bad_links ai_debug_node_connect ai_disable ai_drop_hint ai_dump_hints
+syn keyword sourceCommand       ai_hull ai_next_hull ai_nodes ai_resume ai_set_move_height_epsilon
+syn keyword sourceCommand       ai_setenabled ai_show_connect ai_show_connect_crawl ai_show_connect_fly
+syn keyword sourceCommand       ai_show_connect_jump ai_show_graph_connect ai_show_grid ai_show_hints
+syn keyword sourceCommand       ai_show_hull ai_show_node ai_show_visibility ai_step ai_test_los
 syn keyword sourceCommand       ainet_generate_report ainet_generate_report_only air_density alias
-syn keyword sourceCommand       askconnect_accept async_resume async_suspend audit_save_in_memory autosave
-syn keyword sourceCommand       autosavedangerous autosavedangerousissafe banid banip bench_end
-syn keyword sourceCommand       bench_showstatsdialog bench_start bench_upload benchframe bind bind_mac
-syn keyword sourceCommand       blackbox_dump blackbox_record bloodspray bot bot_changeteams bot_command
-syn keyword sourceCommand       bot_drop bot_hurt bot_kick bot_kill bot_moveto bot_refill bot_teleport
-syn keyword sourceCommand       bot_whack box buddha budget_toggle_group bug bug_swap buildcubemaps cache_print
-syn keyword sourceCommand       cache_print_lru cache_print_summary callvote camortho cancelselect cast_hull
-syn keyword sourceCommand       cast_ray cc_bot_selectweapon cc_emit cc_findsound cc_flush cc_random
-syn keyword sourceCommand       cc_showblocks centerview ch_createairboat ch_createjeep changeclass changelevel
-syn keyword sourceCommand       changelevel2 changelevel_next changeteam chooseteam cl_animationinfo
-syn keyword sourceCommand       cl_benchmark_particle_system cl_buy_favorite cl_buy_favorite_reset
-syn keyword sourceCommand       cl_buy_favorite_set cl_clearhinthistory cl_coach_find_coach cl_coach_toggle
-syn keyword sourceCommand       cl_consistencycheck cl_create_server cl_decline_first_notification
-syn keyword sourceCommand       cl_destroy_ragdolls cl_dump_particle_stats cl_dumpsplithacks
-syn keyword sourceCommand       cl_engine_reload_rosetta cl_ent_absbox cl_ent_bbox cl_ent_rbox cl_find_ent
-syn keyword sourceCommand       cl_find_ent_index cl_fullupdate cl_gameserver_create_identity
-syn keyword sourceCommand       cl_gameserver_list cl_gameserver_reset_identity cl_panelanimation
-syn keyword sourceCommand       cl_particles_dump_effects cl_particles_dumplist cl_precacheinfo cl_pred_track
-syn keyword sourceCommand       cl_predictioncopy_describe cl_print_consistency_list cl_removedecals
-syn keyword sourceCommand       cl_report_soundpatch cl_showents cl_soundemitter_flush cl_soundemitter_reload
-syn keyword sourceCommand       cl_soundscape_flush cl_soundscape_printdebuginfo cl_ss_origin cl_trade
-syn keyword sourceCommand       cl_trade_steamid cl_training_class_unlock_all cl_trigger_first_notification
-syn keyword sourceCommand       cl_updatevisibility cl_view clear clear_debug_overlays cmd cmd1 cmd2 cmd3 cmd4
+syn keyword sourceCommand       askconnect_accept asw_engine_finished_building_map async_resume async_suspend
+syn keyword sourceCommand       audit_save_in_memory autobuy autosave autosavedangerous autosavedangerousissafe
+syn keyword sourceCommand       banid banip bench_end bench_showstatsdialog bench_start bench_upload benchframe
+syn keyword sourceCommand       bind bind_mac bind_osx blackbox_dump blackbox_record bloodspray bot bot_add_ct
+syn keyword sourceCommand       bot_add_t bot_all_weapons bot_changeteams bot_command bot_drop bot_goto_mark
+syn keyword sourceCommand       bot_goto_selected bot_hurt bot_kick bot_kill bot_knives_only bot_moveto
+syn keyword sourceCommand       bot_pistols_only bot_place bot_refill bot_snipers_only bot_teleport bot_whack
+syn keyword sourceCommand       box buddha budget_toggle_group bug bug_swap buildcubemaps buildmodelforworld
+syn keyword sourceCommand       buy_stamps buymenu buyrandom cache_print cache_print_lru cache_print_summary
+syn keyword sourceCommand       callvote camortho cancelselect cast_hull cast_ray cc_bot_selectweapon cc_emit
+syn keyword sourceCommand       cc_findsound cc_flush cc_random cc_showblocks centerview ch_createairboat
+syn keyword sourceCommand       ch_createjeep changeclass changelevel changelevel2 changelevel_next changeteam
+syn keyword sourceCommand       chooseteam cl_animationinfo cl_benchmark_particle_system cl_buy_favorite
+syn keyword sourceCommand       cl_buy_favorite_reset cl_buy_favorite_set cl_clearhinthistory
+syn keyword sourceCommand       cl_coach_find_coach cl_coach_toggle cl_consistencycheck cl_create_server
+syn keyword sourceCommand       cl_cs_dump_econ_item_stringtable cl_csm_server_status cl_csm_status
+syn keyword sourceCommand       cl_decline_first_notification cl_destroy_ragdolls cl_dump_particle_stats
+syn keyword sourceCommand       cl_dumpsplithacks cl_engine_reload_rosetta cl_ent_absbox cl_ent_bbox
+syn keyword sourceCommand       cl_ent_rbox cl_find_ent cl_find_ent_index cl_fullupdate cl_game_mode_convars
+syn keyword sourceCommand       cl_gameserver_create_identity cl_gameserver_list cl_gameserver_reset_identity
+syn keyword sourceCommand       cl_modemanager_reload cl_panelanimation cl_particles_dump_effects
+syn keyword sourceCommand       cl_particles_dumplist cl_precacheinfo cl_pred_track cl_predictioncopy_describe
+syn keyword sourceCommand       cl_print_consistency_list cl_reload_hud cl_remove_all_workshop_maps
+syn keyword sourceCommand       cl_removedecals cl_report_soundpatch cl_saveweaponcustomtextures cl_showents
+syn keyword sourceCommand       cl_sos_test_get_opvar cl_sos_test_set_opvar cl_soundemitter_flush
+syn keyword sourceCommand       cl_soundemitter_reload cl_soundscape_flush cl_soundscape_printdebuginfo
+syn keyword sourceCommand       cl_ss_origin cl_trade cl_trade_steamid cl_training_class_unlock_all
+syn keyword sourceCommand       cl_tree_sway_dir cl_trigger_first_notification cl_updatevisibility cl_view
+syn keyword sourceCommand       clear clear_anim_cache clear_debug_overlays cmd cmd1 cmd2 cmd3 cmd4
 syn keyword sourceCommand       collision_test colorcorrectionui commentary_cvarsnotchanging
 syn keyword sourceCommand       commentary_finishnode commentary_showmodelviewer commentary_testfirstrun
-syn keyword sourceCommand       condump connect connect_lobby connect_splitscreen create_flashlight creditsdone
-syn keyword sourceCommand       cs_make_vip currency_give cvarlist dbghist_addline dbghist_dump debugsystemui
-syn keyword sourceCommand       demo_gototick demo_pause demo_resume demo_returntolobby demo_setendtick
-syn keyword sourceCommand       demo_timescale demo_togglepause demolist demos demoui demoui2 devshots_nextmap
+syn keyword sourceCommand       computer_name con_min_severity condump connect connect_lobby
+syn keyword sourceCommand       connect_splitscreen create_flashlight creditsdone cs_make_vip
+syn keyword sourceCommand       csgo_download_match currency_give cvarlist dbghist_addline dbghist_dump
+syn keyword sourceCommand       debugsystemui demo_gototick demo_listhighlights demo_listimportantticks
+syn keyword sourceCommand       demo_pause demo_resume demo_returntolobby demo_setendtick demo_timescale
+syn keyword sourceCommand       demo_togglepause demolist demos demoui demoui2 devshots_nextmap
 syn keyword sourceCommand       devshots_screenshot differences director_log_scavenge_items
-syn keyword sourceCommand       director_print_player_counts disconnect disguise dlight_debug drawcross
-syn keyword sourceCommand       drawline dropitem dropprimary dsp_reload dti_flush dump_avatar_info
-syn keyword sourceCommand       dump_entity_sizes dump_globals dump_panels dump_particlemanifest dump_pz_data
-syn keyword sourceCommand       dump_server_demo dump_x360_cfg dump_x360_saves dumpentityfactories
-syn keyword sourceCommand       dumpeventqueue dumpgamestringtable dumplongticks dumpsavedir dumpstringtables
-syn keyword sourceCommand       echo econ_show_items_with_tag editdemo editor_toggle endmovie ent_absbox
-syn keyword sourceCommand       ent_attachments ent_autoaim ent_bbox ent_cancelpendingentfires ent_create
-syn keyword sourceCommand       ent_dump ent_fire ent_info ent_keyvalue ent_messages ent_name ent_orient
-syn keyword sourceCommand       ent_pause ent_pivot ent_rbox ent_remove ent_remove_all ent_rotate ent_setname
-syn keyword sourceCommand       ent_show_response_criteria ent_step ent_teleport ent_text ent_viewoffset envmap
-syn keyword sourceCommand       exec exit explode explodevector fadein fadeout find find_ent find_ent_index
-syn keyword sourceCommand       findflags firetarget firstperson flush flush_locked fly_add_keyframe
-syn keyword sourceCommand       fly_clear_all_keyframes fly_show_path fly_start fogui force_centerview
-syn keyword sourceCommand       forcebind foundry_engine_get_mouse_control foundry_engine_release_mouse_control
+syn keyword sourceCommand       director_print_player_counts disconnect disguise disp_list_all_collideable
+syn keyword sourceCommand       dlight_debug dm_reset_spawns dm_togglerandomweapons drawcross drawline
+syn keyword sourceCommand       drawoverviewmap drawradar dropitem dropprimary ds_get_newest_subscribed_files
+syn keyword sourceCommand       dsp_reload dti_flush dump_avatar_info dump_entity_sizes dump_globals
+syn keyword sourceCommand       dump_panels dump_particlemanifest dump_pz_data dump_server_demo dump_x360_cfg
+syn keyword sourceCommand       dump_x360_saves dumpentityfactories dumpeventqueue dumpgamestringtable
+syn keyword sourceCommand       dumplongticks dumpsavedir dumpstringtables echo
+syn keyword sourceCommand       econ_build_pinboard_images_from_collection_name econ_clear_inventory_images
+syn keyword sourceCommand       econ_show_items_with_tag editdemo editor_toggle endmatch_votenextmap endmovie
+syn keyword sourceCommand       ent_absbox ent_attachments ent_autoaim ent_bbox ent_cancelpendingentfires
+syn keyword sourceCommand       ent_create ent_dump ent_fire ent_info ent_keyvalue ent_messages ent_name
+syn keyword sourceCommand       ent_orient ent_pause ent_pivot ent_rbox ent_remove ent_remove_all ent_rotate
+syn keyword sourceCommand       ent_setname ent_show_response_criteria ent_step ent_teleport ent_text
+syn keyword sourceCommand       ent_viewoffset envmap exec execifexists execwithwhitelist exit explode
+syn keyword sourceCommand       explodevector fadein fadeout find find_ent find_ent_index findflags firetarget
+syn keyword sourceCommand       firstperson flush flush_locked fly_add_keyframe fly_clear_all_keyframes
+syn keyword sourceCommand       fly_show_path fly_start fogui force_centerview forcebind forktest
+syn keyword sourceCommand       foundry_engine_get_mouse_control foundry_engine_release_mouse_control
 syn keyword sourceCommand       foundry_select_entity foundry_sync_hammer_view foundry_update_entity fov
-syn keyword sourceCommand       fs_printopenfiles fs_syncdvddevcache fs_warning_level g15_dumpplayer g15_reload
+syn keyword sourceCommand       fs_clear_open_duplicate_times fs_dump_open_duplicate_times
+syn keyword sourceCommand       fs_fios_cancel_prefetches fs_fios_flush_cache fs_fios_prefetch_file
+syn keyword sourceCommand       fs_fios_prefetch_file_in_pack fs_fios_print_prefetches fs_printopenfiles
+syn keyword sourceCommand       fs_syncdvddevcache fs_warning_level g15_dumpplayer g15_reload
 syn keyword sourceCommand       gameinstructor_reload_lessons gameinstructor_reset_counts gamemenucommand
+syn keyword sourceCommand       gamepadslot1 gamepadslot2 gamepadslot3 gamepadslot4 gamepadslot5 gamepadslot6
 syn keyword sourceCommand       gameui_activate gameui_allowescape gameui_allowescapetoshow gameui_hide
 syn keyword sourceCommand       gameui_hide_dialog gameui_preventescape gameui_preventescapetoshow
 syn keyword sourceCommand       gameui_show_dialog getpos getpos_exact ghost_spawn give givecurrentammo
-syn keyword sourceCommand       global_set go_away_from_keyboard god groundlist hammer_update_entity
-syn keyword sourceCommand       hammer_update_safe_entities heartbeat help hide_message_panel hideconsole
-syn keyword sourceCommand       hidepanel hidestatpanel host_runofftime host_timer_report host_writeconfig
-syn keyword sourceCommand       host_writeconfig_ss hud_reloadscheme hurtme ifm_basecamera_camerastate impulse
-syn keyword sourceCommand       incrementvar inspect invnext invprev ipc_console_disable
+syn keyword sourceCommand       gl_dump_stats gl_persistent_buffer_max_offset gl_shader_compile_time_dump
+syn keyword sourceCommand       global_set go_away_from_keyboard god gods grab_window groundlist
+syn keyword sourceCommand       hammer_update_entity hammer_update_safe_entities heartbeat help
+syn keyword sourceCommand       hide_message_panel hideconsole hideoverviewmap hidepanel hideradar hidescores
+syn keyword sourceCommand       hidestatpanel host_filtered_time_report host_reset_config host_runofftime
+syn keyword sourceCommand       host_timer_report host_workshop_collection host_workshop_map host_writeconfig
+syn keyword sourceCommand       host_writeconfig_ss hud_reloadscheme hud_subtitles hurtme
+syn keyword sourceCommand       ifm_basecamera_camerastate impulse incrementvar inspect invnext invnextgrenade
+syn keyword sourceCommand       invnextitem invnextnongrenade invprev ipc_console_disable
 syn keyword sourceCommand       ipc_console_disable_all ipc_console_show item_show_whitelistable_definitions
 syn keyword sourceCommand       itemtest itemtest_botcontrols join_class joyadvancedupdate jpeg kdtree_test
 syn keyword sourceCommand       key_findbinding key_listboundkeys key_updatelayout kick kick_transitioning
-syn keyword sourceCommand       kickall kickid kill killserver killvector lastdisguise lastinv light_crosshair
-syn keyword sourceCommand       lightprobe linefile listRecentNPCSpeech listdeaths listdemo listid listip
-syn keyword sourceCommand       listissues listmaps listmodels load load_itempreset loadcommentary
-syn keyword sourceCommand       loader_dump_table log log_dumpchannels log_level logaddress_add logaddress_del
-syn keyword sourceCommand       logaddress_delall logaddress_list map map_background map_commentary map_edit
-syn keyword sourceCommand       map_showspawnpoints maps mat_configcurrent mat_crosshair mat_crosshair_edit
-syn keyword sourceCommand       mat_crosshair_explorer mat_crosshair_printmaterial mat_crosshair_reloadmaterial
-syn keyword sourceCommand       mat_debug mat_edit mat_hdr_enabled mat_info mat_reloadallmaterials
-syn keyword sourceCommand       mat_reloadmaterial mat_reloadtextures mat_reporthwmorphmemory mat_savechanges
-syn keyword sourceCommand       mat_setvideomode mat_shadercount mat_showmaterials mat_showmaterialsverbose
-syn keyword sourceCommand       mat_showtextures mat_spewvertexandpixelshaders mat_suppress
-syn keyword sourceCommand       mat_texture_list_exclude mat_texture_list_txlod mat_texture_list_txlod_sync
-syn keyword sourceCommand       mat_texture_save_fonts maxplayers mem_compact mem_dump mem_dumpvballocs mem_eat
-syn keyword sourceCommand       mem_incremental_compact mem_test mem_vcollide memory memory_diff memory_list
-syn keyword sourceCommand       memory_mark memory_status menuselect meta minisave mission_debug_print
-syn keyword sourceCommand       mission_list mission_reload mission_show mm_add_item mm_add_player
-syn keyword sourceCommand       mm_datacenter_debugprint mm_debugprint mm_message mm_select_session
-syn keyword sourceCommand       mm_session_info mm_stats mod_dynamicmodeldebug model_list motd movie_fixwave
-syn keyword sourceCommand       mp_disable_autokick mp_forcerespawnplayers mp_forcewin mp_scrambleteams
-syn keyword sourceCommand       mp_showrespawntimes mp_switchteams mp_tournament_restart multvar
-syn keyword sourceCommand       music_dynamic_play music_dynamic_stop_playing music_print
+syn keyword sourceCommand       kickall kickid kickid_ex kill killserver killvector lastdisguise lastinv
+syn keyword sourceCommand       light_crosshair lightprobe linefile listRecentNPCSpeech listdeaths listdemo
+syn keyword sourceCommand       listid listip listissues listmaps listmodels load load_itempreset
+syn keyword sourceCommand       loadcommentary loader_dump_table log log_color log_dumpchannels log_flags
+syn keyword sourceCommand       log_level logaddress_add logaddress_del logaddress_delall logaddress_list map
+syn keyword sourceCommand       map_background map_commentary map_edit map_setbombradius map_showbombradius
+syn keyword sourceCommand       map_showspawnpoints mapgroup maps mat_configcurrent mat_crosshair
+syn keyword sourceCommand       mat_crosshair_edit mat_crosshair_explorer mat_crosshair_printmaterial
+syn keyword sourceCommand       mat_crosshair_reloadmaterial mat_custommaterialusage mat_debug mat_edit
+syn keyword sourceCommand       mat_hdr_enabled mat_info mat_reloadallcustommaterials mat_reloadallmaterials
+syn keyword sourceCommand       mat_reloadmaterial mat_reloadtextures mat_rendered_faces_spew
+syn keyword sourceCommand       mat_reporthwmorphmemory mat_savechanges mat_setvideomode mat_shadercount
+syn keyword sourceCommand       mat_showmaterials mat_showmaterialsverbose mat_showtextures
+syn keyword sourceCommand       mat_spewvertexandpixelshaders mat_suppress mat_texture_list_exclude
+syn keyword sourceCommand       mat_texture_list_txlod mat_texture_list_txlod_sync mat_texture_save_fonts
+syn keyword sourceCommand       mat_updateconvars maxplayers mdlcache_dump_dictionary_state mem_compact
+syn keyword sourceCommand       mem_dump mem_dumpvballocs mem_eat mem_incremental_compact mem_test mem_vcollide
+syn keyword sourceCommand       mem_verify memory memory_diff memory_list memory_mark memory_status menuselect
+syn keyword sourceCommand       messagemode messagemode2 meta minisave mission_debug_print mission_list
+syn keyword sourceCommand       mission_reload mission_show mm_add_item mm_add_player mm_datacenter_debugprint
+syn keyword sourceCommand       mm_debugprint mm_dlc_debugprint mm_message mm_queue_show_stats
+syn keyword sourceCommand       mm_select_session mm_session_info mm_stats mod_DumpWeaponWiewModelCache
+syn keyword sourceCommand       mod_DumpWeaponWorldModelCache mod_combiner_info mod_dynamicmodeldebug
+syn keyword sourceCommand       model_list motd movie_fixwave mp_backup_restore_list_files
+syn keyword sourceCommand       mp_backup_restore_load_file mp_disable_autokick mp_dump_timers
+syn keyword sourceCommand       mp_forcerespawnplayers mp_forcewin mp_pause_match mp_scrambleteams
+syn keyword sourceCommand       mp_showrespawntimes mp_swapteams mp_switchteams mp_tournament_restart
+syn keyword sourceCommand       mp_unpause_match mp_warmup_end mp_warmup_start ms_player_dump_properties
+syn keyword sourceCommand       multvar music_dynamic_play music_dynamic_stop_playing music_print
 syn keyword sourceCommand       nav_add_to_selected_set nav_add_to_selected_set_by_id nav_analyze nav_avoid
 syn keyword sourceCommand       nav_begin_area nav_begin_deselecting nav_begin_drag_deselecting
 syn keyword sourceCommand       nav_begin_drag_selecting nav_begin_selecting nav_begin_shift_xy
-syn keyword sourceCommand       nav_build_ladder nav_check_file_consistency nav_check_floor nav_check_stairs
-syn keyword sourceCommand       nav_chop_selected nav_clear_attribute nav_clear_selected_set
-syn keyword sourceCommand       nav_clear_walkable_marks nav_compress_id nav_connect nav_corner_lower
-syn keyword sourceCommand       nav_corner_place_on_ground nav_corner_raise nav_corner_select nav_crouch
-syn keyword sourceCommand       nav_delete nav_delete_marked nav_disconnect nav_disconnect_outgoing_oneways
-syn keyword sourceCommand       nav_dont_hide nav_dump_selected_set_positions nav_end_area nav_end_deselecting
-syn keyword sourceCommand       nav_end_drag_deselecting nav_end_drag_selecting nav_end_selecting
-syn keyword sourceCommand       nav_end_shift_xy nav_flood_select nav_gen_cliffs_approx nav_generate
-syn keyword sourceCommand       nav_generate_incremental nav_jump nav_ladder_flip nav_load
-syn keyword sourceCommand       nav_lower_drag_volume_max nav_lower_drag_volume_min nav_make_sniper_spots
-syn keyword sourceCommand       nav_mark nav_mark_attribute nav_mark_unnamed nav_mark_walkable nav_merge
-syn keyword sourceCommand       nav_merge_mesh nav_no_hostages nav_no_jump nav_place_floodfill nav_place_list
-syn keyword sourceCommand       nav_place_pick nav_place_replace nav_place_set nav_precise
-syn keyword sourceCommand       nav_raise_drag_volume_max nav_raise_drag_volume_min nav_recall_selected_set
-syn keyword sourceCommand       nav_remove_from_selected_set nav_remove_jump_areas nav_run nav_save
-syn keyword sourceCommand       nav_save_selected nav_select_blocked_areas nav_select_damaging_areas
-syn keyword sourceCommand       nav_select_half_space nav_select_invalid_areas nav_select_larger_than
-syn keyword sourceCommand       nav_select_obstructed_areas nav_select_orphans nav_select_overlapping
-syn keyword sourceCommand       nav_select_radius nav_select_stairs nav_set_place_mode nav_shift
-syn keyword sourceCommand       nav_show_dumped_positions nav_simplify_selected nav_splice nav_split nav_stand
-syn keyword sourceCommand       nav_stop nav_store_selected_set nav_strip nav_subdivide nav_test_stairs
-syn keyword sourceCommand       nav_toggle_deselecting nav_toggle_in_selected_set nav_toggle_place_mode
-syn keyword sourceCommand       nav_toggle_place_painting nav_toggle_selected_set nav_toggle_selecting
-syn keyword sourceCommand       nav_transient nav_unmark nav_update_blocked nav_update_lighting nav_use_place
-syn keyword sourceCommand       nav_walk nav_warp_to_mark nav_world_center nb_command nb_debug nb_debug_filter
-syn keyword sourceCommand       nb_delete_all nb_dump_debug_history nb_force_look_at nb_move_to_cursor
-syn keyword sourceCommand       nb_select nb_warp_selected_here net_channels net_dumpeventstats
-syn keyword sourceCommand       net_reloadgameevents net_start net_status net_steamcnx_status nextdemo nextmap
-syn keyword sourceCommand       noclip notarget npc_ammo_deplete npc_bipass npc_combat npc_conditions
-syn keyword sourceCommand       npc_create npc_create_aimed npc_destroy npc_destroy_unselected npc_enemies
-syn keyword sourceCommand       npc_focus npc_freeze npc_freeze_unselected npc_go npc_go_random npc_heal
-syn keyword sourceCommand       npc_kill npc_nearest npc_relationships npc_reset npc_route npc_select
-syn keyword sourceCommand       npc_speakall npc_squads npc_steering npc_steering_all npc_task_text npc_tasks
-syn keyword sourceCommand       npc_teleport npc_thinknow npc_viewcone obj_dump_damage open_charinfo
-syn keyword sourceCommand       open_charinfo_armory open_charinfo_backpack open_charinfo_crafting
-syn keyword sourceCommand       open_charinfo_direct open_replaybrowser open_replayinputpanel open_store
-syn keyword sourceCommand       openserverbrowser opentf2options outtro_stats_done overview_mode overview_zoom
+syn keyword sourceCommand       nav_build_ladder nav_check_connectivity nav_check_file_consistency
+syn keyword sourceCommand       nav_check_floor nav_check_stairs nav_chop_selected nav_clear_attribute
+syn keyword sourceCommand       nav_clear_selected_set nav_clear_walkable_marks nav_compress_id nav_connect
+syn keyword sourceCommand       nav_corner_lower nav_corner_place_on_ground nav_corner_raise nav_corner_select
+syn keyword sourceCommand       nav_crouch nav_delete nav_delete_marked nav_disconnect
+syn keyword sourceCommand       nav_disconnect_outgoing_oneways nav_dont_hide nav_dump_selected_set_positions
+syn keyword sourceCommand       nav_end_area nav_end_deselecting nav_end_drag_deselecting
+syn keyword sourceCommand       nav_end_drag_selecting nav_end_selecting nav_end_shift_xy nav_flood_select
+syn keyword sourceCommand       nav_gen_cliffs_approx nav_generate nav_generate_incremental nav_jump
+syn keyword sourceCommand       nav_ladder_flip nav_load nav_lower_drag_volume_max nav_lower_drag_volume_min
+syn keyword sourceCommand       nav_make_sniper_spots nav_mark nav_mark_attribute nav_mark_unnamed
+syn keyword sourceCommand       nav_mark_walkable nav_merge nav_merge_mesh nav_no_hostages nav_no_jump
+syn keyword sourceCommand       nav_place_floodfill nav_place_list nav_place_pick nav_place_replace
+syn keyword sourceCommand       nav_place_set nav_precise nav_raise_drag_volume_max nav_raise_drag_volume_min
+syn keyword sourceCommand       nav_recall_selected_set nav_remove_from_selected_set nav_remove_jump_areas
+syn keyword sourceCommand       nav_run nav_save nav_save_selected nav_select_blocked_areas
+syn keyword sourceCommand       nav_select_damaging_areas nav_select_half_space nav_select_invalid_areas
+syn keyword sourceCommand       nav_select_larger_than nav_select_obstructed_areas nav_select_orphans
+syn keyword sourceCommand       nav_select_overlapping nav_select_radius nav_select_stairs nav_set_place_mode
+syn keyword sourceCommand       nav_shift nav_show_dumped_positions nav_simplify_selected nav_splice nav_split
+syn keyword sourceCommand       nav_stand nav_stop nav_store_selected_set nav_strip nav_subdivide
+syn keyword sourceCommand       nav_test_stairs nav_toggle_deselecting nav_toggle_in_selected_set
+syn keyword sourceCommand       nav_toggle_place_mode nav_toggle_place_painting nav_toggle_selected_set
+syn keyword sourceCommand       nav_toggle_selecting nav_transient nav_unmark nav_update_blocked
+syn keyword sourceCommand       nav_update_lighting nav_use_place nav_walk nav_warp_to_mark nav_world_center
+syn keyword sourceCommand       nb_command nb_debug nb_debug_filter nb_delete_all nb_dump_debug_history
+syn keyword sourceCommand       nb_force_look_at nb_move_to_cursor nb_select nb_warp_selected_here net_channels
+syn keyword sourceCommand       net_dumpeventstats net_reloadgameevents net_start net_status
+syn keyword sourceCommand       net_steamcnx_status nextdemo nextmap noclip notarget npc_ammo_deplete
+syn keyword sourceCommand       npc_bipass npc_combat npc_conditions npc_create npc_create_aimed npc_destroy
+syn keyword sourceCommand       npc_destroy_unselected npc_enemies npc_focus npc_freeze npc_freeze_unselected
+syn keyword sourceCommand       npc_go npc_go_random npc_heal npc_kill npc_nearest npc_relationships npc_reset
+syn keyword sourceCommand       npc_route npc_select npc_set_freeze npc_set_freeze_unselected npc_speakall
+syn keyword sourceCommand       npc_squads npc_steering npc_steering_all npc_task_text npc_tasks npc_teleport
+syn keyword sourceCommand       npc_thinknow npc_viewcone obj_dump_damage observer_use occlusion_stats
+syn keyword sourceCommand       occlusion_test_record occlusion_test_run open_charinfo open_charinfo_armory
+syn keyword sourceCommand       open_charinfo_backpack open_charinfo_crafting open_charinfo_direct
+syn keyword sourceCommand       open_replaybrowser open_replayinputpanel open_store openserverbrowser
+syn keyword sourceCommand       opentf2options outtro_stats_done overview_mode overview_zoom
 syn keyword sourceCommand       particle_test_start particle_test_stop path perfui perfvisualbenchmark
 syn keyword sourceCommand       perfvisualbenchmark_abort personalstats phys_swap physics_budget
 syn keyword sourceCommand       physics_constraints physics_debug_entity physics_highlight_active
 syn keyword sourceCommand       physics_report_active physics_select picker ping pingserver pixelvis_debug play
 syn keyword sourceCommand       playdemo player_ready_toggle playflush playgamesound playsoundscape playvideo
-syn keyword sourceCommand       playvideo_exitcommand playvol plugin_load plugin_notify_non_valid plugin_pause
-syn keyword sourceCommand       plugin_pause_all plugin_print plugin_unload plugin_unpause plugin_unpause_all
-syn keyword sourceCommand       print_colorcorrection progress_enable prop_crosshair prop_debug
-syn keyword sourceCommand       prop_dynamic_create prop_physics_create r_3dnow r_cheapwaterend
+syn keyword sourceCommand       playvideo_end_level_transition playvideo_exitcommand
+syn keyword sourceCommand       playvideo_exitcommand_nointerrupt playvideo_nointerrupt playvol plugin_load
+syn keyword sourceCommand       plugin_notify_non_valid plugin_pause plugin_pause_all plugin_print
+syn keyword sourceCommand       plugin_unload plugin_unpause plugin_unpause_all print_colorcorrection
+syn keyword sourceCommand       print_mapgroup print_mapgroup_sv progress_enable prop_crosshair prop_debug
+syn keyword sourceCommand       prop_dynamic_create prop_physics_create quit_prompt r_3dnow r_cheapwaterend
 syn keyword sourceCommand       r_cheapwaterstart r_cleardecals r_flushlod r_printdecalinfo
 syn keyword sourceCommand       r_ropes_holiday_light_color r_screenoverlay r_shadowangles r_shadowblobbycutoff
 syn keyword sourceCommand       r_shadowcolor r_shadowdir r_shadowdist r_skyboxfogfactor r_sse2 radialmenu
-syn keyword sourceCommand       randommap rbgc rcon recompute_speed record refresh_options_dialog
-syn keyword sourceCommand       refreshplayerstats reload removeid removeip replay_add_fake_replays
-syn keyword sourceCommand       replay_clearqueuedtakes replay_confirmquit replay_deleteclientreplays
-syn keyword sourceCommand       replay_docleanup replay_dopublishtest replay_hidebrowser
-syn keyword sourceCommand       replay_printclientreplays replay_printqueuedtakes replay_printsessioninfo
-syn keyword sourceCommand       replay_record replay_reloadbrowser replay_removeclientreplay replay_renderpause
+syn keyword sourceCommand       radio1 radio2 radio3 randommap rbgc rcon rebuy recompute_speed record
+syn keyword sourceCommand       refresh_options_dialog refreshplayerstats reload reload_vjobs removeallids
+syn keyword sourceCommand       removeid removeip render_blanks replay_add_fake_replays replay_clearqueuedtakes
+syn keyword sourceCommand       replay_confirmquit replay_deleteclientreplays replay_docleanup
+syn keyword sourceCommand       replay_dopublishtest replay_hidebrowser replay_printclientreplays
+syn keyword sourceCommand       replay_printqueuedtakes replay_printsessioninfo replay_record
+syn keyword sourceCommand       replay_reloadbrowser replay_removeclientreplay replay_renderpause
 syn keyword sourceCommand       replay_renderunpause replay_stoprecord replay_test_take_save_dlg report
 syn keyword sourceCommand       report_entities report_simthinklist report_soundpatch report_touchlinks
-syn keyword sourceCommand       reset_spawnmenu_counts resetplayerstats respawn_entities restart retry rfgc rpt
-syn keyword sourceCommand       rpt_client_enable rpt_connect rpt_download_log rpt_end rpt_password
-syn keyword sourceCommand       rpt_screenshot rpt_server_enable rpt_start rr_debugresponseconcept_exclude
-syn keyword sourceCommand       rr_reloadresponsesystems save save_finish_async save_replay say say_team sb_add
-syn keyword sourceCommand       sb_move_to_cursor scavenge_set_round_limit scene_flush screenshot
-syn keyword sourceCommand       scripted_user_func server_game_time setang setang_exact setinfo setmaster
-syn keyword sourceCommand       setmodel setpause setpos setpos_exact shake shake_stop messagemode messagemode2
-syn keyword sourceCommand       showGameSettings show_addon_load_order show_addon_metadata show_menu
-syn keyword sourceCommand       showbudget_texture_global_dumpstats showconsole showinfo showmapinfo showpanel
-syn keyword sourceCommand       showschemevisualizer showstatsdlg showtriggers_toggle simple_bot_add
+syn keyword sourceCommand       reset_expo reset_spawnmenu_counts resetplayerstats respawn_entities restart
+syn keyword sourceCommand       retry rfgc rpt rpt_client_enable rpt_connect rpt_download_log rpt_end
+syn keyword sourceCommand       rpt_password rpt_screenshot rpt_server_enable rpt_start
+syn keyword sourceCommand       rr_debugresponseconcept_exclude rr_reloadresponsesystems save save_finish_async
+syn keyword sourceCommand       save_replay say say_team sb_add sb_move_to_cursor scandemo
+syn keyword sourceCommand       scavenge_set_round_limit scene_flush scene_playvcd screenshot script_client
+syn keyword sourceCommand       script_debug_client script_dump_all_client script_execute_client
+syn keyword sourceCommand       script_help_client script_reload_entity_code scripted_user_func
+syn keyword sourceCommand       server_game_time setang setang_exact setinfo setmaster setmodel setpause setpos
+syn keyword sourceCommand       setpos_exact sf4_meshcache_stats shake shake_stop shake_testpunch
+syn keyword sourceCommand       showGameSettings show_addon_load_order show_addon_metadata show_loadout_toggle
+syn keyword sourceCommand       show_menu showbudget_texture_global_dumpstats showconsole showinfo showmapinfo
+syn keyword sourceCommand       showpanel showschemevisualizer showstatsdlg showtriggers_toggle simple_bot_add
 syn keyword sourceCommand       sixense_aim_freeaim_spin_disabled sixense_bind sixense_clear_bindings
 syn keyword sourceCommand       sixense_create_default_bindings sixense_delete_binding sixense_disable_gestures
 syn keyword sourceCommand       sixense_list_bindings sixense_select_grenade sixense_select_machinegun
 syn keyword sourceCommand       sixense_select_melee sixense_select_pistol sixense_set_base_offset
 syn keyword sourceCommand       sixense_set_filter_params sixense_show_frame sixense_write_bindings
-syn keyword sourceCommand       skip_next_map slot0 slot1 slot2 slot3 slot4 slot5 slot6 slot7 slot8 slot9
-syn keyword sourceCommand       slot10 slot11 slot12 snapto snd_async_flush snd_async_showmem
+syn keyword sourceCommand       skip_next_map slot0 slot1 slot10 slot11 slot12 slot2 slot3 slot4 slot5 slot6
+syn keyword sourceCommand       slot7 slot8 slot9 snapto snd_async_flush snd_async_showmem
 syn keyword sourceCommand       snd_async_showmem_music snd_async_showmem_summary
 syn keyword sourceCommand       snd_buildsoundcachefordirectory snd_dump_filepaths snd_dumpclientsounds
-syn keyword sourceCommand       snd_getmixer snd_list_mix_groups snd_list_mixers snd_playsounds
-syn keyword sourceCommand       snd_rebuildaudiocache snd_rebuildlocalizedaudiocache snd_restart snd_setmixer
-syn keyword sourceCommand       snd_setmixlayer snd_setmixlayer_amount snd_setsoundparam snd_soundmixer_flush
-syn keyword sourceCommand       snd_updateaudiocache snd_writemanifest sndplaydelay soundfade soundinfo
-syn keyword sourceCommand       soundlist soundscape_dumpclient soundscape_flush spawnboomermenu
-syn keyword sourceCommand       spawnchargermenu spawnhuntermenu spawnjockeymenu spawnmodemenu spawnsmokermenu
-syn keyword sourceCommand       spawnspittermenu speak spec_help spec_menu spec_mode spec_next spec_player
-syn keyword sourceCommand       spec_pos spec_prev spec_target spec_target_clear spike ss_connect ss_disconnect
-syn keyword sourceCommand       ss_map star_memory startdemos startmovie startupmenu stats stats_nexthighlight
-syn keyword sourceCommand       status stop stopdemo stopsound stopsoundscape stringtabledictionary stuffcmds
-syn keyword sourceCommand       surfaceprop sv_benchmark_force_start sv_bonus_map_challenge_update
-syn keyword sourceCommand       sv_bonus_map_complete sv_bonus_map_unlock sv_clearhinthistory
-syn keyword sourceCommand       sv_debug_stuck_particles sv_findsoundname sv_precacheinfo sv_pure
-syn keyword sourceCommand       sv_querycache_stats sv_showtags sv_shutdown sv_soundemitter_filecheck
-syn keyword sourceCommand       sv_soundemitter_flush sv_soundemitter_reload sv_soundemitter_spew
-syn keyword sourceCommand       sv_soundscape_printdebuginfo terror_reload_team_display terror_test_hud_glow
+syn keyword sourceCommand       snd_front_headphone_position snd_front_stereo_speaker_position
+syn keyword sourceCommand       snd_front_surround_speaker_position snd_getmixer snd_headphone_pan_exponent
+syn keyword sourceCommand       snd_headphone_pan_radial_weight snd_list_mix_groups snd_list_mixers
+syn keyword sourceCommand       snd_playsounds snd_print_channel_by_guid snd_print_channel_by_index
+syn keyword sourceCommand       snd_print_channels snd_print_dsp_effect snd_rear_headphone_position
+syn keyword sourceCommand       snd_rear_stereo_speaker_position snd_rear_surround_speaker_position
+syn keyword sourceCommand       snd_rebuildaudiocache snd_rebuildlocalizedaudiocache snd_restart
+syn keyword sourceCommand       snd_set_master_volume snd_setmixer snd_setmixlayer snd_setmixlayer_amount
+syn keyword sourceCommand       snd_setsoundparam snd_sos_flush_operators snd_sos_print_operators
+syn keyword sourceCommand       snd_soundmixer_flush snd_soundmixer_list_mix_groups
+syn keyword sourceCommand       snd_soundmixer_list_mix_layers snd_soundmixer_list_mixers
+syn keyword sourceCommand       snd_soundmixer_set_trigger_factor snd_stereo_speaker_pan_exponent
+syn keyword sourceCommand       snd_stereo_speaker_pan_radial_weight snd_surround_speaker_pan_exponent
+syn keyword sourceCommand       snd_surround_speaker_pan_radial_weight snd_updateaudiocache snd_writemanifest
+syn keyword sourceCommand       sndplaydelay soundfade soundinfo soundlist soundscape_dumpclient
+syn keyword sourceCommand       soundscape_flush spawnboomermenu spawnchargermenu spawnhuntermenu
+syn keyword sourceCommand       spawnjockeymenu spawnmodemenu spawnsmokermenu spawnspittermenu speak spec_goto
+syn keyword sourceCommand       spec_gui spec_help spec_lerpto spec_menu spec_mode spec_next spec_player
+syn keyword sourceCommand       spec_player_by_name spec_pos spec_prev spec_target spec_target_clear spike
+syn keyword sourceCommand       spincycle ss_connect ss_disconnect ss_map ss_reloadletterbox star_memory
+syn keyword sourceCommand       startdemos startmovie startupmenu stats stats_nexthighlight status stop
+syn keyword sourceCommand       stop_transition_videos_fadeout stopdemo stopsound stopsoundscape stopvideos
+syn keyword sourceCommand       stopvideos_fadeout stringtabledictionary stuffcmds surfaceprop
+syn keyword sourceCommand       sv_benchmark_force_start sv_bonus_map_challenge_update sv_bonus_map_complete
+syn keyword sourceCommand       sv_bonus_map_unlock sv_clearhinthistory sv_cs_dump_econ_item_stringtable
+syn keyword sourceCommand       sv_debug_stuck_particles sv_dump_entity_pack_stats
+syn keyword sourceCommand       sv_dump_serialized_entities_mem sv_findsoundname sv_game_mode_convars
+syn keyword sourceCommand       sv_precacheinfo sv_pure sv_pure_checkvpk sv_pure_finduserfiles
+syn keyword sourceCommand       sv_pure_listfiles sv_pure_listuserfiles sv_querycache_stats sv_showtags
+syn keyword sourceCommand       sv_shutdown sv_soundemitter_filecheck sv_soundemitter_flush
+syn keyword sourceCommand       sv_soundemitter_reload sv_soundemitter_spew sv_soundscape_printdebuginfo
+syn keyword sourceCommand       sv_status teammenu terror_reload_team_display terror_test_hud_glow
 syn keyword sourceCommand       test_dispatcheffect test_entity_blocker test_freezeframe test_giveawayitem
 syn keyword sourceCommand       test_point testhudanim teststatpanel tf_bot_add tf_bot_debug_stuck_log
 syn keyword sourceCommand       tf_bot_kick tf_bot_kill tf_bot_warp_team_to_me tf_clear_attribute
@@ -274,31 +324,37 @@ syn keyword sourceCommand       tf_select_ambush_areas tf_select_with_attribute 
 syn keyword sourceCommand       tf_testvcd tf_wipe_attributes thirdperson thirdperson_mayamode
 syn keyword sourceCommand       thirdpersonshoulder thread_test_tslist thread_test_tsqueue
 syn keyword sourceCommand       threadpool_cycle_reserve threadpool_run_tests timedemo timedemo_vprofrecord
-syn keyword sourceCommand       timedemoquit timeleft timerefresh toggle toggle_duck toggle_zoom toggleconsole
-syn keyword sourceCommand       togglescores toolload training_continue training_showdlg tv_clients tv_msg
-syn keyword sourceCommand       tv_record tv_relay tv_retry sv_status tv_stop tv_stoprecord tv_test_retry
-syn keyword sourceCommand       tv_test_start tv_test_stop ui_pump_dlc_mount_content ui_pump_dlc_mount_corrupt
-syn keyword sourceCommand       ui_pump_dlc_mount_stage ui_reloadscheme unbind unbind_mac unbindall
-syn keyword sourceCommand       unload_all_addons unpause update_addon_paths use user user_context
-syn keyword sourceCommand       user_property users vehicle_flushscript version vgui_drawtree_clear
-syn keyword sourceCommand       vgui_dump_panels vgui_spew_fonts vgui_togglepanel viewanim_addkeyframe
-syn keyword sourceCommand       viewanim_create viewanim_load viewanim_reset viewanim_save viewanim_test
-syn keyword sourceCommand       voicemenu voice_menu_1 voice_menu_2 voice_menu_3 voice_mute voice_printtalkers
-syn keyword sourceCommand       voice_reset_mutelist voice_show_mute voice_unmute voicerecord_toggle vox_reload
-syn keyword sourceCommand       voxeltree_box voxeltree_playerview voxeltree_sphere voxeltree_view
-syn keyword sourceCommand       vphys_sleep_timeout vprof vprof_adddebuggroup1 vprof_cachemiss
-syn keyword sourceCommand       vprof_cachemiss_off vprof_cachemiss_on vprof_child vprof_collapse_all
-syn keyword sourceCommand       vprof_dump_counters vprof_dump_groupnames vprof_expand_all vprof_expand_group
-syn keyword sourceCommand       vprof_generate_report vprof_generate_report_AI vprof_generate_report_AI_only
-syn keyword sourceCommand       vprof_generate_report_budget vprof_generate_report_hierarchy
-syn keyword sourceCommand       vprof_generate_report_hierarchy_per_frame_and_co vprof_generate_report_map_load
-syn keyword sourceCommand       vprof_nextsibling vprof_off vprof_on vprof_parent vprof_playback_average
-syn keyword sourceCommand       vprof_playback_start vprof_playback_step vprof_playback_stepback
-syn keyword sourceCommand       vprof_playback_stop vprof_prevsibling vprof_record_start vprof_record_stop
-syn keyword sourceCommand       vprof_remote_start vprof_remote_stop vprof_reset vprof_reset_peaks vprof_to_csv
-syn keyword sourceCommand       vprof_vtune_group vtune vote wait wc_air_edit_further wc_air_edit_nearer
-syn keyword sourceCommand       wc_air_node_edit wc_create wc_destroy wc_destroy_undo wc_link_edit
-syn keyword sourceCommand       wipe_nav_attributes writeid writeip xload xlook xmove xsave z_wind_dir
+syn keyword sourceCommand       timedemoquit timeleft timerefresh toggle toggleLmapPath toggleShadowPath
+syn keyword sourceCommand       toggleUnlitPath toggleVtxLitPath toggle_duck toggle_zoom toggleconsole
+syn keyword sourceCommand       togglescores toolload toolunload training_continue training_showdlg tv_clients
+syn keyword sourceCommand       tv_msg tv_record tv_relay tv_retry tv_status tv_stop tv_stoprecord
+syn keyword sourceCommand       tv_test_retry tv_test_start tv_test_stop tv_time_remaining tweak_ammo_impulses
+syn keyword sourceCommand       ui_pump_dlc_mount_content ui_pump_dlc_mount_corrupt ui_pump_dlc_mount_stage
+syn keyword sourceCommand       ui_reloadscheme unbind unbind_mac unbindall unbindalljoystick
+syn keyword sourceCommand       unbindallmousekeyboard unload_all_addons unpause update_addon_paths use user
+syn keyword sourceCommand       user_context user_property users vehicle_flushscript version
+syn keyword sourceCommand       vgui_drawtree_clear vgui_dump_panels vgui_spew_fonts vgui_togglepanel
+syn keyword sourceCommand       viewanim_addkeyframe viewanim_create viewanim_load viewanim_reset viewanim_save
+syn keyword sourceCommand       viewanim_test voice_menu_1 voice_menu_2 voice_menu_3 voice_mute
+syn keyword sourceCommand       voice_printtalkers voice_reset_mutelist voice_show_mute voice_unmute voicemenu
+syn keyword sourceCommand       voicerecord_toggle vote vox_reload voxeltree_box voxeltree_playerview
+syn keyword sourceCommand       voxeltree_sphere voxeltree_view vphys_sleep_timeout vprof vprof_adddebuggroup1
+syn keyword sourceCommand       vprof_cachemiss vprof_cachemiss_off vprof_cachemiss_on vprof_child
+syn keyword sourceCommand       vprof_collapse_all vprof_dump_counters vprof_dump_groupnames vprof_expand_all
+syn keyword sourceCommand       vprof_expand_group vprof_generate_report vprof_generate_report_AI
+syn keyword sourceCommand       vprof_generate_report_AI_only vprof_generate_report_budget
+syn keyword sourceCommand       vprof_generate_report_hierarchy
+syn keyword sourceCommand       vprof_generate_report_hierarchy_per_frame_and_co
+syn keyword sourceCommand       vprof_generate_report_hierarchy_per_frame_and_count_only
+syn keyword sourceCommand       vprof_generate_report_map_load vprof_nextsibling vprof_off vprof_on
+syn keyword sourceCommand       vprof_parent vprof_playback_average vprof_playback_start vprof_playback_step
+syn keyword sourceCommand       vprof_playback_stepback vprof_playback_stop vprof_prevsibling
+syn keyword sourceCommand       vprof_record_start vprof_record_stop vprof_remote_start vprof_remote_stop
+syn keyword sourceCommand       vprof_reset vprof_reset_peaks vprof_to_csv vprof_vtune_group vtune wait
+syn keyword sourceCommand       wc_air_edit_further wc_air_edit_nearer wc_air_node_edit wc_create wc_destroy
+syn keyword sourceCommand       wc_destroy_undo wc_link_edit weapon_reload_database whitelistcmd
+syn keyword sourceCommand       wipe_nav_attributes workshop_publish workshop_start_map workshop_workbench
+syn keyword sourceCommand       syn keyword sourceCommand       syn keyword sourceCommand       syn keyword sourceCommand       syn keyword sourceCommand       syn keyword sourceCommand       writeid writeip xload xlook xmove xsave z_wind_dir
 
 " Syntax: Local variables {{{1
 syn keyword sourceVar           BlendBonesMode IgnoreReflectGlassFrustumCheck PhysPMC _cl_classmenuopen _fov
