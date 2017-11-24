@@ -361,56 +361,127 @@ syn keyword sourceVar           BlendBonesMode IgnoreReflectGlassFrustumCheck Ph
 syn keyword sourceVar           addons_eclipse_content adsp_alley_min adsp_courtyard_min adsp_debug
 syn keyword sourceVar           adsp_door_height adsp_duct_min adsp_hall_min adsp_low_ceiling
 syn keyword sourceVar           adsp_opencourtyard_min adsp_openspace_min adsp_openstreet_min adsp_openwall_min
-syn keyword sourceVar           adsp_room_min adsp_street_min adsp_tunnel_min adsp_wall_height ai_shot_bias_max
-syn keyword sourceVar           ai_shot_bias_min airboat_joy_response_move ammo_adrenaline_max
-syn keyword sourceVar           ammo_ammo_pack_max ammo_assaultrifle_max ammo_autoshotgun_max ammo_chainsaw_max
-syn keyword sourceVar           ammo_firstaid_max ammo_grenadelauncher_max ammo_huntingrifle_max ammo_m60_max
-syn keyword sourceVar           ammo_minigun_max ammo_molotov_max ammo_painpills_max ammo_pipebomb_max
-syn keyword sourceVar           ammo_pistol_max ammo_shotgun_max ammo_smg_max ammo_sniperrifle_max
-syn keyword sourceVar           ammo_turret_infected_damage ammo_turret_max ammo_turret_pz_damage
-syn keyword sourceVar           ammo_turret_survivor_damage ammo_turret_tank_damage ammo_turret_witch_damage
-syn keyword sourceVar           ammo_vomitjar_max anim_3wayblend async_allow_held_files async_mode
-syn keyword sourceVar           async_serialize async_simulate_delay binds_per_command blackbox blink_duration
-syn keyword sourceVar           budget_averages_window budget_background_alpha budget_bargraph_background_alpha
-syn keyword sourceVar           budget_bargraph_range_ms budget_history_numsamplesvisible
-syn keyword sourceVar           budget_history_range_ms budget_panel_bottom_of_history_fraction
-syn keyword sourceVar           budget_panel_height budget_panel_width budget_panel_x budget_panel_y
-syn keyword sourceVar           budget_peaks_window budget_show_averages budget_show_history budget_show_peaks
+syn keyword sourceVar           adsp_room_min adsp_street_min adsp_tunnel_min adsp_wall_height ai_LOS_mode
+syn keyword sourceVar           ai_actbusy_search_time ai_ally_manager_debug ai_auto_contact_solver
+syn keyword sourceVar           ai_block_damage ai_citizen_debug_commander ai_debug_assault
+syn keyword sourceVar           ai_debug_avoidancebounds ai_debug_directnavprobe ai_debug_doors
+syn keyword sourceVar           ai_debug_dyninteractions ai_debug_efficiency ai_debug_enemies
+syn keyword sourceVar           ai_debug_enemyfinders ai_debug_eventresponses ai_debug_expressions
+syn keyword sourceVar           ai_debug_follow ai_debug_loners ai_debug_looktargets ai_debug_nav
+syn keyword sourceVar           ai_debug_ragdoll_magnets ai_debug_readiness ai_debug_speech ai_debug_squads
+syn keyword sourceVar           ai_debug_think_ticks ai_debugscriptconditions ai_default_efficient
+syn keyword sourceVar           ai_ef_hate_npc_duration ai_ef_hate_npc_frequency ai_efficiency_override
+syn keyword sourceVar           ai_enable_fear_behavior ai_expression_frametime ai_expression_optimization
+syn keyword sourceVar           ai_fear_player_dist ai_find_lateral_cover ai_find_lateral_los
+syn keyword sourceVar           ai_follow_move_commands ai_follow_use_points ai_follow_use_points_when_moving
+syn keyword sourceVar           ai_force_serverside_ragdoll ai_frametime_limit ai_lead_time ai_moveprobe_debug
+syn keyword sourceVar           ai_moveprobe_jump_debug ai_moveprobe_usetracelist ai_navigator_generate_spikes
+syn keyword sourceVar           ai_navigator_generate_spikes_strength ai_new_aiming ai_newgroundturret
+syn keyword sourceVar           ai_no_local_paths ai_no_node_cache ai_no_select_box ai_no_steer
+syn keyword sourceVar           ai_no_talk_delay ai_norebuildgraph ai_path_adjust_speed_on_immediate_turns
+syn keyword sourceVar           ai_path_insert_pause_at_est_end ai_path_insert_pause_at_obstruction
+syn keyword sourceVar           ai_post_frame_navigation ai_radial_max_link_dist ai_reaction_delay_alert
+syn keyword sourceVar           ai_reaction_delay_idle ai_readiness_decay ai_rebalance_thinks
+syn keyword sourceVar           ai_report_task_timings_on_limit ai_sequence_debug ai_setupbones_debug
+syn keyword sourceVar           ai_shot_bias ai_shot_bias_max ai_shot_bias_min ai_shot_stats ai_shot_stats_term
+syn keyword sourceVar           ai_show_hull_attacks ai_show_think_tolerance ai_simulate_task_overtime
+syn keyword sourceVar           ai_spread_cone_focus_time ai_spread_defocused_cone_multiplier
+syn keyword sourceVar           ai_spread_pattern_focus_time ai_strong_optimizations
+syn keyword sourceVar           ai_strong_optimizations_no_checkstand ai_task_pre_script
+syn keyword sourceVar           ai_test_moveprobe_ignoresmall ai_think_limit_label ai_use_clipped_paths
+syn keyword sourceVar           ai_use_efficiency ai_use_frame_think_limits ai_use_readiness
+syn keyword sourceVar           ai_use_think_optimizations ai_use_visibility_cache airboat_fatal_stress
+syn keyword sourceVar           airboat_joy_response_move allow_all_bot_survivor_team ammo_338mag_max
+syn keyword sourceVar           ammo_357sig_max ammo_357sig_min_max ammo_357sig_p250_max ammo_357sig_small_max
+syn keyword sourceVar           ammo_45acp_max ammo_50AE_max ammo_556mm_box_max ammo_556mm_max
+syn keyword sourceVar           ammo_556mm_small_max ammo_57mm_max ammo_762mm_max ammo_9mm_max
+syn keyword sourceVar           ammo_adrenaline_max ammo_ammo_pack_max ammo_assaultrifle_max
+syn keyword sourceVar           ammo_autoshotgun_max ammo_buckshot_max ammo_chainsaw_max ammo_firstaid_max
+syn keyword sourceVar           ammo_grenade_limit_default ammo_grenade_limit_flashbang
+syn keyword sourceVar           ammo_grenade_limit_total ammo_grenadelauncher_max ammo_huntingrifle_max
+syn keyword sourceVar           ammo_m60_max ammo_max ammo_minigun_max ammo_molotov_max ammo_painpills_max
+syn keyword sourceVar           ammo_pipebomb_max ammo_pistol_max ammo_shotgun_max ammo_smg_max
+syn keyword sourceVar           ammo_sniperrifle_max ammo_turret_infected_damage ammo_turret_max
+syn keyword sourceVar           ammo_turret_pz_damage ammo_turret_survivor_damage ammo_turret_tank_damage
+syn keyword sourceVar           ammo_turret_witch_damage ammo_vomitjar_max anim_3wayblend antlion_easycrush
+syn keyword sourceVar           async_allow_held_files async_mode async_serialize async_simulate_delay
+syn keyword sourceVar           autoaim_max_deflect autoaim_max_dist autoaim_unlock_target
+syn keyword sourceVar           autoaim_viewing_client binds_per_command birds_debug blackbox blink_duration
+syn keyword sourceVar           blob_batchpercent blob_element_speed blob_mindist blob_numelements blob_radius
+syn keyword sourceVar           bot_allow_rogues bot_autodifficulty_threshold_high
+syn keyword sourceVar           bot_autodifficulty_threshold_low bot_changeclass bot_chatter bot_custom_strat
+syn keyword sourceVar           bot_defer_to_human_goals bot_defer_to_human_items bot_forceattack
+syn keyword sourceVar           bot_forceattack2 bot_forceattack_down bot_forcefireweapon bot_join_team
+syn keyword sourceVar           bot_mimic bot_mimic_inverse bot_mimic_yaw_offset breakable_disable_gib_limit
+syn keyword sourceVar           breakable_multiplayer budget_averages_window budget_background_alpha
+syn keyword sourceVar           budget_bargraph_background_alpha budget_bargraph_range_ms
+syn keyword sourceVar           budget_history_numsamplesvisible budget_history_range_ms
+syn keyword sourceVar           budget_panel_bottom_of_history_fraction budget_panel_height budget_panel_width
+syn keyword sourceVar           budget_panel_x budget_panel_y budget_peaks_window budget_show_averages
+syn keyword sourceVar           budget_show_history budget_show_peaks bugbait_distract_time
+syn keyword sourceVar           bugbait_grenade_radius bugbait_hear_radius bugbait_radius
 syn keyword sourceVar           bugreporter_console_bytes bugreporter_includebsp bugreporter_snapshot_delay
 syn keyword sourceVar           bugreporter_uploadasync bugreporter_username building_cubemaps
-syn keyword sourceVar           bullet_ff_through_walls c_maxdistance c_maxpitch c_maxyaw c_mindistance
-syn keyword sourceVar           c_minpitch c_minyaw c_orthoheight c_orthowidth c_thirdpersonshoulder
-syn keyword sourceVar           c_thirdpersonshoulderaimdist c_thirdpersonshoulderdist
+syn keyword sourceVar           bullet_ff_through_walls bulletspeed c_maxdistance c_maxpitch c_maxyaw
+syn keyword sourceVar           c_mindistance c_minpitch c_minyaw c_orthoheight c_orthowidth
+syn keyword sourceVar           c_thirdpersonshoulder c_thirdpersonshoulderaimdist c_thirdpersonshoulderdist
 syn keyword sourceVar           c_thirdpersonshoulderheight c_thirdpersonshoulderoffset cam_collision
 syn keyword sourceVar           cam_idealdelta cam_idealdist cam_ideallag cam_idealpitch cam_idealyaw
-syn keyword sourceVar           cam_snapto cc_captiontrace cc_lang cc_linger_time cc_minvisibleitems
-syn keyword sourceVar           cc_predisplay_time cc_sentencecaptionnorepeat cc_showmissing cc_smallfontlength
-syn keyword sourceVar           cc_subtitles cl_SetupAllBones cl_ShowBoneSetupEnts cl_ShowSunVectors
+syn keyword sourceVar           cam_snapto car_alarm_chirp_distance car_alarm_chirp_duration
+syn keyword sourceVar           car_alarm_chirp_interval car_alarm_distance car_alarm_duration
+syn keyword sourceVar           cash_player_bomb_defused cash_player_bomb_planted cash_player_damage_hostage
+syn keyword sourceVar           cash_player_get_killed cash_player_interact_with_hostage
+syn keyword sourceVar           cash_player_killed_enemy_default cash_player_killed_enemy_factor
+syn keyword sourceVar           cash_player_killed_hostage cash_player_killed_teammate
+syn keyword sourceVar           cash_player_rescued_hostage cash_player_respawn_amount
+syn keyword sourceVar           cash_team_elimination_bomb_map cash_team_elimination_hostage_map_ct
+syn keyword sourceVar           cash_team_elimination_hostage_map_t cash_team_hostage_alive
+syn keyword sourceVar           cash_team_hostage_interaction cash_team_loser_bonus
+syn keyword sourceVar           cash_team_loser_bonus_consecutive_rounds cash_team_planted_bomb_but_defused
+syn keyword sourceVar           cash_team_rescued_hostage cash_team_survive_guardian_wave
+syn keyword sourceVar           cash_team_terrorist_win_bomb cash_team_win_by_defusing_bomb
+syn keyword sourceVar           cash_team_win_by_hostage_rescue cash_team_win_by_time_running_out_bomb
+syn keyword sourceVar           cash_team_win_by_time_running_out_hostage cc_captiontrace cc_lang
+syn keyword sourceVar           cc_linger_time cc_minvisibleitems cc_norepeat cc_predisplay_time
+syn keyword sourceVar           cc_sentencecaptionnorepeat cc_showmissing cc_smallfontlength cc_subtitles
+syn keyword sourceVar           cl_SetupAllBones cl_ShowBoneSetupEnts cl_ShowSunVectors
 syn keyword sourceVar           cl__ragdoll_max_remove_per_frame cl_addon_debug cl_addon_fade_max
 syn keyword sourceVar           cl_addon_fade_min cl_aggregate_particles cl_allowdownload cl_allowupload
-syn keyword sourceVar           cl_anglespeedkey cl_ask_blacklist_for_any_server
-syn keyword sourceVar           cl_ask_blacklist_max_session_duration cl_ask_blacklist_opt_out
-syn keyword sourceVar           cl_ask_bigpicture_controller_opt_out cl_ask_favorite_for_any_server
-syn keyword sourceVar           cl_ask_favorite_min_session_duration cl_ask_favorite_opt_out cl_autohelp
-syn keyword sourceVar           cl_autoreload cl_autorezoom cl_blobbyshadows cl_blurClearAlpha cl_blurDebug
-syn keyword sourceVar           cl_blurPasses cl_blurTapSize cl_bob cl_bobcycle cl_bobup cl_boss_show_stun
-syn keyword sourceVar           cl_burninggibs cl_buy_favorite_nowarn cl_buy_favorite_quiet cl_c4dynamiclight
-syn keyword sourceVar           cl_chat_active cl_chat_wipehistory cl_chatfilter_version cl_chatfilters
-syn keyword sourceVar           cl_clanid cl_class cl_clientmenudistancecap cl_clientmenuscalefactor
-syn keyword sourceVar           cl_cloud_settings cl_cmdrate cl_color_survivor cl_color_zombie cl_colorblind
-syn keyword sourceVar           cl_colorfastpath cl_consistencycheck_interval cl_crosshair_alpha
-syn keyword sourceVar           cl_crosshair_blue cl_crosshair_circle_alpha cl_crosshair_circle_mode
-syn keyword sourceVar           cl_crosshair_dynamic cl_crosshair_file cl_crosshair_green cl_crosshair_red
-syn keyword sourceVar           cl_crosshair_scale cl_crosshair_thickness cl_crosshairalpha cl_crosshaircolor
-syn keyword sourceVar           cl_customsounds cl_cycle_latch_tolerance cl_debug_entity cl_debug_player_perf
-syn keyword sourceVar           cl_debug_player_use cl_debugrumble cl_demoviewoverride cl_detail_avoid_force
-syn keyword sourceVar           cl_detail_avoid_radius cl_detail_avoid_recover_speed cl_detail_max_sway
-syn keyword sourceVar           cl_detaildist cl_detailfade cl_disablehtmlmotd cl_downloadfilter
-syn keyword sourceVar           cl_drawescaperoute cl_drawmonitors cl_drawprogressbar cl_dynamiccrosshair
-syn keyword sourceVar           cl_ejectbrass cl_elevator_physics cl_failremoteconnections cl_fastradial
-syn keyword sourceVar           cl_fasttempentcollision cl_flesh_sound_frequency cl_flipviewmodels
-syn keyword sourceVar           cl_footstep_fx cl_forcepreload cl_foundry_ShowEntityHighlights cl_fov
-syn keyword sourceVar           cl_glow_ability_b cl_glow_ability_colorblind_b cl_glow_ability_colorblind_g
+syn keyword sourceVar           cl_anglespeedkey cl_ask_bigpicture_controller_opt_out
+syn keyword sourceVar           cl_ask_blacklist_for_any_server cl_ask_blacklist_max_session_duration
+syn keyword sourceVar           cl_ask_blacklist_opt_out cl_ask_favorite_for_any_server
+syn keyword sourceVar           cl_ask_favorite_min_session_duration cl_ask_favorite_opt_out cl_autobuy
+syn keyword sourceVar           cl_autohelp cl_autoreload cl_autorezoom cl_autowepswitch cl_blobbyshadows
+syn keyword sourceVar           cl_blurClearAlpha cl_blurDebug cl_blurPasses cl_blurTapSize cl_bob
+syn keyword sourceVar           cl_bob_lower_amt cl_bobamt_lat cl_bobamt_vert cl_bobcycle cl_bobup
+syn keyword sourceVar           cl_boss_show_stun cl_burninggibs cl_buy_favorite_nowarn cl_buy_favorite_quiet
+syn keyword sourceVar           cl_c4dynamiclight cl_chat_active cl_chat_wipehistory cl_chatfilter_version
+syn keyword sourceVar           cl_chatfilters cl_clanid cl_class cl_clientmenudistancecap
+syn keyword sourceVar           cl_clientmenuscalefactor cl_cloud_settings cl_cmdrate cl_color_survivor
+syn keyword sourceVar           cl_color_zombie cl_colorblind cl_colorfastpath cl_consistencycheck_interval
+syn keyword sourceVar           cl_crosshair_alpha cl_crosshair_blue cl_crosshair_circle_alpha
+syn keyword sourceVar           cl_crosshair_circle_mode cl_crosshair_drawoutline cl_crosshair_dynamic
+syn keyword sourceVar           cl_crosshair_dynamic_maxdist_splitratio
+syn keyword sourceVar           cl_crosshair_dynamic_splitalpha_innermod
+syn keyword sourceVar           cl_crosshair_dynamic_splitalpha_outermod cl_crosshair_dynamic_splitdist
+syn keyword sourceVar           cl_crosshair_file cl_crosshair_green cl_crosshair_outlinethickness
+syn keyword sourceVar           cl_crosshair_red cl_crosshair_scale cl_crosshair_thickness cl_crosshairalpha
+syn keyword sourceVar           cl_crosshaircolor cl_crosshaircolor_b cl_crosshaircolor_g cl_crosshaircolor_r
+syn keyword sourceVar           cl_crosshairdot cl_crosshairgap cl_crosshairgap_useweaponvalue
+syn keyword sourceVar           cl_crosshairscale cl_crosshairsize cl_crosshairstyle cl_crosshairthickness
+syn keyword sourceVar           cl_crosshairusealpha cl_customsounds cl_cycle_latch_tolerance cl_debug_entity
+syn keyword sourceVar           cl_debug_player_perf cl_debug_player_use cl_debug_ugc_downloads cl_debugrumble
+syn keyword sourceVar           cl_decryptdata_key cl_decryptdata_key_pub cl_demoviewoverride
+syn keyword sourceVar           cl_detail_avoid_force cl_detail_avoid_radius cl_detail_avoid_recover_speed
+syn keyword sourceVar           cl_detail_max_sway cl_detaildist cl_detailfade cl_disablefreezecam
+syn keyword sourceVar           cl_disablehtmlmotd cl_dm_buyrandomweapons cl_download_demoplayer
+syn keyword sourceVar           cl_downloadfilter cl_drawescaperoute cl_drawmonitors cl_drawprogressbar
+syn keyword sourceVar           cl_dynamiccrosshair cl_ejectbrass cl_elevator_physics cl_failremoteconnections
+syn keyword sourceVar           cl_fastradial cl_fasttempentcollision cl_fixedcrosshairgap
+syn keyword sourceVar           cl_flesh_sound_frequency cl_flipviewmodels cl_footstep_fx cl_forcepreload
+syn keyword sourceVar           cl_foundry_ShowEntityHighlights cl_fov cl_freezecameffects_showholiday
+syn keyword sourceVar           cl_freezecampanel_position_dynamic cl_glow_ability_b
+syn keyword sourceVar           cl_glow_ability_colorblind_b cl_glow_ability_colorblind_g
 syn keyword sourceVar           cl_glow_ability_colorblind_r cl_glow_ability_g cl_glow_ability_r cl_glow_debug
 syn keyword sourceVar           cl_glow_ghost_infected_b cl_glow_ghost_infected_g cl_glow_ghost_infected_r
 syn keyword sourceVar           cl_glow_infected_b cl_glow_infected_g cl_glow_infected_r
@@ -440,20 +511,25 @@ syn keyword sourceVar           cl_glow_survivor_hurt_r cl_glow_survivor_r cl_gl
 syn keyword sourceVar           cl_glow_survivor_vomit_g cl_glow_survivor_vomit_r cl_glow_thirdstrike_item_b
 syn keyword sourceVar           cl_glow_thirdstrike_item_colorblind_b cl_glow_thirdstrike_item_colorblind_g
 syn keyword sourceVar           cl_glow_thirdstrike_item_colorblind_r cl_glow_thirdstrike_item_g
-syn keyword sourceVar           cl_glow_thirdstrike_item_r cl_hud_minmode cl_hudhint_sound cl_ideal_spec_mode
-syn keyword sourceVar           cl_idealpitchscale cl_ignore_vpk_assocation cl_impacteffects
-syn keyword sourceVar           cl_impacteffects_limit_exit cl_impacteffects_limit_general
+syn keyword sourceVar           cl_glow_thirdstrike_item_r cl_hideserverip cl_hud_background_alpha
+syn keyword sourceVar           cl_hud_bomb_under_radar cl_hud_color cl_hud_healthammo_style cl_hud_minmode
+syn keyword sourceVar           cl_hud_playercount_pos cl_hud_playercount_showcount cl_hud_radar_scale
+syn keyword sourceVar           cl_hudhint_sound cl_ideal_spec_mode cl_idealpitchscale cl_ignore_vpk_assocation
+syn keyword sourceVar           cl_impacteffects cl_impacteffects_limit_exit cl_impacteffects_limit_general
 syn keyword sourceVar           cl_impacteffects_limit_water cl_infected_animinsim cl_interp cl_interp_all
 syn keyword sourceVar           cl_interp_npcs cl_interp_ratio cl_interp_threadmodeticks cl_interpolate
-syn keyword sourceVar           cl_jiggle_bone_framerate_cutoff cl_jiggle_bone_sanity cl_lagcomp_errorcheck
-syn keyword sourceVar           cl_lagcompensation cl_language cl_left_hand_ik cl_localnetworkbackdoor
-syn keyword sourceVar           cl_logofile cl_menuduration cl_modelfastpath cl_mouseenable cl_mouselook
-syn keyword sourceVar           cl_mouselook2 cl_music_debug cl_muzzleflash_dlight_1st cl_names_debug
+syn keyword sourceVar           cl_inv_showdividerline cl_inventory_saved_filter cl_inventory_saved_sort
+syn keyword sourceVar           cl_jiggle_bone_framerate_cutoff cl_jiggle_bone_sanity cl_join_advertise
+syn keyword sourceVar           cl_lagcomp_errorcheck cl_lagcompensation cl_language cl_left_hand_ik
+syn keyword sourceVar           cl_loadout_colorweaponnames cl_localnetworkbackdoor cl_logofile
+syn keyword sourceVar           cl_mainmenu_show_datagraph cl_menuduration cl_minimal_rtt_shadows
+syn keyword sourceVar           cl_modelfastpath cl_mouseenable cl_mouselook cl_mouselook2 cl_music_debug
+syn keyword sourceVar           cl_mute_enemy_team cl_muzzleflash_dlight_1st cl_names_debug
 syn keyword sourceVar           cl_new_impact_effects cl_notifications_max_num_visible
 syn keyword sourceVar           cl_notifications_move_time cl_notifications_show_ingame cl_npc_speedmod_intime
-syn keyword sourceVar           cl_npc_speedmod_outtime cl_obj_fake_alert cl_observercrosshair
-syn keyword sourceVar           cl_particle_batch_mode cl_particle_fallback_base
-syn keyword sourceVar           cl_particle_fallback_multiplier cl_particle_max_count
+syn keyword sourceVar           cl_npc_speedmod_outtime cl_obj_fake_alert cl_obs_interp_enable
+syn keyword sourceVar           cl_observercrosshair cl_operation_premium_reminder_op06 cl_particle_batch_mode
+syn keyword sourceVar           cl_particle_fallback_base cl_particle_fallback_multiplier cl_particle_max_count
 syn keyword sourceVar           cl_particle_sim_fallback_base_multiplier cl_particle_sim_fallback_threshold_ms
 syn keyword sourceVar           cl_perf_wizard_enable cl_phys_block_dist cl_phys_block_fraction
 syn keyword sourceVar           cl_phys_maxticks cl_phys_props_enable cl_phys_props_max
@@ -464,143 +540,201 @@ syn keyword sourceVar           cl_pred_checkstuck cl_pred_doresetlatch cl_pred_
 syn keyword sourceVar           cl_predict cl_predictweapons cl_quick_join_panel_accel
 syn keyword sourceVar           cl_quick_join_panel_fakecount cl_quick_join_panel_tall cl_quick_join_scroll_max
 syn keyword sourceVar           cl_quick_join_scroll_offset cl_quick_join_scroll_rate
-syn keyword sourceVar           cl_quick_join_scroll_start cl_ragdoll_collide cl_ragdoll_default_scale
-syn keyword sourceVar           cl_ragdoll_fade_time cl_ragdoll_force_multiplier cl_ragdoll_forcefade
-syn keyword sourceVar           cl_ragdoll_limit cl_ragdoll_maxcount cl_ragdoll_maxcount_boss
-syn keyword sourceVar           cl_ragdoll_maxcount_generic cl_ragdoll_maxcount_gib cl_ragdoll_maxcount_special
-syn keyword sourceVar           cl_ragdoll_maxcount_survivor cl_ragdoll_physics_enable cl_ragdoll_reload
-syn keyword sourceVar           cl_ragdoll_version cl_rematch_vote_in_progress cl_resend
+syn keyword sourceVar           cl_quick_join_scroll_start cl_radar_always_centered cl_radar_icon_scale_min
+syn keyword sourceVar           cl_radar_rotate cl_radar_scale cl_radar_square_with_scoreboard
+syn keyword sourceVar           cl_ragdoll_collide cl_ragdoll_default_scale cl_ragdoll_fade_time
+syn keyword sourceVar           cl_ragdoll_force_multiplier cl_ragdoll_forcefade cl_ragdoll_limit
+syn keyword sourceVar           cl_ragdoll_maxcount cl_ragdoll_maxcount_boss cl_ragdoll_maxcount_generic
+syn keyword sourceVar           cl_ragdoll_maxcount_gib cl_ragdoll_maxcount_special
+syn keyword sourceVar           cl_ragdoll_maxcount_survivor cl_ragdoll_physics_enable
+syn keyword sourceVar           cl_ragdoll_pronecheck_distance cl_ragdoll_reload cl_ragdoll_version
+syn keyword sourceVar           cl_ragdoll_workaround_threshold cl_rebuy cl_rematch_vote_in_progress
+syn keyword sourceVar           cl_remove_old_ugc_downloads cl_resend cl_resend_timeout
 syn keyword sourceVar           cl_retire_low_priority_lights cl_ricochet_percent cl_ricochet_percent_shotgun
-syn keyword sourceVar           cl_rosetta_debug cl_rosetta_line_inner_radius cl_rosetta_line_outer_radius
-syn keyword sourceVar           cl_rumblescale cl_savescreenshotstosteam cl_scalecrosshair cl_sceneentity_debug
+syn keyword sourceVar           cl_righthand cl_rosetta_debug cl_rosetta_line_inner_radius
+syn keyword sourceVar           cl_rosetta_line_outer_radius cl_rumblescale cl_savescreenshotstosteam
+syn keyword sourceVar           cl_scalecrosshair cl_sceneentity_debug cl_scoreboard_mouse_enable_binding
 syn keyword sourceVar           cl_screenshotlocation cl_screenshotname cl_screenshotusertag cl_session
-syn keyword sourceVar           cl_show_bounds_errors cl_show_market_data_on_items cl_show_num_particle_systems
-syn keyword sourceVar           cl_show_path cl_show_splashes cl_show_tickets cl_showbackpackrarities
-syn keyword sourceVar           cl_showbattery cl_showcrit cl_showdemooverlay cl_showerror cl_showfps
-syn keyword sourceVar           cl_showhelp cl_showpausedimage cl_showpluginmessages cl_showpos cl_showtextmsg
-syn keyword sourceVar           cl_simdbones cl_simulate_no_quicktime cl_smoke_alpha cl_smoke_far cl_smoke_near
-syn keyword sourceVar           cl_smooth cl_smoothtime cl_software_cursor cl_soundfile cl_spec_carrieditems
-syn keyword sourceVar           cl_spec_mode cl_spoof_official_ip cl_starfield_diameter cl_starfield_distance
-syn keyword sourceVar           cl_steamscreenshots cl_survivor_light_brightness cl_survivor_light_cone
-syn keyword sourceVar           cl_survivor_light_debug cl_survivor_light_enable cl_survivor_light_offset_x
-syn keyword sourceVar           cl_survivor_light_offset_y cl_survivor_light_offset_z cl_survivor_light_radius
-syn keyword sourceVar           cl_survivor_light_rot cl_team cl_temp_health_fade cl_temp_health_pulse_incap
+syn keyword sourceVar           cl_show_bounds_errors cl_show_clan_in_death_notice cl_show_market_data_on_items
+syn keyword sourceVar           cl_show_num_particle_systems cl_show_path cl_show_splashes cl_show_tickets
+syn keyword sourceVar           cl_showbackpackrarities cl_showbattery cl_showcrit cl_showdemooverlay
+syn keyword sourceVar           cl_showerror cl_showfps cl_showhelp cl_showloadout cl_showpausedimage
+syn keyword sourceVar           cl_showpluginmessages cl_showpos cl_showtextmsg cl_simdbones
+syn keyword sourceVar           cl_simulate_no_quicktime cl_smoke_alpha cl_smoke_far cl_smoke_near cl_smooth
+syn keyword sourceVar           cl_smoothtime cl_software_cursor cl_soundfile cl_spec_carrieditems
+syn keyword sourceVar           cl_spec_follow_grenade_key cl_spec_mode cl_spec_show_bindings cl_spec_stats
+syn keyword sourceVar           cl_spewscriptintro cl_spoof_official_ip cl_starfield_diameter
+syn keyword sourceVar           cl_starfield_distance cl_steamscreenshots cl_survivor_light_brightness
+syn keyword sourceVar           cl_survivor_light_cone cl_survivor_light_debug cl_survivor_light_enable
+syn keyword sourceVar           cl_survivor_light_offset_x cl_survivor_light_offset_y
+syn keyword sourceVar           cl_survivor_light_offset_z cl_survivor_light_radius cl_survivor_light_rot
+syn keyword sourceVar           cl_team cl_teamid_overhead_name_alpha cl_teamid_overhead_name_fadetime
+syn keyword sourceVar           cl_teammate_colors_show cl_temp_health_fade cl_temp_health_pulse_incap
 syn keyword sourceVar           cl_temp_health_pulse_rate cl_thirdperson cl_threaded_bone_setup
 syn keyword sourceVar           cl_threaded_client_leaf_system cl_threaded_init cl_timeout cl_tlucfastpath
 syn keyword sourceVar           cl_tracer_whiz_distance cl_tracers cl_trading_show_requests_from
 syn keyword sourceVar           cl_training_completed_with_classes cl_transition_blur_fade_time cl_updaterate
-syn keyword sourceVar           cl_use_simd_bones cl_use_tournament_specgui cl_viewbob
+syn keyword sourceVar           cl_use_opens_buy_menu cl_use_simd_bones cl_use_tournament_specgui cl_viewbob
 syn keyword sourceVar           cl_viewbob_cyclerate_duck cl_viewbob_cyclerate_run cl_viewbob_cyclerate_walk
-syn keyword sourceVar           cl_viewbob_scale cl_viewbob_scale_duck cl_viewbob_up cl_viewmodelfovboomer
+syn keyword sourceVar           cl_viewbob_scale cl_viewbob_scale_duck cl_viewbob_up
+syn keyword sourceVar           cl_viewmodel_shift_left_amt cl_viewmodel_shift_right_amt cl_viewmodelfovboomer
 syn keyword sourceVar           cl_viewmodelfovhunter cl_viewmodelfovsmoker cl_viewmodelfovsurvivor
 syn keyword sourceVar           cl_viewmodelfovtank cl_viewmodelsclonedasworld cl_viewtarget_clamp
 syn keyword sourceVar           cl_voice_filter cl_vote_active cl_vote_ui_active_after_voting
 syn keyword sourceVar           cl_vote_ui_show_notification cl_witch_glow_angry_b cl_witch_glow_angry_g
 syn keyword sourceVar           cl_witch_glow_angry_r cl_witch_glow_idle_b cl_witch_glow_idle_g
 syn keyword sourceVar           cl_witch_glow_idle_r cl_witch_glow_range cl_wpn_sway_interp cl_yawspeed
-syn keyword sourceVar           clientport closecaption closedcaption commentary_firstrun con_drawnotify
-syn keyword sourceVar           con_enable con_filter_enable con_filter_text con_filter_text_out con_logfile
-syn keyword sourceVar           con_notifytime con_nprint_bgalpha con_nprint_bgborder con_timestamp con_trace
-syn keyword sourceVar           connect_lobby contimes coop cpu_level crosshair datacachesize dbg_demofile
-syn keyword sourceVar           deathmatch debug_materialmodifycontrol_client demo_avellimit demo_campaign_name
-syn keyword sourceVar           demo_connect_string demo_debug demo_fastforwardfinalspeed
-syn keyword sourceVar           demo_fastforwardramptime demo_fastforwardstartspeed demo_fov_override
-syn keyword sourceVar           demo_interplimit demo_interpolateview demo_legacy_rollback
+syn keyword sourceVar           clientport closecaption closedcaption closeonbuy collision_shake_amp
+syn keyword sourceVar           collision_shake_freq collision_shake_time combine_guard_spawn_health
+syn keyword sourceVar           combine_spawn_health commentary commentary_available commentary_firstrun
+syn keyword sourceVar           common_dps_spew common_dps_window con_drawnotify con_enable con_filter_enable
+syn keyword sourceVar           con_filter_text con_filter_text_out con_logfile con_notifytime
+syn keyword sourceVar           con_nprint_bgalpha con_nprint_bgborder con_timestamp con_trace connect_lobby
+syn keyword sourceVar           contimes coop cpu_level crosshair cs_enable_player_physics_box cursortimeout
+syn keyword sourceVar           curve_bias custom_bot_difficulty darkness_ignore_LOS_to_sources datacachesize
+syn keyword sourceVar           dbg_demofile dbg_spew_connected_players_level deathmatch debug_l4dverbose
+syn keyword sourceVar           debug_map_crc debug_materialmodifycontrol debug_materialmodifycontrol_client
+syn keyword sourceVar           debug_overlay_fullposition debug_physimpact debug_touchlinks decalfrequency
+syn keyword sourceVar           demo_avellimit demo_campaign_name demo_connect_string demo_debug
+syn keyword sourceVar           demo_fastforwardfinalspeed demo_fastforwardramptime demo_fastforwardstartspeed
+syn keyword sourceVar           demo_fov_override demo_interplimit demo_interpolateview demo_legacy_rollback
 syn keyword sourceVar           demo_pauseatservertick demo_quitafterplayback demo_ui_enable developer
-syn keyword sourceVar           disp_dynamic dlc_bypass_ownership_check download_debug dsp_automatic dsp_db_min
-syn keyword sourceVar           dsp_db_mixdrop dsp_enhance_stereo dsp_facingaway dsp_mix_max dsp_mix_min
-syn keyword sourceVar           dsp_player dsp_room dsp_slow_cpu dsp_spatial dsp_speaker dsp_vol_2ch
-syn keyword sourceVar           dsp_vol_4ch dsp_vol_5ch dsp_volume dsp_water dt_ShowPartialChangeEnts
-syn keyword sourceVar           dt_UsePartialChangeEnts dtwarning dtwatchclass dtwatchent dtwatchvar
-syn keyword sourceVar           econ_never_show_items_in_cart_count engine_no_focus_sleep english er_colwidth
-syn keyword sourceVar           er_graphwidthfrac er_maxname fast_fogvolume filesystem_buffer_size
-syn keyword sourceVar           filesystem_max_stdio_read filesystem_native filesystem_report_buffered_io
-syn keyword sourceVar           filesystem_unbuffered_io filesystem_use_overlapped_io
-syn keyword sourceVar           first_aid_kit_view_duration flex_rules flex_smooth fly_speed
-syn keyword sourceVar           fog_max_brightness_after_tonemapping fov_desired fov_desired2 fps_max
-syn keyword sourceVar           fps_max_splitscreen fs_convert fs_monitor_read_from_pack fs_report_sync_opens
-syn keyword sourceVar           fs_warning_mode func_break_max_pieces fx_drawimpactdebris fx_drawimpactdust
-syn keyword sourceVar           fx_drawmetalspark fx_glass_velocity_cap g15_update_msec g_Language
-syn keyword sourceVar           g_antlion_maxgibs g_cv_phys2_freeze_ragdolls g_ragdoll_fadespeed
-syn keyword sourceVar           g_ragdoll_lvfadespeed g_ragdoll_max_fps g_ragdoll_min_fps gameinstructor_enable
-syn keyword sourceVar           gameinstructor_start_sound_cooldown gameui_ingame_menu_active gameui_xbox
-syn keyword sourceVar           gl_amd_occlusion_workaround gl_clear gl_nvidia_occlusion_workaround
-syn keyword sourceVar           glow_outline_effect_enable gpu_level gpu_mem_level hap_HasDevice
-syn keyword sourceVar           hap_damagescale_game hap_melee_scale hap_noclip_avatar_scale hap_ui_vehicles
-syn keyword sourceVar           helping_hand_debug hl2_episodic host_ShowIPCCallCount host_flush_threshold
-syn keyword sourceVar           host_framerate host_limitlocal host_map host_profile host_showcachemiss
-syn keyword sourceVar           host_speeds host_syncfps host_thread_mode host_threaded_sound
-syn keyword sourceVar           host_timer_spin_ms host_timescale host_xbox_e3_restart hostip hostname hostport
+syn keyword sourceVar           director_afk_timeout director_allow_infected_bots director_min_start_players
+syn keyword sourceVar           director_report_screen_delay director_survival_setup_time
+syn keyword sourceVar           director_vs_convert_pills disp_dynamic dispcoll_drawplane displaysoundlist
+syn keyword sourceVar           dlc_bypass_ownership_check dog_debug dog_max_wait_time download_debug
+syn keyword sourceVar           dsp_automatic dsp_db_min dsp_db_mixdrop dsp_enhance_stereo dsp_facingaway
+syn keyword sourceVar           dsp_mix_max dsp_mix_min dsp_player dsp_room dsp_slow_cpu dsp_spatial
+syn keyword sourceVar           dsp_speaker dsp_vol_2ch dsp_vol_4ch dsp_vol_5ch dsp_volume dsp_water
+syn keyword sourceVar           dt_ShowPartialChangeEnts dt_UsePartialChangeEnts dt_dump_flattened_tables
+syn keyword sourceVar           dtwarning dtwatchclass dtwatchent dtwatchvar econ_highest_baseitem_seen
+syn keyword sourceVar           econ_never_show_items_in_cart_count elevator_movedelay enable_fast_math
+syn keyword sourceVar           engine_no_focus_sleep english ent_debugkeys ent_show_contexts
+syn keyword sourceVar           ent_steadystate_batchsize ent_steadystate_cooldown ent_steadystate_delay
+syn keyword sourceVar           ent_steadystate_enable ent_steadystate_interval er_colwidth er_graphwidthfrac
+syn keyword sourceVar           er_maxname fall_speed_fatal fall_speed_safe fast_fogvolume
+syn keyword sourceVar           ff_damage_bullet_penetration ff_damage_reduction_bullets
+syn keyword sourceVar           ff_damage_reduction_grenade ff_damage_reduction_grenade_self
+syn keyword sourceVar           ff_damage_reduction_other fidget_max_interval fidget_min_interval
+syn keyword sourceVar           filesystem_buffer_size filesystem_max_stdio_read filesystem_native
+syn keyword sourceVar           filesystem_report_buffered_io filesystem_unbuffered_io
+syn keyword sourceVar           filesystem_use_overlapped_io fire_absorbrate fire_dmgbase fire_dmginterval
+syn keyword sourceVar           fire_dmgscale fire_extabsorb fire_extscale fire_growthrate fire_heatscale
+syn keyword sourceVar           fire_incomingheatscale fire_maxabsorb first_aid_kit_view_duration
+syn keyword sourceVar           flex_expression flex_looktime flex_maxawaytime flex_maxplayertime
+syn keyword sourceVar           flex_minawaytime flex_minplayertime flex_rules flex_smooth flex_talk fly_speed
+syn keyword sourceVar           fog_max_brightness_after_tonemapping force_audio_english fov_desired
+syn keyword sourceVar           fov_desired2 fps_max fps_max_menu fps_max_splitscreen free_pass_peek_debug
+syn keyword sourceVar           fs_convert fs_monitor_read_from_pack fs_report_sync_opens fs_warning_mode
+syn keyword sourceVar           func_break_max_pieces func_break_reduction_factor func_breakdmg_bullet
+syn keyword sourceVar           func_breakdmg_club func_breakdmg_explosive fx_drawimpactdebris
+syn keyword sourceVar           fx_drawimpactdust fx_drawmetalspark fx_glass_velocity_cap g15_update_msec
+syn keyword sourceVar           g_Language g_ai_citizen_show_enemy g_antlion_cascade_push g_antlion_maxgibs
+syn keyword sourceVar           g_cv_phys2_freeze_ragdolls g_debug_antlion g_debug_antlion_worker
+syn keyword sourceVar           g_debug_antlionguard g_debug_combine_camera g_debug_cscanner g_debug_darkness
+syn keyword sourceVar           g_debug_doors g_debug_dropship g_debug_dynamicresupplies
+syn keyword sourceVar           g_debug_npc_vehicle_roles g_debug_physcannon g_debug_transitions g_debug_turret
+syn keyword sourceVar           g_debug_turret_ceiling g_debug_vortigaunt_aim g_helicopter_bomb_danger_radius
+syn keyword sourceVar           g_helicopter_bullrush_bomb_enemy_distance g_helicopter_bullrush_bomb_speed
+syn keyword sourceVar           g_helicopter_bullrush_bomb_time g_helicopter_bullrush_distance
+syn keyword sourceVar           g_helicopter_bullrush_mega_bomb_health g_helicopter_bullrush_shoot_height
+syn keyword sourceVar           g_helicopter_chargetime g_helicopter_idletime g_helicopter_maxfiringdist
+syn keyword sourceVar           g_ragdoll_fadespeed g_ragdoll_important_maxcount g_ragdoll_lvfadespeed
+syn keyword sourceVar           g_ragdoll_max_fps g_ragdoll_maxcount g_ragdoll_min_fps g_test_new_antlion_jump
+syn keyword sourceVar           game_type gameinstructor_enable gameinstructor_start_sound_cooldown
+syn keyword sourceVar           gameui_ingame_menu_active gameui_xbox gl_amd_occlusion_workaround gl_clear
+syn keyword sourceVar           gl_nvidia_occlusion_workaround glow_outline_effect_enable
+syn keyword sourceVar           gotv_theater_container gpu_level gpu_mem_level grenadelauncher_startpos_forward
+syn keyword sourceVar           grenadelauncher_startpos_right grenadelauncher_startpos_up
+syn keyword sourceVar           grenadelauncher_vel_up grenadelauncher_vel_variance hap_HasDevice
+syn keyword sourceVar           hap_airboat_gun_mag hap_damagescale_game hap_jeep_cannon_mag hap_melee_scale
+syn keyword sourceVar           hap_noclip_avatar_scale hap_turret_mag hap_ui_vehicles helping_hand_debug
+syn keyword sourceVar           hide_server hl2_darkness_flashlight_factor hl2_episodic hl2_normspeed
+syn keyword sourceVar           hl2_sprintspeed hl2_walkspeed host_ShowIPCCallCount host_flush_threshold
+syn keyword sourceVar           host_framerate host_info_show host_limitlocal host_map host_name_store
+syn keyword sourceVar           host_players_show host_profile host_rules_show host_showcachemiss host_speeds
+syn keyword sourceVar           host_syncfps host_thread_mode host_threaded_sound host_timer_spin_ms
+syn keyword sourceVar           host_timescale host_xbox_e3_restart hostfile hostip hostname hostport
 syn keyword sourceVar           hud_achievement_count hud_achievement_count_engineer
 syn keyword sourceVar           hud_achievement_description hud_achievement_glowtime hud_achievement_tracker
-syn keyword sourceVar           hud_autoaim_method hud_autoaim_scale_icon hud_autoreloadscript
-syn keyword sourceVar           hud_classautokill hud_combattext hud_combattext_batching hud_combattext_healing
-syn keyword sourceVar           hud_deathnotice_bots hud_deathnotice_threats hud_deathnotice_time
-syn keyword sourceVar           hud_dmgrecord_persisttime_deaths hud_dmgrecord_persisttime_other
-syn keyword sourceVar           hud_draw_active_reticle hud_draw_fixed_reticle hud_drawhistory_time
-syn keyword sourceVar           hud_escort_interp hud_escort_test_progress hud_escort_test_speed hud_fastswitch
-syn keyword sourceVar           hud_freezecamhide hud_lowammowarning_maxposadjust hud_lowammowarning_threshold
-syn keyword sourceVar           hud_magnetism hud_medicautocallers hud_medicautocallersthreshold
-syn keyword sourceVar           hud_medichealtargetmarker hud_quickinfo hud_reticle_alpha_speed
-syn keyword sourceVar           hud_reticle_maxalpha hud_reticle_minalpha hud_reticle_scale hud_saytext_time
-syn keyword sourceVar           hud_scavenge_timer_warning_range hud_showemptyweaponslots hud_showtargetid
-syn keyword sourceVar           hud_survival_target_time_range hud_takesshots hud_targetid_health
-syn keyword sourceVar           hud_targetid_name_height hud_targetid_name_height_boomer
-syn keyword sourceVar           hud_targetid_name_height_hunter hud_targetid_name_height_smoker
-syn keyword sourceVar           hud_targetid_name_height_tank hud_targetid_player_view_cone
-syn keyword sourceVar           hud_targetid_pz_ss_view_cone hud_targetid_skill hud_targetid_upgrades
-syn keyword sourceVar           hud_winpanel_scoreanim_chingdelay hud_winpanel_scoreanim_effectdelay
-syn keyword sourceVar           hud_winpanel_scoreanim_effectdelay_mult hud_winpanel_scoreanim_scoredelay
-syn keyword sourceVar           hud_winpanel_tiebreak_anim hud_winpanel_tiebreak_intro
-syn keyword sourceVar           hud_winpanel_tiebreak_outro hud_zombieteam hud_zombieteam_showself
-syn keyword sourceVar           ifm_steadycam_2ddragconstant ifm_steadycam_2dspringconstant
-syn keyword sourceVar           ifm_steadycam_armspeed ifm_steadycam_mousefactor ifm_steadycam_mousepower
-syn keyword sourceVar           ifm_steadycam_noise ifm_steadycam_rotatedamp ifm_steadycam_rotaterate
-syn keyword sourceVar           ifm_steadycam_sensitivity ifm_steadycam_zoomdamp ifm_steadycam_zoomspeed
-syn keyword sourceVar           in_usekeyboardsampletime inferno_dlights inferno_entity_flame_scale
-syn keyword sourceVar           inferno_fire ip joy_accel_filter joy_accelmax joy_accelscale joy_advanced
-syn keyword sourceVar           joy_advaxisr joy_advaxisu joy_advaxisv joy_advaxisx joy_advaxisy joy_advaxisz
-syn keyword sourceVar           joy_autoaimdampen joy_autoaimdampenrange joy_autosprint
-syn keyword sourceVar           joy_axisbutton_threshold joy_axis_deadzone joy_cfg_preset joy_cfg_preset2
-syn keyword sourceVar           joy_circle_correct joy_diagonalpov joy_display_input joy_forwardsensitivity
-syn keyword sourceVar           joy_forwardthreshold joy_gamecontroller_config joy_inverty joy_inverty2
-syn keyword sourceVar           joy_inverty_default joy_legacy joy_legacy2 joy_lookspin_default joy_lowend
-syn keyword sourceVar           joy_lowmap joy_movement_stick joy_movement_stick2 joy_movement_stick_default
-syn keyword sourceVar           joy_name joy_pegged joy_pitchsensitivity joy_pitchsensitivity2
+syn keyword sourceVar           hud_airboathint_numentries hud_autoaim_method hud_autoaim_scale_icon
+syn keyword sourceVar           hud_autoreloadscript hud_classautokill hud_combattext hud_combattext_batching
+syn keyword sourceVar           hud_combattext_healing hud_deathnotice_bots hud_deathnotice_threats
+syn keyword sourceVar           hud_deathnotice_time hud_dmgrecord_persisttime_deaths
+syn keyword sourceVar           hud_dmgrecord_persisttime_other hud_draw_active_reticle hud_draw_fixed_reticle
+syn keyword sourceVar           hud_drawhistory_time hud_escort_interp hud_escort_test_progress
+syn keyword sourceVar           hud_escort_test_speed hud_fastswitch hud_freezecamhide hud_jeephint_numentries
+syn keyword sourceVar           hud_lowammowarning_maxposadjust hud_lowammowarning_threshold hud_magnetism
+syn keyword sourceVar           hud_medicautocallers hud_medicautocallersthreshold hud_medichealtargetmarker
+syn keyword sourceVar           hud_quickinfo hud_reticle_alpha_speed hud_reticle_maxalpha hud_reticle_minalpha
+syn keyword sourceVar           hud_reticle_scale hud_saytext_time hud_scaling hud_scavenge_timer_warning_range
+syn keyword sourceVar           hud_showemptyweaponslots hud_showtargetid hud_survival_target_time_range
+syn keyword sourceVar           hud_takesshots hud_targetid_health hud_targetid_name_height
+syn keyword sourceVar           hud_targetid_name_height_boomer hud_targetid_name_height_hunter
+syn keyword sourceVar           hud_targetid_name_height_smoker hud_targetid_name_height_tank
+syn keyword sourceVar           hud_targetid_player_view_cone hud_targetid_pz_ss_view_cone hud_targetid_skill
+syn keyword sourceVar           hud_targetid_upgrades hud_winpanel_scoreanim_chingdelay
+syn keyword sourceVar           hud_winpanel_scoreanim_effectdelay hud_winpanel_scoreanim_effectdelay_mult
+syn keyword sourceVar           hud_winpanel_scoreanim_scoredelay hud_winpanel_tiebreak_anim
+syn keyword sourceVar           hud_winpanel_tiebreak_intro hud_winpanel_tiebreak_outro hud_zombieteam
+syn keyword sourceVar           hud_zombieteam_showself ifm_steadycam_2ddragconstant
+syn keyword sourceVar           ifm_steadycam_2dspringconstant ifm_steadycam_armspeed ifm_steadycam_mousefactor
+syn keyword sourceVar           ifm_steadycam_mousepower ifm_steadycam_noise ifm_steadycam_rotatedamp
+syn keyword sourceVar           ifm_steadycam_rotaterate ifm_steadycam_sensitivity ifm_steadycam_zoomdamp
+syn keyword sourceVar           ifm_steadycam_zoomspeed in_usekeyboardsampletime inferno_dlights
+syn keyword sourceVar           inferno_entity_flame_scale inferno_fire inferno_max_trace_per_tick ip ip_steam
+syn keyword sourceVar           ip_tv item_enable_content_streaming item_quality_chance_common
+syn keyword sourceVar           item_quality_chance_rare item_quality_chance_unique joy_accel_filter
+syn keyword sourceVar           joy_accelmax joy_accelscale joy_accelscalepoly joy_advanced joy_advaxisr
+syn keyword sourceVar           joy_advaxisu joy_advaxisv joy_advaxisx joy_advaxisy joy_advaxisz
+syn keyword sourceVar           joy_autoAimDampenMethod joy_autoaimdampen joy_autoaimdampenrange joy_autosprint
+syn keyword sourceVar           joy_axis_deadzone joy_axisbutton_threshold joy_cfg_preset joy_cfg_preset2
+syn keyword sourceVar           joy_circle_correct joy_curvepoint_1 joy_curvepoint_2 joy_curvepoint_3
+syn keyword sourceVar           joy_curvepoint_4 joy_curvepoint_end joy_diagonalpov joy_display_input
+syn keyword sourceVar           joy_forwardsensitivity joy_forwardthreshold joy_gamecontroller_config joy_gamma
+syn keyword sourceVar           joy_inverty joy_inverty2 joy_inverty_default joy_legacy joy_legacy2
+syn keyword sourceVar           joy_lookspin_default joy_lowend joy_lowend_linear joy_lowmap joy_movement_stick
+syn keyword sourceVar           joy_movement_stick2 joy_movement_stick_default joy_name joy_no_accel_jump
+syn keyword sourceVar           joy_pegged joy_pitchsensitivity joy_pitchsensitivity2
 syn keyword sourceVar           joy_pitchsensitivity_default joy_pitchthreshold joy_response_look
-syn keyword sourceVar           joy_response_move joy_response_move_vehicle joy_sensitive_step0
-syn keyword sourceVar           joy_sensitive_step1 joy_sensitive_step2 joy_sidesensitivity joy_sidethreshold
-syn keyword sourceVar           joy_variable_frametime joy_vehicle_turn_lowend joy_vehicle_turn_lowmap
-syn keyword sourceVar           joy_virtual_peg joy_wingmanwarrior_centerhack joy_wingmanwarrior_turnhack
-syn keyword sourceVar           joy_xcontroller_cfg_loaded joy_xcontroller_found joy_yawsensitivity
-syn keyword sourceVar           joy_yawsensitivity2 joy_yawsensitivity_default joy_yawthreshold joystick
-syn keyword sourceVar           joystick_force_disabled joystick_force_disabled_set jpeg_quality
-syn keyword sourceVar           ladder_autocenter ladder_console_controls ladder_horizon
+syn keyword sourceVar           joy_response_look_pitch joy_response_move joy_response_move_vehicle
+syn keyword sourceVar           joy_sensitive_step0 joy_sensitive_step1 joy_sensitive_step2 joy_sidesensitivity
+syn keyword sourceVar           joy_sidethreshold joy_variable_frametime joy_vehicle_turn_lowend
+syn keyword sourceVar           joy_vehicle_turn_lowmap joy_virtual_peg joy_wingmanwarrior_centerhack
+syn keyword sourceVar           joy_wingmanwarrior_turnhack joy_xcontroller_cfg_loaded joy_xcontroller_found
+syn keyword sourceVar           joy_yawsensitivity joy_yawsensitivity2 joy_yawsensitivity_default
+syn keyword sourceVar           joy_yawthreshold joystick joystick_force_disabled joystick_force_disabled_set
+syn keyword sourceVar           joystick_force_disabled_set_from_options jpeg_quality l4d1_survivor_give_item
+syn keyword sourceVar           l4d_show_incapupdate l4d_show_weaponequip l4d_stats_nogameplaycheck
+syn keyword sourceVar           l4d_stats_track ladder_autocenter ladder_console_controls ladder_horizon
 syn keyword sourceVar           leaderboard_force_rank_show_interval loader_defer_non_critical_jobs
-syn keyword sourceVar           loader_spew_info loader_spew_info_ex loader_throttle_io localplayer_visionflags
-syn keyword sourceVar           locator_fade_time locator_lerp_rest locator_lerp_speed locator_lerp_time
-syn keyword sourceVar           locator_pulse_time lod_TransitionDist lookspring lookstrafe lower_body
-syn keyword sourceVar           lower_body_hulk_layers m_customaccel m_customaccel_exponent m_customaccel_max
+syn keyword sourceVar           loader_spew_info loader_spew_info_ex loader_throttle_io lobby_default_access
+syn keyword sourceVar           lobby_voice_chat_enabled localplayer_visionflags locator_fade_time
+syn keyword sourceVar           locator_lerp_rest locator_lerp_speed locator_lerp_time locator_pulse_time
+syn keyword sourceVar           lockMoveControllerRet lod_TransitionDist log_verbose_enable
+syn keyword sourceVar           log_verbose_interval lookspring lookstrafe lower_body lower_body_hulk_layers
+syn keyword sourceVar           lservercfgfile m_customaccel m_customaccel_exponent m_customaccel_max
 syn keyword sourceVar           m_customaccel_scale m_filter m_filter2 m_forward m_mouseaccel1 m_mouseaccel2
 syn keyword sourceVar           m_mousespeed m_pitch m_pitch2 m_rawinput m_side m_yaw map_noareas
-syn keyword sourceVar           mat_360_aa_override mat_aaquality mat_alphacoverage mat_antialias
-syn keyword sourceVar           mat_autoexposure_max mat_autoexposure_min mat_bloom_scalefactor_scalar
-syn keyword sourceVar           mat_bloomscale mat_bufferprimitives mat_bumpmap mat_clipz
-syn keyword sourceVar           mat_colcorrection_disableentities mat_colcorrection_editor mat_color_projection
-syn keyword sourceVar           mat_colorcorrection mat_compressedtextures mat_debug_postprocessing_effects
-syn keyword sourceVar           mat_debugdepth mat_debugdepthmode mat_debugdepthval mat_debugdepthvalmax
-syn keyword sourceVar           mat_depthfeather_enable mat_diffuse mat_disable_bloom mat_disable_d3d9ex
-syn keyword sourceVar           mat_disable_fancy_blending mat_disable_lightwarp mat_disable_ps_patch
-syn keyword sourceVar           mat_disablehwmorph mat_dof_enabled mat_dof_far_blur_depth
-syn keyword sourceVar           mat_dof_far_blur_radius mat_dof_far_focus_depth mat_dof_max_blur_radius
-syn keyword sourceVar           mat_dof_near_blur_depth mat_dof_near_blur_radius mat_dof_near_focus_depth
-syn keyword sourceVar           mat_dof_override mat_dof_quality mat_drawTexture mat_drawTextureScale
-syn keyword sourceVar           mat_drawTitleSafe mat_dump_rts mat_dxlevel mat_envmapsize mat_envmaptgasize
-syn keyword sourceVar           mat_excludetextures mat_fastspecular mat_filterlightmaps mat_filtertextures
-syn keyword sourceVar           mat_force_ps_patch mat_force_vertexfog mat_forceaniso mat_forcehardwaresync
-syn keyword sourceVar           mat_forcemanagedtextureintohardware mat_framebuffercopyoverlaysize
-syn keyword sourceVar           mat_grain_enable mat_grain_scale_override mat_hdr_level
-syn keyword sourceVar           mat_hdr_manual_tonemap_rate mat_levelflush mat_lightmap_pfms
+syn keyword sourceVar           mapcycledisabled mapcyclefile mapoverview_allow_client_draw
+syn keyword sourceVar           mapoverview_allow_grid_usage mat_360_aa_override mat_aaquality
+syn keyword sourceVar           mat_alphacoverage mat_antialias mat_autoexposure_max mat_autoexposure_min
+syn keyword sourceVar           mat_bloom_scalefactor_scalar mat_bloomscale mat_bufferprimitives mat_bumpmap
+syn keyword sourceVar           mat_clipz mat_colcorrection_disableentities mat_colcorrection_editor
+syn keyword sourceVar           mat_color_projection mat_colorcorrection mat_compressedtextures
+syn keyword sourceVar           mat_debug_postprocessing_effects mat_debugdepth mat_debugdepthmode
+syn keyword sourceVar           mat_debugdepthval mat_debugdepthvalmax mat_depthfeather_enable mat_diffuse
+syn keyword sourceVar           mat_disable_bloom mat_disable_d3d9ex mat_disable_fancy_blending
+syn keyword sourceVar           mat_disable_lightwarp mat_disable_ps_patch mat_disablehwmorph mat_dof_enabled
+syn keyword sourceVar           mat_dof_far_blur_depth mat_dof_far_blur_radius mat_dof_far_focus_depth
+syn keyword sourceVar           mat_dof_max_blur_radius mat_dof_near_blur_depth mat_dof_near_blur_radius
+syn keyword sourceVar           mat_dof_near_focus_depth mat_dof_override mat_dof_quality mat_drawTexture
+syn keyword sourceVar           mat_drawTextureScale mat_drawTitleSafe mat_dump_rts mat_dxlevel mat_envmapsize
+syn keyword sourceVar           mat_envmaptgasize mat_excludetextures mat_fastspecular mat_filterlightmaps
+syn keyword sourceVar           mat_filtertextures mat_force_ps_patch mat_force_vertexfog mat_forceaniso
+syn keyword sourceVar           mat_forcehardwaresync mat_forcemanagedtextureintohardware
+syn keyword sourceVar           mat_framebuffercopyoverlaysize mat_grain_enable mat_grain_scale_override
+syn keyword sourceVar           mat_hdr_level mat_hdr_manual_tonemap_rate mat_levelflush mat_lightmap_pfms
 syn keyword sourceVar           mat_local_contrast_edge_scale_override mat_local_contrast_enable
 syn keyword sourceVar           mat_local_contrast_midtone_mask_override mat_local_contrast_scale_override
 syn keyword sourceVar           mat_local_contrast_vignette_end_override
@@ -628,10 +762,13 @@ syn keyword sourceVar           mat_texture_list_all_frames mat_texture_list_con
 syn keyword sourceVar           mat_texture_list_exclude_editing mat_texture_list_view
 syn keyword sourceVar           mat_tonemapping_occlusion_use_stencil mat_treesway mat_trilinear
 syn keyword sourceVar           mat_triplebuffered mat_use_compressed_hdr_textures mat_vignette_enable
-syn keyword sourceVar           mat_vsync mat_wateroverlaysize matchmakingport mem_dumpstats mem_force_flush
-syn keyword sourceVar           mem_force_flush_section mem_level mem_max_heapsize mem_max_heapsize_dedicated
-syn keyword sourceVar           mem_min_heapsize mem_periodicdumps mem_test_each_frame mem_test_every_n_seconds
-syn keyword sourceVar           mem_test_quiet metamod_version miniprofiler_dump mm_basedir
+syn keyword sourceVar           mat_vsync mat_wateroverlaysize matchmakingport mc_accel_band_size
+syn keyword sourceVar           mc_dead_zone_radius mc_max_pitchrate mc_max_yawrate mem_dumpstats
+syn keyword sourceVar           mem_force_flush mem_force_flush_section mem_level mem_max_heapsize
+syn keyword sourceVar           mem_max_heapsize_dedicated mem_min_heapsize mem_periodicdumps
+syn keyword sourceVar           mem_test_each_frame mem_test_every_n_seconds mem_test_quiet metamod_version
+syn keyword sourceVar           metropolice_charge metropolice_chase_use_follow metropolice_move_and_melee
+syn keyword sourceVar           miniprofiler_dump mm_basedir mm_csgo_community_search_players_min
 syn keyword sourceVar           mm_datacenter_delay_mount_frames mm_datacenter_query_delay
 syn keyword sourceVar           mm_datacenter_report_version mm_datacenter_retry_infochunks_attempts
 syn keyword sourceVar           mm_datacenter_retry_interval mm_datacenter_update_interval mm_dedicated_allow
@@ -650,48 +787,124 @@ syn keyword sourceVar           mm_server_search_inet_ping_timeout mm_server_sea
 syn keyword sourceVar           mm_server_search_lan_ping_duration mm_server_search_lan_ping_interval
 syn keyword sourceVar           mm_server_search_lan_ports mm_server_search_server_lifetime
 syn keyword sourceVar           mm_server_search_update_interval mm_session_search_num_results
-syn keyword sourceVar           mm_session_search_ping_limit mm_session_search_qos_timeout
-syn keyword sourceVar           mm_session_sys_delay_create mm_session_sys_timeout mm_teamsearch_errortime
-syn keyword sourceVar           mm_teamsearch_nostart mm_tu_string mod_check_vcollide mod_dont_load_vertices
-syn keyword sourceVar           mod_dynamicloadspew mod_dynamicunloadtex mod_dynamicunloadtime mod_forcedata
-syn keyword sourceVar           mod_forcetouchdata mod_load_anims_async mod_load_fakestall mod_load_mesh_async
-syn keyword sourceVar           mod_load_showstall mod_load_vcollide_async mod_lock_mdls_on_load
-syn keyword sourceVar           mod_lock_meshes_on_load mod_test_mesh_not_available mod_test_not_available
-syn keyword sourceVar           mod_test_verts_not_available mod_touchalldata mod_trace_load morph_debug
-syn keyword sourceVar           morph_path motd_intros mp_allowspectators mp_blockstyle mp_bonusroundtime
-syn keyword sourceVar           mp_buytime mp_capdeteriorate_time mp_capstyle mp_chattime mp_decals
-syn keyword sourceVar           mp_disable_respawn_times mp_facefronttime mp_fadetoblack mp_feetyawrate
-syn keyword sourceVar           mp_feetyawrate_max mp_forceautoteam mp_forcecamera mp_friendlyfire mp_gamemode
-syn keyword sourceVar           mp_ik mp_maxrounds mp_playerid mp_playerid_delay mp_playerid_hold
-syn keyword sourceVar           mp_respawnwavetime mp_slammoveyaw mp_stalemate_meleeonly
-syn keyword sourceVar           mp_teams_unbalance_limit mp_timelimit mp_tournament mp_usehwmmodels
-syn keyword sourceVar           mp_usehwmvcds mp_weapon_ak47_price mp_weapon_aug_price mp_weapon_awp_price
-syn keyword sourceVar           mp_weapon_deagle_price mp_weapon_elite_price mp_weapon_famas_price
-syn keyword sourceVar           mp_weapon_fiveseven_price mp_weapon_g3sg1_price mp_weapon_galil_price
-syn keyword sourceVar           mp_weapon_glock_price mp_weapon_m249_price mp_weapon_m3_price
-syn keyword sourceVar           mp_weapon_m4a1_price mp_weapon_mac10_price mp_weapon_mp5navy_price
-syn keyword sourceVar           mp_weapon_p228_price mp_weapon_p90_price mp_weapon_scout_price
-syn keyword sourceVar           mp_weapon_sg550_price mp_weapon_sg552_price mp_weapon_tmp_price
-syn keyword sourceVar           mp_weapon_ump45_price mp_weapon_usp_price mp_weapon_xm1014_price mp_winlimit
+syn keyword sourceVar           mm_session_search_ping_buckets mm_session_search_ping_limit
+syn keyword sourceVar           mm_session_search_qos_timeout mm_session_sys_delay_create
+syn keyword sourceVar           mm_session_sys_timeout mm_teamsearch_errortime mm_teamsearch_nostart
+syn keyword sourceVar           mm_tu_string mod_check_vcollide mod_dont_load_vertices mod_dynamicloadspew
+syn keyword sourceVar           mod_dynamicunloadtex mod_dynamicunloadtime mod_forcedata mod_forcetouchdata
+syn keyword sourceVar           mod_load_anims_async mod_load_fakestall mod_load_mesh_async mod_load_showstall
+syn keyword sourceVar           mod_load_vcollide_async mod_lock_mdls_on_load mod_lock_meshes_on_load
+syn keyword sourceVar           mod_test_mesh_not_available mod_test_not_available mod_test_verts_not_available
+syn keyword sourceVar           mod_touchalldata mod_trace_load monk_headshot_freq morph_debug morph_path
+syn keyword sourceVar           mortar_visualize motd_enabled motd_intros motdfile motdfile_text
+syn keyword sourceVar           mp_afterroundmoney mp_allowNPCs mp_allowspectators mp_autocrosshair mp_autokick
+syn keyword sourceVar           mp_autoteambalance mp_backup_restore_load_autopause mp_backup_round_auto
+syn keyword sourceVar           mp_backup_round_file mp_backup_round_file_last mp_backup_round_file_pattern
+syn keyword sourceVar           mp_blockstyle mp_bonusroundtime mp_buy_allow_grenades mp_buy_anywhere
+syn keyword sourceVar           mp_buy_during_immunity mp_buytime mp_c4timer mp_capdeteriorate_time mp_capstyle
+syn keyword sourceVar           mp_chattime mp_clan_ready_signal mp_clan_readyrestart
+syn keyword sourceVar           mp_competitive_endofmatch_extra_time mp_ct_default_grenades mp_ct_default_melee
+syn keyword sourceVar           mp_ct_default_primary mp_ct_default_secondary mp_death_drop_c4
+syn keyword sourceVar           mp_death_drop_defuser mp_death_drop_grenade mp_death_drop_gun
+syn keyword sourceVar           mp_deathcam_skippable mp_decals mp_default_team_winner_no_objective
+syn keyword sourceVar           mp_defaultteam mp_defuser_allocation mp_disable_respawn_times
+syn keyword sourceVar           mp_display_kill_assists mp_dm_bonus_length_max mp_dm_bonus_length_min
+syn keyword sourceVar           mp_dm_bonus_percent mp_dm_time_between_bonus_max mp_dm_time_between_bonus_min
+syn keyword sourceVar           mp_do_warmup_offine mp_do_warmup_period mp_drop_knife_enable
+syn keyword sourceVar           mp_enableroundwaittime mp_endmatch_votenextleveltime mp_endmatch_votenextmap
+syn keyword sourceVar           mp_endmatch_votenextmap_keepcurrent mp_facefronttime mp_fadetoblack
+syn keyword sourceVar           mp_falldamage mp_feetyawrate mp_feetyawrate_max mp_flashlight mp_footsteps
+syn keyword sourceVar           mp_force_assign_teams mp_force_pick_time mp_forceautoteam mp_forcecamera
+syn keyword sourceVar           mp_forcerespawn mp_fraglimit mp_free_armor mp_freezetime mp_friendlyfire
+syn keyword sourceVar           mp_gamemode mp_ggprogressive_random_weapon_kills_needed
+syn keyword sourceVar           mp_ggprogressive_round_restart_delay mp_ggprogressive_use_random_weapons
+syn keyword sourceVar           mp_ggtr_bomb_defuse_bonus mp_ggtr_bomb_detonation_bonus
+syn keyword sourceVar           mp_ggtr_bomb_pts_for_flash mp_ggtr_bomb_pts_for_he mp_ggtr_bomb_pts_for_molotov
+syn keyword sourceVar           mp_ggtr_bomb_pts_for_upgrade mp_ggtr_bomb_respawn_delay
+syn keyword sourceVar           mp_ggtr_end_round_kill_bonus mp_ggtr_halftime_delay
+syn keyword sourceVar           mp_ggtr_last_weapon_kill_ends_half mp_ggtr_num_rounds_autoprogress
+syn keyword sourceVar           mp_give_player_c4 mp_guardian_bot_money_per_wave mp_guardian_player_dist_max
+syn keyword sourceVar           mp_guardian_player_dist_min mp_guardian_special_kills_needed
+syn keyword sourceVar           mp_guardian_special_weapon_needed mp_halftime mp_halftime_duration
+syn keyword sourceVar           mp_halftime_pausetimer mp_highlander mp_holiday_nogifts mp_hostages_max
+syn keyword sourceVar           mp_hostages_rescuetime mp_hostages_run_speed_modifier
+syn keyword sourceVar           mp_hostages_spawn_farthest mp_hostages_spawn_force_positions
+syn keyword sourceVar           mp_hostages_spawn_same_every_round mp_hostages_takedamage
+syn keyword sourceVar           mp_humans_must_join_team mp_humanteam mp_idledealmethod mp_idlemaxtime
+syn keyword sourceVar           mp_ignore_round_win_conditions mp_ik mp_join_grace_time mp_limitteams
+syn keyword sourceVar           mp_logdetail mp_match_can_clinch mp_match_end_at_timelimit
+syn keyword sourceVar           mp_match_end_changelevel mp_match_end_restart mp_match_restart_delay
+syn keyword sourceVar           mp_maxmoney mp_maxrounds mp_molotovusedelay mp_overtime_enable
+syn keyword sourceVar           mp_overtime_halftime_pausetimer mp_overtime_maxrounds mp_overtime_startmoney
+syn keyword sourceVar           mp_playercashawards mp_playerid mp_playerid_delay mp_playerid_hold
+syn keyword sourceVar           mp_radar_showall mp_randomspawn mp_randomspawn_in_bombsite mp_randomspawn_los
+syn keyword sourceVar           mp_respawn_immunitytime mp_respawn_on_death_ct mp_respawn_on_death_t
+syn keyword sourceVar           mp_respawnwavetime mp_respawnwavetime_ct mp_respawnwavetime_t mp_restartgame
+syn keyword sourceVar           mp_restartgame_immediate mp_restartround mp_round_restart_delay mp_roundlimit
+syn keyword sourceVar           mp_roundtime mp_roundtime_defuse mp_roundtime_hostage mp_scrambleteams_auto
+syn keyword sourceVar           mp_scrambleteams_auto_windifference mp_show_voice_icons mp_slammoveyaw
+syn keyword sourceVar           mp_solid_teammates mp_spawnprotectiontime mp_spec_swapplayersides
+syn keyword sourceVar           mp_spectators_max mp_stalemate_at_timelimit mp_stalemate_enable
+syn keyword sourceVar           mp_stalemate_meleeonly mp_stalemate_timelimit mp_startmoney
+syn keyword sourceVar           mp_t_default_grenades mp_t_default_melee mp_t_default_primary
+syn keyword sourceVar           mp_t_default_secondary mp_td_dmgtokick mp_td_dmgtowarn mp_td_spawndmgthreshold
+syn keyword sourceVar           mp_teamcashawards mp_teamflag_1 mp_teamflag_2 mp_teamlist mp_teamlogo_1
+syn keyword sourceVar           mp_teamlogo_2 mp_teammatchstat_1 mp_teammatchstat_2 mp_teammatchstat_cycletime
+syn keyword sourceVar           mp_teammatchstat_holdtime mp_teammatchstat_txt mp_teammates_are_enemies
+syn keyword sourceVar           mp_teamname_1 mp_teamname_2 mp_teamoverride mp_teamplay mp_teamprediction_pct
+syn keyword sourceVar           mp_teamprediction_txt mp_teams_unbalance_limit mp_time_between_capscoring
+syn keyword sourceVar           mp_timelimit mp_tkpunish mp_tournament mp_tournament_allow_non_admin_restart
+syn keyword sourceVar           mp_tournament_blueteamname mp_tournament_redteamname mp_tournament_stopwatch
+syn keyword sourceVar           mp_tournament_whitelist mp_use_respawn_waves mp_usehwmmodels mp_usehwmvcds
+syn keyword sourceVar           mp_verbose_changelevel_spew mp_waitingforplayers_cancel
+syn keyword sourceVar           mp_waitingforplayers_restart mp_waitingforplayers_time mp_warmup_pausetimer
+syn keyword sourceVar           mp_warmuptime mp_warmuptime_all_players_connected mp_weapon_ak47_price
+syn keyword sourceVar           mp_weapon_aug_price mp_weapon_awp_price mp_weapon_deagle_price
+syn keyword sourceVar           mp_weapon_elite_price mp_weapon_famas_price mp_weapon_fiveseven_price
+syn keyword sourceVar           mp_weapon_g3sg1_price mp_weapon_galil_price mp_weapon_glock_price
+syn keyword sourceVar           mp_weapon_m249_price mp_weapon_m3_price mp_weapon_m4a1_price
+syn keyword sourceVar           mp_weapon_mac10_price mp_weapon_mp5navy_price mp_weapon_p228_price
+syn keyword sourceVar           mp_weapon_p90_price mp_weapon_scout_price mp_weapon_sg550_price
+syn keyword sourceVar           mp_weapon_sg552_price mp_weapon_tmp_price mp_weapon_ump45_price
+syn keyword sourceVar           mp_weapon_usp_price mp_weapon_xm1014_price mp_weapons_allow_map_placed
+syn keyword sourceVar           mp_weapons_allow_randomize mp_weapons_allow_zeus mp_weapons_glow_on_ground
+syn keyword sourceVar           mp_weaponstay mp_win_panel_display_time mp_windifference mp_windifference_min
+syn keyword sourceVar           mp_winlimit music_bank_max_duration music_bank_min_duration
 syn keyword sourceVar           music_master_latency_report music_master_spew muzzleflash_light name name2
-syn keyword sourceVar           nb_shadow_blobby_dist nb_shadow_cull_dist nb_shadow_dist net_allow_multicast
-syn keyword sourceVar           net_allow_syslink net_chokeloop net_compresspackets net_compresspackets_minsize
-syn keyword sourceVar           net_compressvoice net_drawslider net_dumptest net_graph net_graphheight
-syn keyword sourceVar           net_graphmsecs net_graphpos net_graphproportionalfont net_graphshowinterp
-syn keyword sourceVar           net_graphshowlatency net_graphsolid net_graphtext net_maxcleartime
-syn keyword sourceVar           net_maxfilesize net_maxfragments net_maxpacketdrop net_maxroutable
-syn keyword sourceVar           net_megasnapshot net_minroutable net_paranoid net_public_adr net_queue_trace
-syn keyword sourceVar           net_queued_packet_thread net_scale net_showdrop net_showeventlisteners
-syn keyword sourceVar           net_showevents net_showfragments net_showmsg net_showpeaks net_showsplits
-syn keyword sourceVar           net_showtcp net_showudp net_showudp_remoteonly net_showudp_wire net_showusercmd
-syn keyword sourceVar           net_splitpacket_maxrate net_splitrate net_steamcnx_allowrelay
-syn keyword sourceVar           net_steamcnx_debug net_steamcnx_enabled net_udp_rcvbuf
-syn keyword sourceVar           net_usesocketsforloopback netgraph_pos next_weapon_timer old_radiusdamage
-syn keyword sourceVar           opt_EnumerateLeavesFastAlgorithm option_duck_method_default overview_alpha
-syn keyword sourceVar           overview_health overview_locked overview_names overview_tracks
-syn keyword sourceVar           particle_sim_alt_cores password perf_fire_bullet_firstpredictedonly
-syn keyword sourceVar           perf_fire_bullet_single peril_notice_timer phonemedelay phonemefilter
-syn keyword sourceVar           phonemesnap phys2_air_density phys2_angular_damping
+syn keyword sourceVar           nav_drag_selection_volume_zmax_offset nav_drag_selection_volume_zmin_offset
+syn keyword sourceVar           nav_save_history nb_avoid nb_avoid_interval nb_debug_history
+syn keyword sourceVar           nb_player_move_direct nb_shadow_blobby_dist nb_shadow_cull_dist nb_shadow_dist
+syn keyword sourceVar           nb_stuck_dump_threshold net_allow_multicast net_allow_syslink net_chokeloop
+syn keyword sourceVar           net_compresspackets net_compresspackets_minsize net_compressvoice
+syn keyword sourceVar           net_drawslider net_droponsendoverflow net_dumptest net_graph net_graphheight
+syn keyword sourceVar           net_graphholdsvframerate net_graphmsecs net_graphpos net_graphproportionalfont
+syn keyword sourceVar           net_graphshowinterp net_graphshowlatency net_graphshowsvframerate
+syn keyword sourceVar           net_graphsolid net_graphtext net_maxcleartime net_maxfilesize net_maxfragments
+syn keyword sourceVar           net_maxpacketdrop net_maxroutable net_megasnapshot net_minroutable net_paranoid
+syn keyword sourceVar           net_public_adr net_queue_trace net_queued_packet_thread net_scale net_showdrop
+syn keyword sourceVar           net_showeventlisteners net_showevents net_showfragments net_showmsg
+syn keyword sourceVar           net_showpeaks net_showsplits net_showtcp net_showudp net_showudp_oob
+syn keyword sourceVar           net_showudp_remoteonly net_showudp_wire net_showusercmd net_splitpacket_maxrate
+syn keyword sourceVar           net_splitrate net_steamcnx_allowrelay net_steamcnx_debug net_steamcnx_enabled
+syn keyword sourceVar           net_threaded_socket_burst_cap net_threaded_socket_recovery_rate
+syn keyword sourceVar           net_threaded_socket_recovery_time net_udp_rcvbuf net_usesocketsforloopback
+syn keyword sourceVar           netgraph_pos next_weapon_timer nextlevel nextmap_print_enabled
+syn keyword sourceVar           npc_barnacle_swallow npc_blob_idle_speed_factor npc_blob_show_centroid
+syn keyword sourceVar           npc_blob_sin_amplitude npc_blob_straggler_dist npc_blob_think_interval
+syn keyword sourceVar           npc_blob_use_model npc_blob_use_orientation npc_blob_use_threading
+syn keyword sourceVar           npc_citizen_auto_player_squad npc_citizen_auto_player_squad_allow_use
+syn keyword sourceVar           npc_citizen_dont_precache_all npc_citizen_explosive_resist npc_citizen_insignia
+syn keyword sourceVar           npc_citizen_medic_emit_sound npc_citizen_squad_marker npc_create_equipment
+syn keyword sourceVar           npc_go_do_run npc_height_adjust npc_sentences npc_strider_height_adj
+syn keyword sourceVar           npc_strider_shake_ropes_magnitude npc_strider_shake_ropes_radius npc_vphysics
+syn keyword sourceVar           obj_capture_damage obj_sapper_amount obj_show_damage object_deterioration_time
+syn keyword sourceVar           occlusion_test_camera_margins occlusion_test_jump_margin occlusion_test_margins
+syn keyword sourceVar           occlusion_test_shadow_length occlusion_test_shadow_max_distance
+syn keyword sourceVar           old_radiusdamage opt_EnumerateLeavesFastAlgorithm option_duck_method
+syn keyword sourceVar           option_duck_method_default option_speed_method overview_alpha overview_health
+syn keyword sourceVar           overview_locked overview_names overview_tracks particle_sim_alt_cores password
+syn keyword sourceVar           perf_fire_bullet_firstpredictedonly perf_fire_bullet_single peril_notice_timer
+syn keyword sourceVar           phonemedelay phonemefilter phonemesnap phys2_air_density phys2_angular_damping
 syn keyword sourceVar           phys2_angular_damping_in_water phys2_artificial_acceleration phys2_async
 syn keyword sourceVar           phys2_async_server phys2_buoyancy_damping phys2_buoyancy_factor
 syn keyword sourceVar           phys2_buoyancy_version phys2_buoyant_damping_multiplier
@@ -722,45 +935,71 @@ syn keyword sourceVar           phys2_ragdoll_torque_magnitude phys2_ragdoll_use
 syn keyword sourceVar           phys2_ragdoll_use_d6_joints phys2_ragdoll_velocity phys2_report_asserts
 syn keyword sourceVar           phys2_report_errors phys2_report_messages phys2_report_warnings
 syn keyword sourceVar           phys2_res_mgr_break phys2_scheduler_enable phys2_scheduler_stats
-syn keyword sourceVar           phys2_scheduler_yield phys2_sim_hw phys2_sim_thread_mask_client
-syn keyword sourceVar           phys2_sim_thread_mask_server phys2_sim_thread_stack
-syn keyword sourceVar           phys2_sleep_angular_velocity phys2_sleep_damping phys2_sleep_energy_threshold
-syn keyword sourceVar           phys2_sleep_linear_velocity phys2_solver_batch_size phys2_support_level
-syn keyword sourceVar           phys2_thread_mask_client phys2_thread_mask_server phys2_thread_stack
-syn keyword sourceVar           phys2_version phys2_visualize phys2_water_density_multiplier
-syn keyword sourceVar           phys2_water_single_actor phys2_water_wakeup_counter phys2_xbox_scheduler
+syn keyword sourceVar           phys2_scheduler_yield phys2_shoot_speed phys2_sim_hw
+syn keyword sourceVar           phys2_sim_thread_mask_client phys2_sim_thread_mask_server
+syn keyword sourceVar           phys2_sim_thread_stack phys2_sleep_angular_velocity phys2_sleep_damping
+syn keyword sourceVar           phys2_sleep_energy_threshold phys2_sleep_linear_velocity
+syn keyword sourceVar           phys2_solver_batch_size phys2_support_level phys2_thread_mask_client
+syn keyword sourceVar           phys2_thread_mask_server phys2_thread_stack phys2_version phys2_visualize
+syn keyword sourceVar           phys2_water_density_multiplier phys2_water_single_actor
+syn keyword sourceVar           phys2_water_wakeup_counter phys2_xbox_scheduler
 syn keyword sourceVar           phys2_xbox_scheduler_thread_mask phys2_xbox_sim_thread_priority
 syn keyword sourceVar           phys2ui_mouse_wheel_scale phys_debug_check_contacts
 syn keyword sourceVar           phys_enable_experimental_optimizations phys_enable_query_cache
-syn keyword sourceVar           phys_enable_simd_optimizations phys_pushscale phys_ragdoll_force_magnitude
-syn keyword sourceVar           physics2_polytope_radius_factor physx_subdir ping_max_green ping_max_red
-syn keyword sourceVar           ping_max_yellow pipeline_static_props prop_use props_break_max_pieces
-syn keyword sourceVar           props_break_max_pieces_perframe publish_file_last_dir punch_angle_decay_rate
-syn keyword sourceVar           pyro_dof pyro_max_intensity pyro_max_rate pyro_max_side_length
-syn keyword sourceVar           pyro_max_side_width pyro_min_intensity pyro_min_rate pyro_min_side_length
-syn keyword sourceVar           pyro_min_side_width pyro_vignette pyro_vignette_distortion r_3dsky
-syn keyword sourceVar           r_DispDrawAxes r_DrawDetailProps r_DrawSpecificStaticProp
-syn keyword sourceVar           r_FlashlightDetailProps r_ForceRestore r_ForceWaterLeaf
-syn keyword sourceVar           r_PhysPropStaticLighting r_RainAllowInSplitScreen r_RainParticleDensity
-syn keyword sourceVar           r_ShowViewerArea r_WaterDrawReflection r_WaterDrawRefraction r_ambientboost
-syn keyword sourceVar           r_ambientfactor r_ambientmin r_aspectratio r_bloomtintb r_bloomtintexponent
-syn keyword sourceVar           r_bloomtintexponent_ghost r_bloomtintg r_bloomtintr r_debug_sequencesets
-syn keyword sourceVar           r_decal_cover_count r_decal_cullsize r_decal_overlap_area r_decal_overlap_count
-syn keyword sourceVar           r_decals r_decalstaticprops r_dopixelvisibility r_draw_flashlight_3rd_person
-syn keyword sourceVar           r_draw_lasersight_1st_person r_draw_lasersight_3rd_person r_drawbatchdecals
-syn keyword sourceVar           r_drawdetailprops r_drawflecks r_drawmodeldecals r_drawmodelstatsoverlaymax
-syn keyword sourceVar           r_drawmodelstatsoverlaymin r_drawopaquestaticpropslast r_drawpixelvisibility
-syn keyword sourceVar           r_drawtracers_firstperson r_drawunderwaterfogblocker r_drawviewmodel r_dynamic
-syn keyword sourceVar           r_emulategl r_entityclips r_eyeglintlodpixels r_eyegloss r_eyemove r_eyes
-syn keyword sourceVar           r_eyeshift_x r_eyeshift_y r_eyeshift_z r_eyesize r_fade360style r_fastzreject
-syn keyword sourceVar           r_fastzrejectdisp r_flashlight_3rd_person_range r_flashlight_topdown
-syn keyword sourceVar           r_flashlight_version2 r_flashlightculldepth r_flashlightdepthres
-syn keyword sourceVar           r_flashlightdepthtexture r_flashlightdrawdepth r_flashlightdrawfrustum
-syn keyword sourceVar           r_flashlightdrawfrustumbbox r_flashlightdrawsweptbbox r_flashlightinfectedfar
-syn keyword sourceVar           r_flashlightinfectedfov r_flashlightinfectedlinear r_flashlightinfectedshadows
-syn keyword sourceVar           r_flashlightmodels r_flashlightmuzzleflash r_flashlightnodraw
-syn keyword sourceVar           r_flashlightrender r_flashlightrendermodels r_flashlightrenderworld
-syn keyword sourceVar           r_flashlightscissor r_flashlightupdatedepth r_flashlightvolumetrics
+syn keyword sourceVar           phys_enable_simd_optimizations phys_impactforcescale
+syn keyword sourceVar           phys_penetration_error_time phys_pushscale phys_ragdoll_force_magnitude
+syn keyword sourceVar           phys_shoot_torque phys_speeds phys_stressbodyweights phys_timescale
+syn keyword sourceVar           phys_upimpactforcescale physcannon_ball_cone physcannon_chargetime
+syn keyword sourceVar           physcannon_cone physcannon_dmg_glass physcannon_maxforce physcannon_maxmass
+syn keyword sourceVar           physcannon_mega_pullforce physcannon_mega_tracelength physcannon_minforce
+syn keyword sourceVar           physcannon_pullforce physcannon_punt_cone physcannon_right_turrets
+syn keyword sourceVar           physcannon_tracelength physics2_polytope_radius_factor
+syn keyword sourceVar           physicsshadowupdate_render physx_subdir ping_max_green ping_max_red
+syn keyword sourceVar           ping_max_yellow pipe_bomb_beep_interval_delta pipe_bomb_beep_min_interval
+syn keyword sourceVar           pipe_bomb_initial_beep_interval pipe_bomb_shake_amplitude
+syn keyword sourceVar           pipe_bomb_shake_radius pipe_bomb_timer_duration pipeline_static_props
+syn keyword sourceVar           pistol_use_new_accuracy play_distance play_with_friends_enabled
+syn keyword sourceVar           player_botdifflast_s player_competitive_maplist_8_5_1_FE007AD3
+syn keyword sourceVar           player_gamemodelast_m player_gamemodelast_s player_gametypelast_m
+syn keyword sourceVar           player_gametypelast_s player_last_leaderboards_filter
+syn keyword sourceVar           player_last_leaderboards_mode player_last_leaderboards_panel
+syn keyword sourceVar           player_last_medalstats_category player_last_medalstats_panel
+syn keyword sourceVar           player_limit_jump_speed player_maplast_m player_maplast_s
+syn keyword sourceVar           player_medalstats_most_recent_time player_medalstats_recent_range
+syn keyword sourceVar           player_nevershow_communityservermessage player_old_armor
+syn keyword sourceVar           player_showpredictedposition player_showpredictedposition_timestep
+syn keyword sourceVar           player_squad_autosummon_debug player_squad_autosummon_move_tolerance
+syn keyword sourceVar           player_squad_autosummon_player_tolerance player_squad_autosummon_time
+syn keyword sourceVar           player_squad_autosummon_time_after_combat player_squad_double_tap_time
+syn keyword sourceVar           player_squad_transient_commands player_teamplayedlast player_throwforce
+syn keyword sourceVar           prop_active_gib_limit prop_active_gib_max_fade_time prop_use
+syn keyword sourceVar           props_break_max_pieces props_break_max_pieces_perframe publish_file_last_dir
+syn keyword sourceVar           punch_angle_decay_rate pvs_min_player_distance pyro_dof pyro_max_intensity
+syn keyword sourceVar           pyro_max_rate pyro_max_side_length pyro_max_side_width pyro_min_intensity
+syn keyword sourceVar           pyro_min_rate pyro_min_side_length pyro_min_side_width pyro_vignette
+syn keyword sourceVar           pyro_vignette_distortion r_3dsky r_DispDrawAxes r_DrawDetailProps
+syn keyword sourceVar           r_DrawSpecificStaticProp r_FlashlightDetailProps r_ForceRestore
+syn keyword sourceVar           r_ForceWaterLeaf r_PhysPropStaticLighting r_RainAllowInSplitScreen
+syn keyword sourceVar           r_RainParticleDensity r_ShowViewerArea r_WaterDrawReflection
+syn keyword sourceVar           r_WaterDrawRefraction r_ambientboost r_ambientfactor r_ambientmin r_aspectratio
+syn keyword sourceVar           r_bloomtintb r_bloomtintexponent r_bloomtintexponent_ghost r_bloomtintg
+syn keyword sourceVar           r_bloomtintr r_debug_sequencesets r_decal_cover_count r_decal_cullsize
+syn keyword sourceVar           r_decal_overlap_area r_decal_overlap_count r_decals r_decalstaticprops
+syn keyword sourceVar           r_dopixelvisibility r_draw_flashlight_3rd_person r_draw_lasersight_1st_person
+syn keyword sourceVar           r_draw_lasersight_3rd_person r_drawbatchdecals r_drawdetailprops r_drawflecks
+syn keyword sourceVar           r_drawmodeldecals r_drawmodelstatsoverlaymax r_drawmodelstatsoverlaymin
+syn keyword sourceVar           r_drawopaquestaticpropslast r_drawpixelvisibility r_drawtracers_firstperson
+syn keyword sourceVar           r_drawunderwaterfogblocker r_drawviewmodel r_dynamic r_emulategl r_entityclips
+syn keyword sourceVar           r_eyeglintlodpixels r_eyegloss r_eyemove r_eyes r_eyeshift_x r_eyeshift_y
+syn keyword sourceVar           r_eyeshift_z r_eyesize r_fade360style r_fastzreject r_fastzrejectdisp
+syn keyword sourceVar           r_flashlight_3rd_person_range r_flashlight_topdown r_flashlight_version2
+syn keyword sourceVar           r_flashlightculldepth r_flashlightdepthres r_flashlightdepthtexture
+syn keyword sourceVar           r_flashlightdrawdepth r_flashlightdrawfrustum r_flashlightdrawfrustumbbox
+syn keyword sourceVar           r_flashlightdrawsweptbbox r_flashlightinfectedfar r_flashlightinfectedfov
+syn keyword sourceVar           r_flashlightinfectedlinear r_flashlightinfectedshadows r_flashlightmodels
+syn keyword sourceVar           r_flashlightmuzzleflash r_flashlightnodraw r_flashlightrender
+syn keyword sourceVar           r_flashlightrendermodels r_flashlightrenderworld r_flashlightscissor
+syn keyword sourceVar           r_flashlightupdatedepth r_flashlightvolumetrics
 syn keyword sourceVar           r_flashlightvolumetricsdrawnatend r_flex r_frustumcullworld r_glint_alwaysdraw
 syn keyword sourceVar           r_glint_procedural r_hunkalloclightmaps r_impactparticles r_jiggle_bones
 syn keyword sourceVar           r_lightaverage r_lightcache_zbuffercache r_lod r_maxdlights r_maxmodeldecal
@@ -787,27 +1026,34 @@ syn keyword sourceVar           ragdoll_slowdown ragdoll_slowdown_time rate rcon
 syn keyword sourceVar           reload_materials replay_block_dump_interval replay_buffersize
 syn keyword sourceVar           replay_cache_client_ragdolls replay_data_lifespan
 syn keyword sourceVar           replay_deathcammaxverticaloffset replay_debug replay_dodiskcleanup
-syn keyword sourceVar           replay_editor_camera_length replay_editor_fov_mousewheel_invert
-syn keyword sourceVar           replay_editor_fov_mousewheel_multiplier replay_enable
-syn keyword sourceVar           replay_enableeventbasedscreenshots replay_enablerenderpreview
-syn keyword sourceVar           replay_fileserver_host replay_fileserver_path replay_fileserver_port
-syn keyword sourceVar           replay_fileserver_protocol replay_flushinterval replay_forcereconstruct
-syn keyword sourceVar           replay_ignorereplayticks replay_local_fileserver_path
+syn keyword sourceVar           replay_dofileserver_cleanup_on_start replay_editor_camera_length
+syn keyword sourceVar           replay_editor_fov_mousewheel_invert replay_editor_fov_mousewheel_multiplier
+syn keyword sourceVar           replay_enable replay_enableeventbasedscreenshots replay_enablerenderpreview
+syn keyword sourceVar           replay_fileserver_autocleanup replay_fileserver_host
+syn keyword sourceVar           replay_fileserver_offload_aborttime replay_fileserver_offload_enable
+syn keyword sourceVar           replay_fileserver_offload_hostname replay_fileserver_offload_login
+syn keyword sourceVar           replay_fileserver_offload_maxuploads replay_fileserver_offload_password
+syn keyword sourceVar           replay_fileserver_offload_port replay_fileserver_offload_protocol
+syn keyword sourceVar           replay_fileserver_offload_proxy_host replay_fileserver_offload_proxy_port
+syn keyword sourceVar           replay_fileserver_offload_remotepath replay_fileserver_offload_useproxy
+syn keyword sourceVar           replay_fileserver_path replay_fileserver_port replay_fileserver_protocol
+syn keyword sourceVar           replay_flushinterval replay_forcereconstruct replay_ignorereplayticks
+syn keyword sourceVar           replay_local_fileserver_path replay_max_publish_threads
 syn keyword sourceVar           replay_maxconcurrentdownloads replay_maxscreenshotsperreplay
 syn keyword sourceVar           replay_mintimebetweenscreenshots replay_movie_export_last_dir
 syn keyword sourceVar           replay_movie_reveal_warning replay_msgduration_connectrecording
 syn keyword sourceVar           replay_msgduration_error replay_msgduration_misc
 syn keyword sourceVar           replay_msgduration_replaysavailable replay_msgduration_startrecord
-syn keyword sourceVar           replay_msgduration_stoprecord replay_perftip_count_enter
+syn keyword sourceVar           replay_msgduration_stoprecord replay_name replay_perftip_count_enter
 syn keyword sourceVar           replay_perftip_count_exit replay_perftip_count_freecam_enter
 syn keyword sourceVar           replay_perftip_count_freecam_exit replay_perftip_count_freecam_exit2
 syn keyword sourceVar           replay_playerdeathscreenshotdelay replay_postdeathrecordtime
 syn keyword sourceVar           replay_postwinreminderduration replay_publish_simulate_delay_ftp
 syn keyword sourceVar           replay_publish_simulate_delay_local_http replay_publish_simulate_rename_fail
 syn keyword sourceVar           replay_quitmsg_dontaskagain replay_ragdoll_blending replay_ragdoll_dbg
-syn keyword sourceVar           replay_ragdoll_tickoffset replay_recording replay_renderqueue_first_add
-syn keyword sourceVar           replay_rendersetting_encodingquality replay_rendersetting_exportraw
-syn keyword sourceVar           replay_rendersetting_motionblur_can_toggle
+syn keyword sourceVar           replay_ragdoll_tickoffset replay_record_voice replay_recording
+syn keyword sourceVar           replay_renderqueue_first_add replay_rendersetting_encodingquality
+syn keyword sourceVar           replay_rendersetting_exportraw replay_rendersetting_motionblur_can_toggle
 syn keyword sourceVar           replay_rendersetting_motionblurenabled replay_rendersetting_motionblurquality
 syn keyword sourceVar           replay_rendersetting_quitwhendone replay_rendersetting_renderglow
 syn keyword sourceVar           replay_replayeditor_rewindmsgcounter replay_replaywelcomedlgcount
@@ -820,29 +1066,38 @@ syn keyword sourceVar           rope_collide rope_rendersolid rope_shake rope_sm
 syn keyword sourceVar           rope_smooth_maxalpha rope_smooth_maxalphawidth rope_smooth_minalpha
 syn keyword sourceVar           rope_smooth_minwidth rope_solid_maxalpha rope_solid_maxwidth
 syn keyword sourceVar           rope_solid_minalpha rope_solid_minwidth rope_subdiv rope_wind_dist
-syn keyword sourceVar           rpt_vprof_time save_async save_asyncdelay save_console save_disable
+syn keyword sourceVar           rpg_missle_use_custom_detonators rpt_vprof_time rr_debug_qa rr_debugplayer
+syn keyword sourceVar           rr_debugresponseconcept rr_debugresponses rr_debugrule rr_dumpresponses
+syn keyword sourceVar           safezonex safezoney save_async save_asyncdelay save_console save_disable
 syn keyword sourceVar           save_history_count save_huddelayframes save_in_memory save_noxsave
-syn keyword sourceVar           save_screenshot save_spew sb_close_browser_on_connect
-syn keyword sourceVar           sb_dontshow_maxplayer_warning sb_firstopentime sb_mod_suggested_maxplayers
-syn keyword sourceVar           sb_numtimesopened sb_perf_collect sb_perf_dump_low sb_perf_dump_low_dist
-syn keyword sourceVar           sb_quick_list_bit_field sb_showblacklists
-syn keyword sourceVar           scavenge_scoreboard_round_sound_effect_interval
+syn keyword sourceVar           save_screenshot save_spew sb_allow_leading sb_close_browser_on_connect
+syn keyword sourceVar           sb_dontshow_maxplayer_warning sb_firstopentime sb_melee_approach_victim
+syn keyword sourceVar           sb_mod_suggested_maxplayers sb_numtimesopened sb_perf_collect sb_perf_dump_low
+syn keyword sourceVar           sb_perf_dump_low_dist sb_quick_list_bit_field sb_reachable_cache_paranoia
+syn keyword sourceVar           sb_showblacklists sb_skill sb_temp_health_consider_factor sb_toughness_buffer
+syn keyword sourceVar           sb_transition scavenge_scoreboard_round_sound_effect_interval
 syn keyword sourceVar           scavenge_scoreboard_round_time_effect_delay
 syn keyword sourceVar           scavenge_scoreboard_round_time_effect_duration
-syn keyword sourceVar           scavenge_scoreboard_survivor_score_effect_delay scene_clientflex scene_print
-syn keyword sourceVar           scene_vcdautosave scr_centertime sensitivity sfm_record_hz shake_show
-syn keyword sourceVar           shotgun_reload_cancel_delay showbudget_texture_global_sum showparticlecounts
-syn keyword sourceVar           sixense_aim_1to1_heading_multiplier sixense_aim_1to1_pitch_multiplier
-syn keyword sourceVar           sixense_aim_1to1_ratchet_vertical sixense_aim_freeaim_accel_band_exponent
-syn keyword sourceVar           sixense_aim_freeaim_accel_band_size sixense_aim_freeaim_auto_level_rate
-syn keyword sourceVar           sixense_aim_freeaim_dead_zone_radius sixense_aim_freeaim_heading_multiplier
-syn keyword sourceVar           sixense_aim_freeaim_max_speed sixense_aim_freeaim_pitch_multiplier
-syn keyword sourceVar           sixense_aim_freeaim_switch_blend_time_exit sixense_aim_scope_heading_multiplier
-syn keyword sourceVar           sixense_aim_scope_pitch_multiplier sixense_always_draw_crosshair
-syn keyword sourceVar           sixense_base_offset_x sixense_base_offset_y sixense_base_offset_z
-syn keyword sourceVar           sixense_controller_angle_mode sixense_crosshair_horiz_multiplier
-syn keyword sourceVar           sixense_crosshair_vert_multiplier sixense_crouch_sensitivity sixense_enabled
-syn keyword sourceVar           sixense_exit_metroid_blend sixense_exit_one_to_one_dot sixense_features_enabled
+syn keyword sourceVar           scavenge_scoreboard_survivor_score_effect_delay scene_async_prefetch_spew
+syn keyword sourceVar           scene_clamplookat scene_clientflex scene_clientplayback scene_flatturn
+syn keyword sourceVar           scene_forcecombined scene_maxcaptionradius scene_print scene_showfaceto
+syn keyword sourceVar           scene_showlook scene_showmoveto scene_showunlock scene_vcdautosave
+syn keyword sourceVar           scr_centertime script_attach_debugger_at_startup
+syn keyword sourceVar           script_break_in_native_debugger_on_error sdl_speaker_channels sensitivity
+syn keyword sourceVar           servercfgfile sf_ui_tint sfm_record_hz shake_show shotgun_reload_cancel_delay
+syn keyword sourceVar           showbudget_texture_global_sum showhitlocation showparticlecounts showsniperdist
+syn keyword sourceVar           showsniperlines sixense_aim_1to1_heading_multiplier
+syn keyword sourceVar           sixense_aim_1to1_pitch_multiplier sixense_aim_1to1_ratchet_vertical
+syn keyword sourceVar           sixense_aim_freeaim_accel_band_exponent sixense_aim_freeaim_accel_band_size
+syn keyword sourceVar           sixense_aim_freeaim_auto_level_rate sixense_aim_freeaim_dead_zone_radius
+syn keyword sourceVar           sixense_aim_freeaim_heading_multiplier sixense_aim_freeaim_max_speed
+syn keyword sourceVar           sixense_aim_freeaim_pitch_multiplier sixense_aim_freeaim_switch_blend_time_exit
+syn keyword sourceVar           sixense_aim_scope_heading_multiplier sixense_aim_scope_pitch_multiplier
+syn keyword sourceVar           sixense_always_draw_crosshair sixense_base_offset_x sixense_base_offset_y
+syn keyword sourceVar           sixense_base_offset_z sixense_controller_angle_mode
+syn keyword sourceVar           sixense_crosshair_horiz_multiplier sixense_crosshair_vert_multiplier
+syn keyword sourceVar           sixense_crouch_sensitivity sixense_enabled sixense_exit_metroid_blend
+syn keyword sourceVar           sixense_exit_one_to_one_dot sixense_features_enabled
 syn keyword sourceVar           sixense_feet_angles_offset_stick_spin_exponent
 syn keyword sourceVar           sixense_feet_angles_offset_stick_spin_horiz_multiplier
 syn keyword sourceVar           sixense_feet_angles_offset_stick_spin_invert_pitch
@@ -856,60 +1111,266 @@ syn keyword sourceVar           sixense_spring_view_max_spring sixense_spring_vi
 syn keyword sourceVar           sixense_spring_view_min_spring sixense_tilt_gesture_angle_threshold
 syn keyword sourceVar           sixense_trigger_threshold sixense_walking_dead_zone_percent
 syn keyword sourceVar           sixense_walking_exponent sixense_weapon_select_sensitivity
-syn keyword sourceVar           sixense_zoom_momentary_time sk_autoaim_mode skill smoothstairs
-syn keyword sourceVar           snd_async_fullyasync snd_async_minsize snd_async_spew_blocking
-syn keyword sourceVar           snd_async_stream_fail snd_async_stream_spew snd_cull_duplicates
-syn keyword sourceVar           snd_debug_gaincurve snd_debug_gaincurvevol snd_defer_trace
-syn keyword sourceVar           snd_delay_sound_shift snd_disable_mixer_duck snd_disable_mixer_solo
-syn keyword sourceVar           snd_duckerattacktime snd_duckerreleasetime snd_duckerthreshold snd_ducktovolume
-syn keyword sourceVar           snd_legacy_surround snd_list snd_lockpartial snd_max_same_sounds
-syn keyword sourceVar           snd_max_same_weapon_sounds snd_mergemethod snd_mix_async snd_mix_minframetime
-syn keyword sourceVar           snd_mixahead snd_mixer_master_dsp snd_mixer_master_level snd_moviefix
-syn keyword sourceVar           snd_musicvolume snd_mute_losefocus snd_noextraupdate snd_pitchquality
-syn keyword sourceVar           snd_prefetch_common snd_profile snd_show snd_ShowThreadFrameTime
-syn keyword sourceVar           snd_show_maxchannels_errors snd_showclassname snd_showmixer snd_soundmixer
-syn keyword sourceVar           snd_soundmixer_parse_debug snd_soundmixer_version snd_spatialize_roundrobin
-syn keyword sourceVar           snd_store_filepaths snd_surround_speakers snd_vox_captiontrace
-syn keyword sourceVar           snd_vox_globaltimeout snd_vox_sectimetout snd_vox_seqtimetout
-syn keyword sourceVar           soundpatch_captionlength soundscape_message sourcemod_version spec_allowroaming
-syn keyword sourceVar           spec_autodirector spec_centerchasecam spec_chasedistance spec_chasedistancestep
-syn keyword sourceVar           spec_cinematic spec_closeup_range spec_lockedchasecam
+syn keyword sourceVar           sixense_zoom_momentary_time sk_airboat_drain_rate sk_airboat_max_ammo
+syn keyword sourceVar           sk_airboat_recharge_rate sk_allow_autoaim sk_ally_regen_time sk_ammo_qty_scale1
+syn keyword sourceVar           sk_ammo_qty_scale2 sk_ammo_qty_scale3 sk_antlion_air_attack_dmg
+syn keyword sourceVar           sk_antlion_health sk_antlion_jump_damage sk_antlion_swipe_damage
+syn keyword sourceVar           sk_antlionguard_dmg_charge sk_antlionguard_dmg_shove sk_antlionguard_health
+syn keyword sourceVar           sk_apc_health sk_apc_missile_damage sk_auto_reload_time sk_autoaim_mode
+syn keyword sourceVar           sk_autoaim_scale1 sk_autoaim_scale2 sk_barnacle_health sk_barney_health
+syn keyword sourceVar           sk_battery sk_bullseye_health sk_citizen_giveammo_player_delay
+syn keyword sourceVar           sk_citizen_heal_ally sk_citizen_heal_ally_delay sk_citizen_heal_ally_min_pct
+syn keyword sourceVar           sk_citizen_heal_player sk_citizen_heal_player_delay
+syn keyword sourceVar           sk_citizen_heal_player_min_forced sk_citizen_heal_player_min_pct
+syn keyword sourceVar           sk_citizen_health sk_citizen_player_stare_dist sk_citizen_player_stare_time
+syn keyword sourceVar           sk_citizen_stare_heal_time sk_combine_ball_search_radius
+syn keyword sourceVar           sk_combine_guard_health sk_combine_guard_kick sk_combine_s_health
+syn keyword sourceVar           sk_combine_s_kick sk_combineball_guidefactor sk_combineball_seek_angle
+syn keyword sourceVar           sk_combineball_seek_kill sk_crow_health sk_crow_melee_dmg sk_crowbar_lead_time
+syn keyword sourceVar           sk_dmg_homer_grenade sk_dmg_inflict_scale1 sk_dmg_inflict_scale2
+syn keyword sourceVar           sk_dmg_inflict_scale3 sk_dmg_pathfollower_grenade sk_dmg_sniper_penetrate_npc
+syn keyword sourceVar           sk_dmg_sniper_penetrate_plr sk_dmg_take_scale1 sk_dmg_take_scale2
+syn keyword sourceVar           sk_dmg_take_scale3 sk_dropship_container_health sk_dynamic_resupply_modifier
+syn keyword sourceVar           sk_env_headcrabcanister_shake_amplitude sk_env_headcrabcanister_shake_radius
+syn keyword sourceVar           sk_env_headcrabcanister_shake_radius_vehicle sk_fraggrenade_radius
+syn keyword sourceVar           sk_gunship_burst_dist sk_gunship_burst_min sk_gunship_burst_size
+syn keyword sourceVar           sk_gunship_health_increments sk_headcrab_fast_health sk_headcrab_health
+syn keyword sourceVar           sk_headcrab_melee_dmg sk_headcrab_poison_health sk_headcrab_poison_npc_damage
+syn keyword sourceVar           sk_healthcharger sk_healthkit sk_healthvial sk_helicopter_burstcount
+syn keyword sourceVar           sk_helicopter_drone_speed sk_helicopter_firingcone
+syn keyword sourceVar           sk_helicopter_grenade_puntscale sk_helicopter_grenadedamage
+syn keyword sourceVar           sk_helicopter_grenadeforce sk_helicopter_grenaderadius sk_helicopter_health
+syn keyword sourceVar           sk_helicopter_num_bombs1 sk_helicopter_num_bombs2 sk_helicopter_num_bombs3
+syn keyword sourceVar           sk_helicopter_roundsperburst sk_homer_grenade_radius sk_ichthyosaur_health
+syn keyword sourceVar           sk_ichthyosaur_melee_dmg sk_jeep_gauss_damage sk_manhack_health
+syn keyword sourceVar           sk_manhack_melee_dmg sk_manhack_v2 sk_max_357 sk_max_alyxgun sk_max_ar2
+syn keyword sourceVar           sk_max_ar2_altfire sk_max_buckshot sk_max_crossbow sk_max_gauss_round
+syn keyword sourceVar           sk_max_grenade sk_max_pistol sk_max_rpg_round sk_max_smg1 sk_max_smg1_grenade
+syn keyword sourceVar           sk_max_sniper_round sk_metropolice_health sk_metropolice_simple_health
+syn keyword sourceVar           sk_metropolice_stitch_along_hitcount sk_metropolice_stitch_at_hitcount
+syn keyword sourceVar           sk_metropolice_stitch_behind_hitcount sk_metropolice_stitch_distance
+syn keyword sourceVar           sk_metropolice_stitch_reaction sk_metropolice_stitch_tight_hitcount sk_npc_arm
+syn keyword sourceVar           sk_npc_chest sk_npc_dmg_357 sk_npc_dmg_airboat sk_npc_dmg_alyxgun
+syn keyword sourceVar           sk_npc_dmg_ar2 sk_npc_dmg_buckshot sk_npc_dmg_combineball sk_npc_dmg_crossbow
+syn keyword sourceVar           sk_npc_dmg_crowbar sk_npc_dmg_dropship sk_npc_dmg_fraggrenade
+syn keyword sourceVar           sk_npc_dmg_grenade sk_npc_dmg_gunship sk_npc_dmg_gunship_to_plr
+syn keyword sourceVar           sk_npc_dmg_helicopter sk_npc_dmg_helicopter_to_plr sk_npc_dmg_pistol
+syn keyword sourceVar           sk_npc_dmg_rpg_round sk_npc_dmg_smg1 sk_npc_dmg_smg1_grenade
+syn keyword sourceVar           sk_npc_dmg_sniper_round sk_npc_dmg_stunstick sk_npc_head sk_npc_leg
+syn keyword sourceVar           sk_npc_stomach sk_pathfollower_grenade_radius sk_player_arm sk_player_chest
+syn keyword sourceVar           sk_player_head sk_player_leg sk_player_stomach sk_plr_dmg_357
+syn keyword sourceVar           sk_plr_dmg_airboat sk_plr_dmg_alyxgun sk_plr_dmg_ar2 sk_plr_dmg_buckshot
+syn keyword sourceVar           sk_plr_dmg_crossbow sk_plr_dmg_crowbar sk_plr_dmg_fraggrenade
+syn keyword sourceVar           sk_plr_dmg_grenade sk_plr_dmg_pistol sk_plr_dmg_rpg_round sk_plr_dmg_smg1
+syn keyword sourceVar           sk_plr_dmg_smg1_grenade sk_plr_dmg_sniper_round sk_plr_dmg_stunstick
+syn keyword sourceVar           sk_plr_grenade_drop_time sk_plr_health_drop_time sk_plr_num_shotgun_pellets
+syn keyword sourceVar           sk_rollermine_shock sk_rollermine_stun_delay sk_rollermine_vehicle_intercept
+syn keyword sourceVar           sk_scanner_dmg_dive sk_scanner_health sk_smg1_grenade_radius sk_stalker_health
+syn keyword sourceVar           sk_stalker_melee_dmg sk_strider_health sk_strider_num_missiles1
+syn keyword sourceVar           sk_strider_num_missiles2 sk_strider_num_missiles3 sk_suitcharger
+syn keyword sourceVar           sk_suitcharger_citadel sk_suitcharger_citadel_maxarmor
+syn keyword sourceVar           sk_vortigaunt_armor_charge sk_vortigaunt_armor_charge_per_token
+syn keyword sourceVar           sk_vortigaunt_dmg_claw sk_vortigaunt_dmg_rake sk_vortigaunt_dmg_zap
+syn keyword sourceVar           sk_vortigaunt_health sk_vortigaunt_vital_antlion_worker_dmg
+syn keyword sourceVar           sk_vortigaunt_zap_range sk_weapon_ar2_alt_fire_duration
+syn keyword sourceVar           sk_weapon_ar2_alt_fire_mass sk_weapon_ar2_alt_fire_radius
+syn keyword sourceVar           sk_zombie_dmg_both_slash sk_zombie_dmg_one_slash sk_zombie_health
+syn keyword sourceVar           sk_zombie_poison_dmg_spit sk_zombie_poison_health skill smoke_trail
+syn keyword sourceVar           smoothstairs snd_ShowThreadFrameTime snd_async_fullyasync snd_async_minsize
+syn keyword sourceVar           snd_async_spew_blocking snd_async_stream_fail snd_async_stream_spew
+syn keyword sourceVar           snd_cull_duplicates snd_deathcamera_volume snd_debug_gaincurve
+syn keyword sourceVar           snd_debug_gaincurvevol snd_defer_trace snd_delay_sound_shift
+syn keyword sourceVar           snd_disable_mixer_duck snd_disable_mixer_solo snd_duckerattacktime
+syn keyword sourceVar           snd_duckerreleasetime snd_duckerthreshold snd_ducking_off snd_ducktovolume
+syn keyword sourceVar           snd_legacy_surround snd_list snd_lockpartial snd_mapobjective_volume
+syn keyword sourceVar           snd_max_same_sounds snd_max_same_weapon_sounds snd_menumusic_volume
+syn keyword sourceVar           snd_mergemethod snd_mix_async snd_mix_minframetime snd_mixahead
+syn keyword sourceVar           snd_mixer_master_dsp snd_mixer_master_level snd_moviefix snd_music_selection
+syn keyword sourceVar           snd_musicvolume snd_musicvolume_multiplier_inoverlay snd_mute_losefocus
+syn keyword sourceVar           snd_noextraupdate snd_pitchquality snd_prefetch_common snd_profile
+syn keyword sourceVar           snd_roundend_volume snd_roundstart_volume snd_show snd_show_maxchannels_errors
+syn keyword sourceVar           snd_showclassname snd_showmixer snd_soundmixer snd_soundmixer_parse_debug
+syn keyword sourceVar           snd_soundmixer_version snd_spatialize_roundrobin snd_store_filepaths
+syn keyword sourceVar           snd_surround_speakers snd_tensecondwarning_volume snd_vox_captiontrace
+syn keyword sourceVar           snd_vox_globaltimeout snd_vox_sectimetout snd_vox_seqtimetout sniper_xbox_delay
+syn keyword sourceVar           sniperspeak sniperviewdist soundpatch_captionlength soundscape_message
+syn keyword sourceVar           sourcemod_version spec_allowroaming spec_autodirector spec_centerchasecam
+syn keyword sourceVar           spec_chasedistance spec_chasedistancestep spec_cinematic spec_closeup_range
+syn keyword sourceVar           spec_filter spec_filter_infected spec_filter_survivors
+syn keyword sourceVar           spec_freeze_deathanim_time spec_freeze_panel_extended_time
+syn keyword sourceVar           spec_freeze_time_lock spec_hide_players spec_lockedchasecam
 syn keyword sourceVar           spec_lockedchasecam_center_speed spec_lockedchasecam_delay
 syn keyword sourceVar           spec_lockedchasecam_pitch spec_lockedchasecam_yaw spec_longshot_range
-syn keyword sourceVar           spec_max_tracking_error spec_scoreboard spec_track spec_tracking_power
-syn keyword sourceVar           spew_consolelog_to_debugstring ss_splitmode ss_verticalsplit
-syn keyword sourceVar           ss_voice_hearpartner stats_highlight_interval steam_stats_write_to_keyvalue
+syn keyword sourceVar           spec_max_tracking_error spec_scoreboard spec_show_xray spec_track
+syn keyword sourceVar           spec_tracking_power spec_usenumberkeys_nobinds spew_consolelog_to_debugstring
+syn keyword sourceVar           spit_scaling_min_scale ss_splitmode ss_verticalsplit ss_voice_hearpartner
+syn keyword sourceVar           stats_highlight_interval steam_stats_write_to_keyvalue
 syn keyword sourceVar           steamworks_client_sessionid steamworks_immediate_upload
-syn keyword sourceVar           steamworks_server_sessionid steamworks_sessionid_client steamworks_show_uploads
-syn keyword sourceVar           steamworks_stats_disable still_vel_limit still_view_accel_limit store_version
-syn keyword sourceVar           stringtable_alwaysrebuilddictionaries stringtable_usedictionaries
-syn keyword sourceVar           studio_queue_mode survivor_allow_crawling survivor_drag_continuous_fire
+syn keyword sourceVar           steamworks_server_sessionid steamworks_sessionid_client
+syn keyword sourceVar           steamworks_sessionid_server steamworks_show_uploads steamworks_stats_disable
+syn keyword sourceVar           step_spline still_vel_limit still_view_accel_limit store_version
+syn keyword sourceVar           strider_always_use_procedural_height strider_ar2_altfire_dmg
+syn keyword sourceVar           strider_distributed_fire strider_eyepositions strider_free_knowledge
+syn keyword sourceVar           strider_free_pass_after_escorts_dead strider_free_pass_cover_dist
+syn keyword sourceVar           strider_free_pass_duration strider_free_pass_move_tolerance
+syn keyword sourceVar           strider_free_pass_refill_rate strider_free_pass_start_time
+syn keyword sourceVar           strider_free_pass_tolerance_after_escorts_dead strider_idle_test
+syn keyword sourceVar           strider_immolate strider_missile_suppress_dist strider_missile_suppress_time
+syn keyword sourceVar           strider_pct_height_no_crouch_move strider_peek_eye_dist strider_peek_eye_dist_z
+syn keyword sourceVar           strider_peek_time strider_peek_time_after_damage strider_show_cannonlos
+syn keyword sourceVar           strider_show_focus strider_show_weapon_los_condition strider_show_weapon_los_z
+syn keyword sourceVar           strider_test_height stringtable_alwaysrebuilddictionaries
+syn keyword sourceVar           stringtable_usedictionaries studio_queue_mode suitvolume
+syn keyword sourceVar           survivor_allow_crawling survivor_death_anims survivor_drag_continuous_fire
 syn keyword sourceVar           survivor_expressions survivor_expressions_anger survivor_expressions_fear
-syn keyword sourceVar           survivor_it_fade_in_interval survivor_it_fade_out_interval survivor_lean
-syn keyword sourceVar           survivor_ledge_grab_health survivor_revive_after_drag
-syn keyword sourceVar           survivor_revive_continuous_fire survivor_teammatefocus_enabled
-syn keyword sourceVar           survivor_teammatefocus_speed survivor_teammatefocus_stickyness
-syn keyword sourceVar           survivor_upgrade_reload_duration sys_attract_mode_timeout
-syn keyword sourceVar           sys_minidumpexpandedspew sys_minidumpspewlines systemlinkport tank_pz_forward
+syn keyword sourceVar           survivor_incap_decay_rate survivor_incap_health
+syn keyword sourceVar           survivor_incap_hopeless_decay_rate survivor_incap_max_fall_damage
+syn keyword sourceVar           survivor_incap_tongued_decay_rate survivor_it_fade_in_interval
+syn keyword sourceVar           survivor_it_fade_out_interval survivor_lean survivor_ledge_grab_health
+syn keyword sourceVar           survivor_limit survivor_model_selection survivor_respawn_with_guns
+syn keyword sourceVar           survivor_revive_after_drag survivor_revive_continuous_fire
+syn keyword sourceVar           survivor_teammatefocus_enabled survivor_teammatefocus_speed
+syn keyword sourceVar           survivor_teammatefocus_stickyness survivor_upgrade_reload_duration
+syn keyword sourceVar           sv__ragdoll_max_remove_per_frame sv_accelerate sv_accelerate_debug_speed
+syn keyword sourceVar           sv_accelerate_use_weapon_speed sv_airaccelerate sv_allow_color_correction
+syn keyword sourceVar           sv_allow_lobby_connect_only sv_allow_thirdperson sv_allow_voice_from_file
+syn keyword sourceVar           sv_allow_votes sv_allow_wait_command sv_allowdownload sv_allowupload sv_alltalk
+syn keyword sourceVar           sv_alternateticks sv_arms_race_vote_to_restart_disallowed_after
+syn keyword sourceVar           sv_auto_adjust_bot_difficulty sv_auto_full_alltalk_during_warmup_half_end
+syn keyword sourceVar           sv_autobuyammo sv_autojump sv_autoladderdismount sv_autosave sv_backspeed
+syn keyword sourceVar           sv_banid_dev_enabled sv_banid_enabled sv_benchmark_autovprofrecord
+syn keyword sourceVar           sv_benchmark_freeroam sv_benchmark_numticks sv_bonus_challenge
+syn keyword sourceVar           sv_bots_force_rebuy_every_round sv_bots_get_easier_each_win
+syn keyword sourceVar           sv_bots_get_harder_after_each_wave sv_bounce
+syn keyword sourceVar           sv_broadcast_ugc_download_progress_interval sv_broadcast_ugc_downloads
+syn keyword sourceVar           sv_buy_status_override sv_cacheencodedents sv_cheats
+syn keyword sourceVar           sv_client_cmdrate_difference sv_client_max_interp_ratio
+syn keyword sourceVar           sv_client_min_interp_ratio sv_client_predict sv_clockcorrection_msecs
+syn keyword sourceVar           sv_coaching_enabled sv_competitive_minspec sv_competitive_official_5v5
+syn keyword sourceVar           sv_consistency sv_contact sv_ct_spawn_on_bombsite sv_damage_print_enable
+syn keyword sourceVar           sv_dc_friends_reqd sv_deadtalk sv_debug_entity sv_debug_player_use
+syn keyword sourceVar           sv_debug_ugc_downloads sv_debugmanualmode sv_debugtempentities sv_deltaprint
+syn keyword sourceVar           sv_deltatime sv_disable_glow_faritems sv_disable_glow_survivors
+syn keyword sourceVar           sv_disable_immunity_alpha sv_disable_observer_interpolation
+syn keyword sourceVar           sv_disable_show_team_select_menu sv_downloadurl sv_enable_delta_packing
+syn keyword sourceVar           sv_enableoldqueries sv_extra_client_connect_time sv_filterban sv_footsteps
+syn keyword sourceVar           sv_force_transmit_players sv_forcepreload sv_friction sv_full_alltalk
+syn keyword sourceVar           sv_gameinstructor_disable sv_gametypes sv_glowenable sv_gravity
+syn keyword sourceVar           sv_grenade_trajectory_dash sv_grenade_trajectory_thickness
+syn keyword sourceVar           sv_grenade_trajectory_time sv_grenade_trajectory_time_spectator sv_hibernate_ms
+syn keyword sourceVar           sv_hibernate_ms_vgui sv_hibernate_postgame_delay sv_hibernate_punt_tv_clients
+syn keyword sourceVar           sv_hibernate_when_empty sv_holiday_mode sv_hosting_lobby sv_hudhint_sound
+syn keyword sourceVar           sv_ignore_hitboxes sv_ignoregrenaderadio sv_infected_scale_max
+syn keyword sourceVar           sv_infected_scale_min sv_instancebaselines sv_kick_ban_duration
+syn keyword sourceVar           sv_kick_players_with_cooldown sv_ladder_useonly sv_ladderautomountdot
+syn keyword sourceVar           sv_lagflushbonecache sv_lagpushticks sv_lan sv_log_onefile sv_logbans
+syn keyword sourceVar           sv_logblocks sv_logdownloadlist sv_logecho sv_logfile sv_logflush sv_logsdir
+syn keyword sourceVar           sv_logsecret sv_lowedict_action sv_lowedict_threshold sv_massreport
+syn keyword sourceVar           sv_master_legacy_mode sv_master_share_game_socket sv_matchend_drops_enabled
+syn keyword sourceVar           sv_matchpause_auto_5v5 sv_max_allowed_net_graph sv_max_connects_sec
+syn keyword sourceVar           sv_max_connects_sec_global sv_max_connects_window sv_max_queries_sec
+syn keyword sourceVar           sv_max_queries_sec_global sv_max_queries_tracked_ips_max
+syn keyword sourceVar           sv_max_queries_tracked_ips_prune sv_max_queries_window
+syn keyword sourceVar           sv_max_usercmd_future_ticks sv_maxclientframes sv_maxcmdrate sv_maxplayers
+syn keyword sourceVar           sv_maxrate sv_maxreplay sv_maxroutable sv_maxspeed sv_maxunlag sv_maxupdaterate
+syn keyword sourceVar           sv_maxuptimelimit sv_maxusrcmdprocessticks sv_maxusrcmdprocessticks_holdaim
+syn keyword sourceVar           sv_maxusrcmdprocessticks_warning sv_maxvelocity sv_mincmdrate sv_minrate
+syn keyword sourceVar           sv_minupdaterate sv_minuptimelimit sv_multiplayer_maxtempentities
+syn keyword sourceVar           sv_multiplayer_sounds sv_music_debug sv_namechange_cooldown_seconds
+syn keyword sourceVar           sv_netspike_on_reliable_snapshot_overflow sv_new_delta_bits sv_noclipaccelerate
+syn keyword sourceVar           sv_noclipfriction sv_noclipspeed sv_npc_talker_maxdist sv_occlude_players
+syn keyword sourceVar           sv_optimizedmovement sv_parallel_packentities sv_parallel_sendsnapshot
+syn keyword sourceVar           sv_party_mode sv_password sv_pausable sv_pausable_dev sv_pausable_dev_ds
+syn keyword sourceVar           sv_player_max_separation_force sv_playerperfhistorycount
+syn keyword sourceVar           sv_proj_stunball_damage sv_pure_consensus sv_pure_kick_clients
+syn keyword sourceVar           sv_pure_retiretime sv_pure_trace sv_pushaway_clientside
+syn keyword sourceVar           sv_pushaway_clientside_size sv_pushaway_force sv_pushaway_max_force
+syn keyword sourceVar           sv_pushaway_min_force sv_pushaway_min_player_speed sv_pvsskipanimation
+syn keyword sourceVar           sv_pz_endgame_vote_period sv_pz_endgame_vote_post_period
+syn keyword sourceVar           sv_quota_stringcmdspersecond sv_ragdoll_maxcount sv_ragdoll_maxcount_boss
+syn keyword sourceVar           sv_ragdoll_maxcount_generic sv_ragdoll_maxcount_gib sv_ragdoll_maxcount_special
+syn keyword sourceVar           sv_ragdoll_maxcount_survivor sv_ragdoll_version sv_rcon_banpenalty sv_rcon_log
+syn keyword sourceVar           sv_rcon_maxfailures sv_rcon_maxpacketbans sv_rcon_maxpacketsize
+syn keyword sourceVar           sv_rcon_minfailures sv_rcon_minfailuretime sv_rcon_whitelist_address
+syn keyword sourceVar           sv_regeneration_wait_time sv_region sv_registration_message
+syn keyword sourceVar           sv_registration_successful sv_reliableavatardata sv_remove_old_ugc_downloads
+syn keyword sourceVar           sv_rescue_disabled sv_reservation_grace sv_reservation_tickrate_adjustment
+syn keyword sourceVar           sv_reservation_timeout sv_restrict_aspect_ratio_fov sv_robust_explosions
+syn keyword sourceVar           sv_rollangle sv_rollspeed sv_runcmds sv_script_think_interval sv_search_key
+syn keyword sourceVar           sv_search_team_key sv_sendtables sv_server_graphic1 sv_server_graphic2
+syn keyword sourceVar           sv_show_assassination_target_to_everyone sv_show_crosshair_target
+syn keyword sourceVar           sv_show_cull_props sv_show_whitelist_msg sv_showdamage sv_showdebugtracers
+syn keyword sourceVar           sv_showimpacts sv_showimpacts_penetration sv_showimpacts_time sv_showladders
+syn keyword sourceVar           sv_showplayerhitboxes sv_showprecachedsounds sv_skyname
+syn keyword sourceVar           sv_sound_discardextraunreliable sv_soundemitter_trace
+syn keyword sourceVar           sv_spawn_afk_bomb_drop_time sv_spec_hear sv_specaccelerate sv_specnoclip
+syn keyword sourceVar           sv_specspeed sv_staminajumpcost sv_staminalandcost sv_staminamax
+syn keyword sourceVar           sv_staminarecoveryrate sv_stats sv_steamblockingcheck sv_steamgroup
+syn keyword sourceVar           sv_steamgroup_exclusive sv_stepsize sv_stickysprint sv_stickysprint_default
+syn keyword sourceVar           sv_stopspeed sv_stressbots sv_strict_notarget sv_sync_client_updates sv_tags
+syn keyword sourceVar           sv_test_scripted_sequences sv_teststepsimulation sv_thinktimecheck
+syn keyword sourceVar           sv_threaded_init sv_timeout sv_tracereffects_limit_general sv_turbophysics
+syn keyword sourceVar           sv_ugc_manager_max_new_file_check_interval_secs sv_unlag sv_unlag_debug
+syn keyword sourceVar           sv_unlag_fixstuck sv_unlockedchapters sv_use_steam_voice sv_useexplicitdelete
+syn keyword sourceVar           sv_usercmd_custom_random_seed sv_validate_edict_change_infos
+syn keyword sourceVar           sv_vehicle_autoaim_scale sv_visiblemaxplayers sv_voicecodec sv_voiceenable
+syn keyword sourceVar           sv_vote_allow_in_warmup sv_vote_allow_spectators sv_vote_command_delay
+syn keyword sourceVar           sv_vote_creation_timer sv_vote_disallow_kick_on_match_point
+syn keyword sourceVar           sv_vote_failure_timer sv_vote_failure_timer_mvm
+syn keyword sourceVar           sv_vote_issue_change_difficulty_allowed sv_vote_issue_change_map_later_allowed
+syn keyword sourceVar           sv_vote_issue_change_map_now_allowed sv_vote_issue_change_mission_allowed
+syn keyword sourceVar           sv_vote_issue_changelevel_allowed sv_vote_issue_changelevel_allowed_mvm
+syn keyword sourceVar           sv_vote_issue_kick_allowed sv_vote_issue_kick_allowed_mvm
+syn keyword sourceVar           sv_vote_issue_kick_spectators_mvm sv_vote_issue_loadbackup_allowed
+syn keyword sourceVar           sv_vote_issue_mvm_challenge_allowed sv_vote_issue_nextlevel_allowed
+syn keyword sourceVar           sv_vote_issue_nextlevel_allowextend sv_vote_issue_nextlevel_choicesmode
+syn keyword sourceVar           sv_vote_issue_nextlevel_prevent_change sv_vote_issue_restart_game_allowed
+syn keyword sourceVar           sv_vote_issue_scramble_teams_allowed sv_vote_kick_ban_duration
+syn keyword sourceVar           sv_vote_quorum_ratio sv_vote_timer_duration
+syn keyword sourceVar           sv_vote_to_changelevel_before_match_point sv_vote_ui_hide_disabled_issues
+syn keyword sourceVar           sv_wateraccelerate sv_waterdist sv_waterfriction sv_workshop_allow_other_maps
+syn keyword sourceVar           sv_zoo_model_filter sv_zoo_spacing sv_zoo_spacing_rows sv_zoo_spacing_wrap
+syn keyword sourceVar           sv_zoo_tint_clr sv_zoo_tint_loop sv_zoo_wrap_skin sys_antialiasing
+syn keyword sourceVar           sys_aspectratio sys_attract_mode_timeout sys_minidumpexpandedspew
+syn keyword sourceVar           sys_minidumpspewlines sys_refldetail systemlinkport tank_pz_forward
+syn keyword sourceVar           tank_rock_overhead_percent target_scan_use_query_cache tauntfrequency
 syn keyword sourceVar           teamwork_event_display_time teamwork_event_fade_in_time
 syn keyword sourceVar           teamwork_event_fade_out_time teamwork_event_min_interval telemetry_demoend
 syn keyword sourceVar           telemetry_demostart telemetry_filtervalue telemetry_framecount telemetry_level
-syn keyword sourceVar           telemetry_pause telemetry_resume telemetry_server testscript_debug
+syn keyword sourceVar           telemetry_pause telemetry_resume telemetry_server template_debug
+syn keyword sourceVar           test_massive_dmg test_massive_dmg_clip testscript_debug
 syn keyword sourceVar           texture_budget_background_alpha texture_budget_panel_bottom_of_history_fraction
 syn keyword sourceVar           texture_budget_panel_global texture_budget_panel_height
 syn keyword sourceVar           texture_budget_panel_width texture_budget_panel_x texture_budget_panel_y
-syn keyword sourceVar           tf_arena_max_streak tf_arena_preround_time tf_arena_round_time
-syn keyword sourceVar           tf_arena_use_queue tf_build_menu_controller_mode tf_chargedfriends
-syn keyword sourceVar           tf_clientsideeye_lookats tf_coach_min_time_played
-syn keyword sourceVar           tf_coach_request_nevershowagain tf_colorblindassist tf_dingaling
-syn keyword sourceVar           tf_dingaling_pitchmaxdmg tf_dingaling_pitchmindmg tf_dingaling_volume
-syn keyword sourceVar           tf_dingalingaling tf_dingalingaling_repeat_delay
-syn keyword sourceVar           tf_disguise_menu_controller_mode tf_explanations_backpackpanel
-syn keyword sourceVar           tf_explanations_charinfo_armory_panel tf_explanations_charinfopanel
-syn keyword sourceVar           tf_explanations_craftingpanel tf_explanations_discardpanel
-syn keyword sourceVar           tf_explanations_store tf_explanations_tradingpanel tf_highfive_hintcount
-syn keyword sourceVar           tf_hud_no_crosshair_on_scope_zoom tf_hud_notification_duration
-syn keyword sourceVar           tf_hud_num_building_alert_beeps tf_last_store_pricesheet_version tf_matchgroups
+syn keyword sourceVar           tf_allow_player_use tf_allow_taunt_switch tf_arena_first_blood
+syn keyword sourceVar           tf_arena_max_streak tf_arena_override_cap_enable_time
+syn keyword sourceVar           tf_arena_override_team_size tf_arena_preround_time tf_arena_round_time
+syn keyword sourceVar           tf_arena_use_queue tf_avoidteammates_pushaway tf_backstab_detection_method
+syn keyword sourceVar           tf_birthday tf_birthday_ball_chance tf_boost_drain_time tf_bot_auto_vacate
+syn keyword sourceVar           tf_bot_count tf_bot_difficulty tf_bot_force_class tf_bot_join_after_player
+syn keyword sourceVar           tf_bot_keep_class_after_death tf_bot_melee_only tf_bot_notice_gunfire_range
+syn keyword sourceVar           tf_bot_notice_quiet_gunfire_range tf_bot_offline_practice
+syn keyword sourceVar           tf_bot_path_lookahead_range tf_bot_prefix_name_with_difficulty tf_bot_quota
+syn keyword sourceVar           tf_bot_quota_mode tf_bot_sniper_allow_opportunistic tf_bot_taunt_victim_chance
+syn keyword sourceVar           tf_build_menu_controller_mode tf_caplinear tf_chargedfriends tf_clamp_airducks
+syn keyword sourceVar           tf_clamp_back_speed tf_clamp_back_speed_min tf_clientsideeye_lookats
+syn keyword sourceVar           tf_coach_min_time_played tf_coach_request_nevershowagain tf_colorblindassist
+syn keyword sourceVar           tf_ctf_bonus_time tf_damage_disablespread tf_damage_events_track_for
+syn keyword sourceVar           tf_damage_lineardist tf_damage_range tf_demoman_charge_drain_time
+syn keyword sourceVar           tf_demoman_charge_regen_rate tf_dev_health_on_damage_recover_percentage
+syn keyword sourceVar           tf_dev_marked_for_death_lifetime tf_dingaling tf_dingaling_pitchmaxdmg
+syn keyword sourceVar           tf_dingaling_pitchmindmg tf_dingaling_volume tf_dingalingaling
+syn keyword sourceVar           tf_dingalingaling_repeat_delay tf_disguise_menu_controller_mode
+syn keyword sourceVar           tf_escort_recede_time tf_escort_recede_time_overtime
+syn keyword sourceVar           tf_explanations_backpackpanel tf_explanations_charinfo_armory_panel
+syn keyword sourceVar           tf_explanations_charinfopanel tf_explanations_craftingpanel
+syn keyword sourceVar           tf_explanations_discardpanel tf_explanations_store tf_explanations_tradingpanel
+syn keyword sourceVar           tf_flag_caps_per_round tf_force_holidays_off tf_forced_holiday
+syn keyword sourceVar           tf_gamemode_arena tf_gamemode_cp tf_gamemode_ctf tf_gamemode_mvm
+syn keyword sourceVar           tf_gamemode_payload tf_gamemode_sd tf_grenadelauncher_min_contact_speed
+syn keyword sourceVar           tf_highfive_debug tf_highfive_hintcount tf_hud_no_crosshair_on_scope_zoom
+syn keyword sourceVar           tf_hud_notification_duration tf_hud_num_building_alert_beeps tf_invuln_time
+syn keyword sourceVar           tf_last_store_pricesheet_version tf_matchgroups
 syn keyword sourceVar           tf_matchmaking_goodenough_count_end tf_matchmaking_goodenough_count_start
 syn keyword sourceVar           tf_matchmaking_goodenough_score_end tf_matchmaking_goodenough_score_start
 syn keyword sourceVar           tf_matchmaking_join_in_progress tf_matchmaking_max_search_time
@@ -923,26 +1384,58 @@ syn keyword sourceVar           tf_matchmaking_numbers_valve_bonus_pts_b tf_matc
 syn keyword sourceVar           tf_matchmaking_ping_a tf_matchmaking_ping_a_score tf_matchmaking_ping_b
 syn keyword sourceVar           tf_matchmaking_ping_b_score tf_matchmaking_ping_c tf_matchmaking_ping_c_score
 syn keyword sourceVar           tf_matchmaking_retry_cooldown_seconds tf_matchmaking_retry_max_penalty
-syn keyword sourceVar           tf_matchmaking_spew_level tf_matchmaking_ticket_help tf_max_separation_force
-syn keyword sourceVar           tf_medieval_thirdperson tf_medigun_autoheal tf_mm_mannup_disabled
-syn keyword sourceVar           tf_mvm_classupgradehelpcount tf_mvm_tabs_discovered
-syn keyword sourceVar           tf_particles_disable_weather tf_quickplay_beta_ask_percentage
+syn keyword sourceVar           tf_matchmaking_spew_level tf_matchmaking_ticket_help tf_max_health_boost
+syn keyword sourceVar           tf_max_separation_force tf_max_voice_speak_delay tf_medieval tf_medieval_autorp
+syn keyword sourceVar           tf_medieval_thirdperson tf_medigun_autoheal tf_medigun_lagcomp
+syn keyword sourceVar           tf_mm_mannup_disabled tf_mm_player_reservation_timeout_seconds tf_mm_servermode
+syn keyword sourceVar           tf_mm_strict tf_mm_trusted tf_mvm_classupgradehelpcount
+syn keyword sourceVar           tf_mvm_disconnect_on_victory tf_mvm_min_players_to_start
+syn keyword sourceVar           tf_mvm_missioncyclefile tf_mvm_popfile tf_mvm_tabs_discovered tf_overtime_nag
+syn keyword sourceVar           tf_particles_disable_weather tf_player_movement_stun_time tf_playergib
+syn keyword sourceVar           tf_pressandhold_minduration tf_quickplay_beta_ask_percentage
 syn keyword sourceVar           tf_quickplay_beta_preference tf_quickplay_lastviewedmode tf_recent_achievements
 syn keyword sourceVar           tf_remember_activeweapon tf_remember_lastswitched tf_replay_pyrovision
-syn keyword sourceVar           tf_respawn_on_loadoutchanges tf_roundinfo_pause
-syn keyword sourceVar           tf_show_preset_explanation_in_class_loadout tf_simple_disguise_menu
-syn keyword sourceVar           tf_sniper_fullcharge_bell tf_spectate_pyrovision tf_spectator_target_location
-syn keyword sourceVar           tf_stats_track tf_steam_workshop_query_timeout
-syn keyword sourceVar           tf_store_stamp_donation_add_timestamp tf_test_hat_bodygroup tf_testitem_recent
+syn keyword sourceVar           tf_resolve_stuck_players tf_respawn_on_loadoutchanges tf_roundinfo_pause
+syn keyword sourceVar           tf_scout_bat_launch_delay tf_scout_energydrink_activation
+syn keyword sourceVar           tf_scout_energydrink_consume_rate tf_scout_energydrink_regen_rate
+syn keyword sourceVar           tf_scout_stunball_base_duration tf_scout_stunball_base_speed
+syn keyword sourceVar           tf_server_identity_account_id tf_server_identity_disable_quickplay
+syn keyword sourceVar           tf_server_identity_token tf_show_preset_explanation_in_class_loadout
+syn keyword sourceVar           tf_showspeed tf_simple_disguise_menu tf_sniper_fullcharge_bell
+syn keyword sourceVar           tf_soldier_buff_pulses tf_spectate_pyrovision tf_spectator_target_location
+syn keyword sourceVar           tf_spy_cloak_consume_rate tf_spy_cloak_no_attack_time tf_spy_cloak_regen_rate
+syn keyword sourceVar           tf_spy_invis_time tf_spy_invis_unstealth_time tf_spy_max_cloaked_speed
+syn keyword sourceVar           tf_stalematechangeclasstime tf_stats_nogameplaycheck tf_stats_track
+syn keyword sourceVar           tf_steam_workshop_query_timeout tf_store_stamp_donation_add_timestamp
+syn keyword sourceVar           tf_teamtalk tf_test_hat_bodygroup tf_testitem_recent
+syn keyword sourceVar           tf_tournament_classlimit_demoman tf_tournament_classlimit_engineer
+syn keyword sourceVar           tf_tournament_classlimit_heavy tf_tournament_classlimit_medic
+syn keyword sourceVar           tf_tournament_classlimit_pyro tf_tournament_classlimit_scout
+syn keyword sourceVar           tf_tournament_classlimit_sniper tf_tournament_classlimit_soldier
+syn keyword sourceVar           tf_tournament_classlimit_spy tf_tournament_hide_domination_icons
 syn keyword sourceVar           tf_training_has_prompted_for_forums tf_training_has_prompted_for_loadout
 syn keyword sourceVar           tf_training_has_prompted_for_offline_practice
 syn keyword sourceVar           tf_training_has_prompted_for_options tf_training_has_prompted_for_training
-syn keyword sourceVar           tf_weapon_select_demo_start_delay tf_weapon_select_demo_time think_limit
-syn keyword sourceVar           thirdperson_platformer thirdperson_screenspace threadpool_affinity
-syn keyword sourceVar           threadpool_reserve timedemo_runcount tir_start tir_stop tracer_extra
-syn keyword sourceVar           training_map_video tv_autorecord tv_autoretry tv_chatgroupsize tv_chattimelimit
-syn keyword sourceVar           tv_debug tv_deltacache tv_dispatchmode tv_enable tv_maxclients tv_maxrate
-syn keyword sourceVar           tv_name tv_nochat tv_overridemaster tv_password tv_port tv_relaypassword
+syn keyword sourceVar           tf_use_fixed_weaponspreads tf_useparticletracers tf_weapon_criticals
+syn keyword sourceVar           tf_weapon_select_demo_start_delay tf_weapon_select_demo_time
+syn keyword sourceVar           tf_whip_speed_increase think_limit thirdperson_platformer
+syn keyword sourceVar           thirdperson_screenspace threadpool_affinity threadpool_reserve
+syn keyword sourceVar           timedemo_runcount tir_start tir_stop tongue_bullet_radius trace_report
+syn keyword sourceVar           tracer_extra training_can_build_dispenser training_can_build_sentry
+syn keyword sourceVar           training_can_build_tele_entrance training_can_build_tele_exit
+syn keyword sourceVar           training_can_destroy_buildings training_can_pickup_dispenser
+syn keyword sourceVar           training_can_pickup_sentry training_can_pickup_tele_entrance
+syn keyword sourceVar           training_can_pickup_tele_exit training_can_select_weapon_building
+syn keyword sourceVar           training_can_select_weapon_item1 training_can_select_weapon_item2
+syn keyword sourceVar           training_can_select_weapon_melee training_can_select_weapon_pda
+syn keyword sourceVar           training_can_select_weapon_primary training_can_select_weapon_secondary
+syn keyword sourceVar           training_class training_map_video tutor tv_advertise_watchable
+syn keyword sourceVar           tv_allow_camera_man tv_allow_camera_man_steamid tv_allow_static_shots
+syn keyword sourceVar           tv_autorecord tv_autoretry tv_chatgroupsize tv_chattimelimit tv_debug tv_delay
+syn keyword sourceVar           tv_delaymapchange tv_deltacache tv_dispatchmode tv_dispatchweight tv_enable
+syn keyword sourceVar           tv_encryptdata_key tv_encryptdata_key_pub tv_maxclients
+syn keyword sourceVar           tv_maxclients_relayreserved tv_maxrate tv_name tv_nochat tv_overridemaster
+syn keyword sourceVar           tv_password tv_port tv_relaypassword tv_relayradio tv_relaytextchat
 syn keyword sourceVar           tv_relayvoice tv_snapshotrate tv_timeout tv_title tv_transmitall
 syn keyword sourceVar           ui_blogpost_scroll_speed ui_blogpost_upload_retry_time
 syn keyword sourceVar           ui_blogpost_upload_version ui_blogpost_vote_test ui_foundgames_fake_content
@@ -955,9 +1448,12 @@ syn keyword sourceVar           ui_mainmenu_blogpost_animation ui_mainmenu_chall
 syn keyword sourceVar           ui_modes_filter_players ui_old_options_menu ui_play_online_browser
 syn keyword sourceVar           ui_public_lobby_filter_campaign ui_public_lobby_filter_difficulty2
 syn keyword sourceVar           ui_public_lobby_filter_status ui_start_dlc_time_corrupt
-syn keyword sourceVar           ui_start_dlc_time_loaded ui_start_dlc_time_pump ui_volume_max v_centermove
-syn keyword sourceVar           v_centerspeed v_ipitch_cycle v_ipitch_level v_iroll_cycle v_iroll_level
-syn keyword sourceVar           v_iyaw_cycle v_iyaw_level vcr_verbose verbose_tank_music
+syn keyword sourceVar           ui_start_dlc_time_loaded ui_start_dlc_time_pump
+syn keyword sourceVar           ui_steam_overlay_notification_position ui_volume_max
+syn keyword sourceVar           ui_workshop_games_expire_minutes v_centermove v_centerspeed v_ipitch_cycle
+syn keyword sourceVar           v_ipitch_level v_iroll_cycle v_iroll_level v_iyaw_cycle v_iyaw_level
+syn keyword sourceVar           vcr_verbose verbose_tank_music versus_force_start_time versus_marker_num
+syn keyword sourceVar           versus_round_restarttimer versus_round_restarttimer_finale
 syn keyword sourceVar           versus_stats_highlight_interval vgui_drawfocus vgui_drawkeyfocus
 syn keyword sourceVar           vgui_drawtree_bounds vgui_drawtree_draw_selected vgui_drawtree_freeze
 syn keyword sourceVar           vgui_drawtree_hidden vgui_drawtree_panelalpha vgui_drawtree_panelptr
@@ -965,429 +1461,80 @@ syn keyword sourceVar           vgui_drawtree_popupsonly vgui_drawtree_render_or
 syn keyword sourceVar           vgui_drawtree_visible vgui_message_dialog_modal vgui_show_glyph_miss
 syn keyword sourceVar           video_quicktime_decode_gamma video_quicktime_encode_gamma view_offset
 syn keyword sourceVar           viewmodel_fov viewmodel_fov_demo viewmodel_offset_x viewmodel_offset_y
-syn keyword sourceVar           viewmodel_offset_z violence_ablood violence_agibs violence_hblood
-syn keyword sourceVar           violence_hgibs vm_camera vm_camera_interp_speed vm_camera_no_roll
-syn keyword sourceVar           vm_camera_scale vm_draw_addon vm_draw_always vm_fade voice_all_icons
-syn keyword sourceVar           voice_avggain voice_clientdebug voice_debugfeedback voice_debugfeedbackfrom
-syn keyword sourceVar           voice_dsound voice_enable voice_fadeouttime voice_forcemicrecord
-syn keyword sourceVar           voice_head_icon_height voice_head_icon_size voice_inputfromfile
-syn keyword sourceVar           voice_local_icon voice_loopback voice_maxgain voice_minimum_gain
-syn keyword sourceVar           voice_modenable voice_overdrive voice_overdrivefadetime voice_profile
-syn keyword sourceVar           voice_recordtofile voice_scale voice_showchannels voice_showincoming
-syn keyword sourceVar           voice_spatialize voice_steal voice_threshold voice_vox voice_writevoices
+syn keyword sourceVar           viewmodel_offset_z viewmodel_presetpos violence_ablood violence_agibs
+syn keyword sourceVar           violence_hblood violence_hgibs vm_camera vm_camera_interp_speed
+syn keyword sourceVar           vm_camera_no_roll vm_camera_scale vm_draw_addon vm_draw_always vm_fade
+syn keyword sourceVar           voice_all_icons voice_avggain voice_caster_enable voice_caster_scale
+syn keyword sourceVar           voice_clientdebug voice_debugfeedback voice_debugfeedbackfrom voice_dsound
+syn keyword sourceVar           voice_enable voice_fadeouttime voice_forcemicrecord voice_head_icon_height
+syn keyword sourceVar           voice_head_icon_size voice_inputfromfile voice_local_icon voice_loopback
+syn keyword sourceVar           voice_maxgain voice_minimum_gain voice_modenable voice_overdrive
+syn keyword sourceVar           voice_overdrivefadetime voice_profile voice_recordtofile voice_scale
+syn keyword sourceVar           voice_serverdebug voice_showchannels voice_showincoming voice_spatialize
+syn keyword sourceVar           voice_steal voice_system_enable voice_threshold voice_vox voice_writevoices
 syn keyword sourceVar           voice_xsend_debug volume vphysics_client_threaded
 syn keyword sourceVar           vphysics_client_threaded_min_cpus vprof_counters vprof_counters_show_minmax
 syn keyword sourceVar           vprof_dump_oninterval vprof_dump_spikes vprof_dump_spikes_budget_group
 syn keyword sourceVar           vprof_dump_spikes_hiearchy vprof_dump_spikes_node vprof_dump_spikes_terse
 syn keyword sourceVar           vprof_graph vprof_graphheight vprof_graphwidth vprof_scope
-syn keyword sourceVar           vprof_server_spike_threshold vprof_server_thread vprof_unaccounted_limit
-syn keyword sourceVar           vprof_verbose vprof_warningmsec weapon_spawn_fade_distance
-syn keyword sourceVar           windows_speaker_config x360_audio_english x360_resolution_height
-syn keyword sourceVar           x360_resolution_interlaced x360_resolution_widescreen_mode
-syn keyword sourceVar           x360_resolution_width youtube_http_proxy youtube_username z_added_light_max
-syn keyword sourceVar           z_added_light_min z_added_light_scale z_anim_idle_speed_max
-syn keyword sourceVar           z_anim_idle_speed_min z_atomize_gibbed_limbs_probability z_burn_decay_rate
-syn keyword sourceVar           z_debug_infected_anim z_debug_shared_random z_difficulty z_escape_route_far
+syn keyword sourceVar           vprof_scope_entity_gamephys vprof_scope_entity_thinks
+syn keyword sourceVar           vprof_server_spike_threshold vprof_server_thread vprof_think_limit
+syn keyword sourceVar           vprof_unaccounted_limit vprof_verbose vprof_warningmsec vs_score_pp_health
+syn keyword sourceVar           vs_score_pp_healthbuffer weapon_reticle_knife_show weapon_showproficiency
+syn keyword sourceVar           weapon_spawn_fade_distance windows_speaker_config witch_rage_ramp_duration
+syn keyword sourceVar           x360_audio_english x360_resolution_height x360_resolution_interlaced
+syn keyword sourceVar           x360_resolution_widescreen_mode x360_resolution_width xbox_autothrottle
+syn keyword sourceVar           xbox_steering_deadzone xbox_throttlebias xbox_throttlespoof xc_crouch_debounce
+syn keyword sourceVar           xc_crouch_range xc_uncrouch_on_jump xc_use_crouch_limiter youtube_http_proxy
+syn keyword sourceVar           youtube_username z_added_light_max z_added_light_min z_added_light_scale
+syn keyword sourceVar           z_anim_idle_speed_max z_anim_idle_speed_min z_atomize_gibbed_limbs_probability
+syn keyword sourceVar           z_attack_change_target_range z_attack_interval z_attack_max_range
+syn keyword sourceVar           z_attack_min_range z_attack_movement_penalty z_attack_on_the_run_range
+syn keyword sourceVar           z_bbq_min z_bbq_rate z_burn_decay_rate z_burn_max z_burn_rate
+syn keyword sourceVar           z_checkpoint_debug z_damage_screen_fade_alpha z_damage_screen_fade_duration
+syn keyword sourceVar           z_debug_infected_anim z_debug_infected_server_anim z_debug_shared_random
+syn keyword sourceVar           z_debug_stuck z_difficulty z_door_pound_damage z_escape_route_far
 syn keyword sourceVar           z_escape_route_near z_escape_route_segment_fade_in_rate
-syn keyword sourceVar           z_escape_route_segment_fade_out_rate z_ghost_ahead_flow z_ghost_friction
-syn keyword sourceVar           z_gib_spread_force z_gib_spread_randomize z_gib_spread_torque
-syn keyword sourceVar           z_gun_swing_coop_max_penalty z_gun_swing_coop_min_penalty
-syn keyword sourceVar           z_gun_swing_vs_amt_penalty z_gun_swing_vs_cooldown z_gun_swing_vs_max_penalty
-syn keyword sourceVar           z_gun_swing_vs_min_penalty z_gun_swing_vs_restore_time
-syn keyword sourceVar           z_infected_damage_cutouts z_infected_decals z_infected_gib_count
-syn keyword sourceVar           z_infected_gib_max_speed z_infected_gib_min_speed z_infected_shadows
-syn keyword sourceVar           z_infected_tinting z_it_decay_rate z_leap_cooldown z_lunge_cooldown
-syn keyword sourceVar           z_lunge_reflect z_max_player_zombies z_minigun_debug z_minigun_fire_anim_speed
+syn keyword sourceVar           z_escape_route_segment_fade_out_rate z_exploding_force z_exploding_inner_radius
+syn keyword sourceVar           z_exploding_outer_radius z_fatal_blast_incineration_probability
+syn keyword sourceVar           z_fatal_blast_max_ragdolls z_fatal_blast_min_ragdolls
+syn keyword sourceVar           z_finale_spawn_safety_range_override z_ghost_ahead_flow z_ghost_cooldown
+syn keyword sourceVar           z_ghost_delay_minspawn z_ghost_duration z_ghost_friction z_ghost_group_spawn
+syn keyword sourceVar           z_ghost_line_of_scrimmage_far z_ghost_line_of_scrimmage_near
+syn keyword sourceVar           z_ghost_line_of_scrimmage_safety z_ghost_line_of_scrimmage_threat_bonus
+syn keyword sourceVar           z_ghost_los_expected_progress z_ghost_offer_acceptance_time
+syn keyword sourceVar           z_ghost_offer_spawn_safety_time z_ghost_spawn_distance z_gib_spread_force
+syn keyword sourceVar           z_gib_spread_randomize z_gib_spread_torque z_gun_swing_coop_max_penalty
+syn keyword sourceVar           z_gun_swing_coop_min_penalty z_gun_swing_vs_amt_penalty z_gun_swing_vs_cooldown
+syn keyword sourceVar           z_gun_swing_vs_max_penalty z_gun_swing_vs_min_penalty
+syn keyword sourceVar           z_gun_swing_vs_restore_time z_head_damage_causes_wounds z_hunter_lunge_distance
+syn keyword sourceVar           z_hunter_lunge_pitch z_infected_damage_cutouts z_infected_decals
+syn keyword sourceVar           z_infected_gib_count z_infected_gib_max_speed z_infected_gib_min_speed
+syn keyword sourceVar           z_infected_shadows z_infected_tinting z_it_decay_rate z_leap_cooldown
+syn keyword sourceVar           z_lunge_cooldown z_lunge_reflect z_max_player_zombies z_max_survivor_damage
+syn keyword sourceVar           z_minigun_atomize z_minigun_debug z_minigun_fire_anim_speed
 syn keyword sourceVar           z_minigun_firing_speed z_minigun_particles z_minigun_spin_down_speed
 syn keyword sourceVar           z_minigun_spin_up_speed z_minigun_spread z_minigun_stand_distance
 syn keyword sourceVar           z_mob_simple_shadows z_network_compression z_nightvision_b z_nightvision_g
-syn keyword sourceVar           z_nightvision_r z_ragdoll_impact_strength z_round_start_attack_prevention
-syn keyword sourceVar           z_scrimmage_a_far z_scrimmage_a_near z_scrimmage_b z_scrimmage_creep_delay
-syn keyword sourceVar           z_scrimmage_creep_rate z_scrimmage_debug z_scrimmage_far z_scrimmage_g
-syn keyword sourceVar           z_scrimmage_height z_scrimmage_r z_scrimmage_reset z_scrimmage_yardline_a_far
+syn keyword sourceVar           z_nightvision_r z_non_head_damage_factor_multiplier z_population
+syn keyword sourceVar           z_pounce_shake_amplitude z_pounce_shake_duration z_pounce_shake_radius
+syn keyword sourceVar           z_pounce_stumble_radius z_ragdoll_discard_range z_ragdoll_impact_strength
+syn keyword sourceVar           z_round_start_attack_prevention z_scrimmage_a_far z_scrimmage_a_near
+syn keyword sourceVar           z_scrimmage_b z_scrimmage_creep_delay z_scrimmage_creep_rate z_scrimmage_debug
+syn keyword sourceVar           z_scrimmage_far z_scrimmage_g z_scrimmage_height z_scrimmage_r
+syn keyword sourceVar           z_scrimmage_reset z_scrimmage_sphere z_scrimmage_yardline_a_far
 syn keyword sourceVar           z_scrimmage_yardline_a_near z_scrimmage_yardline_b z_scrimmage_yardline_far
 syn keyword sourceVar           z_scrimmage_yardline_g z_scrimmage_yardline_height z_scrimmage_yardline_r
-syn keyword sourceVar           z_scrimmage_yardline_width z_spec_nightvision z_splatter_delay
-syn keyword sourceVar           z_splatter_delay_melee z_splatterdistance z_tracer_particles
-syn keyword sourceVar           z_transitioning_player_addon_rebuild z_witch_rage_smoothing
-syn keyword sourceVar           z_wound_client_disabled zoom_sensitivity_ratio
-syn keyword sourceVar     ai_LOS_mode ai_actbusy_search_time ai_ally_manager_debug ai_auto_contact_solver
-syn keyword sourceVar     ai_block_damage ai_citizen_debug_commander ai_debug_assault
-syn keyword sourceVar     ai_debug_avoidancebounds ai_debug_directnavprobe ai_debug_doors
-syn keyword sourceVar     ai_debug_dyninteractions ai_debug_efficiency ai_debug_enemies
-syn keyword sourceVar     ai_debug_enemyfinders ai_debug_eventresponses ai_debug_expressions
-syn keyword sourceVar     ai_debug_follow ai_debug_loners ai_debug_looktargets ai_debug_nav
-syn keyword sourceVar     ai_debug_ragdoll_magnets ai_debug_readiness ai_debug_speech ai_debug_squads
-syn keyword sourceVar     ai_debug_think_ticks ai_debugscriptconditions ai_default_efficient
-syn keyword sourceVar     ai_ef_hate_npc_duration ai_ef_hate_npc_frequency ai_efficiency_override
-syn keyword sourceVar     ai_enable_fear_behavior ai_expression_frametime ai_expression_optimization
-syn keyword sourceVar     ai_fear_player_dist ai_find_lateral_cover ai_find_lateral_los
-syn keyword sourceVar     ai_follow_move_commands ai_follow_use_points ai_follow_use_points_when_moving
-syn keyword sourceVar     ai_force_serverside_ragdoll ai_frametime_limit ai_lead_time ai_moveprobe_debug
-syn keyword sourceVar     ai_moveprobe_jump_debug ai_moveprobe_usetracelist ai_navigator_generate_spikes
-syn keyword sourceVar     ai_navigator_generate_spikes_strength ai_new_aiming ai_newgroundturret
-syn keyword sourceVar     ai_no_local_paths ai_no_node_cache ai_no_select_box ai_no_steer
-syn keyword sourceVar     ai_no_talk_delay ai_norebuildgraph ai_path_adjust_speed_on_immediate_turns
-syn keyword sourceVar     ai_path_insert_pause_at_est_end ai_path_insert_pause_at_obstruction
-syn keyword sourceVar     ai_post_frame_navigation ai_radial_max_link_dist ai_reaction_delay_alert
-syn keyword sourceVar     ai_reaction_delay_idle ai_readiness_decay ai_rebalance_thinks
-syn keyword sourceVar     ai_report_task_timings_on_limit ai_sequence_debug ai_setupbones_debug
-syn keyword sourceVar     ai_shot_bias ai_shot_bias_max ai_shot_bias_min ai_shot_stats ai_shot_stats_term
-syn keyword sourceVar     ai_show_hull_attacks ai_show_think_tolerance ai_simulate_task_overtime
-syn keyword sourceVar     ai_spread_cone_focus_time ai_spread_defocused_cone_multiplier
-syn keyword sourceVar     ai_spread_pattern_focus_time ai_strong_optimizations
-syn keyword sourceVar     ai_strong_optimizations_no_checkstand ai_task_pre_script
-syn keyword sourceVar     ai_test_moveprobe_ignoresmall ai_think_limit_label ai_use_clipped_paths
-syn keyword sourceVar     ai_use_efficiency ai_use_frame_think_limits ai_use_readiness
-syn keyword sourceVar     ai_use_think_optimizations ai_use_visibility_cache airboat_fatal_stress
-syn keyword sourceVar     allow_all_bot_survivor_team ammo_max anim_3wayblend antlion_easycrush
-syn keyword sourceVar     autoaim_max_deflect autoaim_max_dist autoaim_unlock_target
-syn keyword sourceVar     autoaim_viewing_client birds_debug blob_batchpercent blob_element_speed
-syn keyword sourceVar     blob_mindist blob_numelements blob_radius bot_changeclass bot_forceattack
-syn keyword sourceVar     bot_forceattack2 bot_forceattack_down bot_forcefireweapon bot_mimic
-syn keyword sourceVar     bot_mimic_inverse bot_mimic_yaw_offset breakable_disable_gib_limit
-syn keyword sourceVar     breakable_multiplayer bugbait_distract_time bugbait_grenade_radius
-syn keyword sourceVar     bugbait_hear_radius bugbait_radius bulletspeed car_alarm_chirp_distance
-syn keyword sourceVar     car_alarm_chirp_duration car_alarm_chirp_interval car_alarm_distance
-syn keyword sourceVar     car_alarm_duration cc_norepeat cl_ragdoll_pronecheck_distance
-syn keyword sourceVar     cl_spewscriptintro collision_shake_amp collision_shake_freq
-syn keyword sourceVar     collision_shake_time combine_guard_spawn_health combine_spawn_health commentary
-syn keyword sourceVar     commentary_available common_dps_spew common_dps_window curve_bias
-syn keyword sourceVar     darkness_ignore_LOS_to_sources dbg_spew_connected_players_level
-syn keyword sourceVar     debug_l4dverbose debug_materialmodifycontrol debug_overlay_fullposition
-syn keyword sourceVar     debug_physimpact debug_touchlinks decalfrequency director_afk_timeout
-syn keyword sourceVar     director_allow_infected_bots director_min_start_players
-syn keyword sourceVar     director_report_screen_delay director_survival_setup_time
-syn keyword sourceVar     director_vs_convert_pills dispcoll_drawplane displaysoundlist dog_debug
-syn keyword sourceVar     dog_max_wait_time elevator_movedelay ent_debugkeys ent_show_contexts
-syn keyword sourceVar     ent_steadystate_batchsize ent_steadystate_cooldown ent_steadystate_delay
-syn keyword sourceVar     ent_steadystate_enable ent_steadystate_interval fall_speed_fatal
-syn keyword sourceVar     fall_speed_safe fidget_max_interval fidget_min_interval fire_absorbrate
-syn keyword sourceVar     fire_dmgbase fire_dmginterval fire_dmgscale fire_extabsorb fire_extscale
-syn keyword sourceVar     fire_growthrate fire_heatscale fire_incomingheatscale fire_maxabsorb
-syn keyword sourceVar     flex_expression flex_looktime flex_maxawaytime flex_maxplayertime
-syn keyword sourceVar     flex_minawaytime flex_minplayertime flex_talk free_pass_peek_debug
-syn keyword sourceVar     func_break_max_pieces func_break_reduction_factor func_breakdmg_bullet
-syn keyword sourceVar     func_breakdmg_club func_breakdmg_explosive g_Language g_ai_citizen_show_enemy
-syn keyword sourceVar     g_antlion_cascade_push g_debug_antlion g_debug_antlion_worker
-syn keyword sourceVar     g_debug_antlionguard g_debug_combine_camera g_debug_cscanner g_debug_darkness
-syn keyword sourceVar     g_debug_doors g_debug_dropship g_debug_dynamicresupplies
-syn keyword sourceVar     g_debug_npc_vehicle_roles g_debug_physcannon g_debug_transitions g_debug_turret
-syn keyword sourceVar     g_debug_turret_ceiling g_debug_vortigaunt_aim g_helicopter_bomb_danger_radius
-syn keyword sourceVar     g_helicopter_bullrush_bomb_enemy_distance g_helicopter_bullrush_bomb_speed
-syn keyword sourceVar     g_helicopter_bullrush_bomb_time g_helicopter_bullrush_distance
-syn keyword sourceVar     g_helicopter_bullrush_mega_bomb_health g_helicopter_bullrush_shoot_height
-syn keyword sourceVar     g_helicopter_chargetime g_helicopter_idletime g_helicopter_maxfiringdist
-syn keyword sourceVar     g_ragdoll_important_maxcount g_ragdoll_maxcount g_test_new_antlion_jump
-syn keyword sourceVar     grenadelauncher_startpos_forward grenadelauncher_startpos_right
-syn keyword sourceVar     grenadelauncher_startpos_up grenadelauncher_vel_up grenadelauncher_vel_variance
-syn keyword sourceVar     hap_airboat_gun_mag hap_jeep_cannon_mag hap_turret_mag hide_server
-syn keyword sourceVar     hl2_darkness_flashlight_factor hl2_episodic hl2_normspeed hl2_sprintspeed
-syn keyword sourceVar     hl2_walkspeed hostfile hud_airboathint_numentries hud_jeephint_numentries
-syn keyword sourceVar     inferno_max_trace_per_tick item_enable_content_streaming
-syn keyword sourceVar     item_quality_chance_common item_quality_chance_rare item_quality_chance_unique
-syn keyword sourceVar     l4d1_survivor_give_item l4d_show_incapupdate l4d_show_weaponequip
-syn keyword sourceVar     l4d_stats_nogameplaycheck l4d_stats_track log_verbose_enable
-syn keyword sourceVar     log_verbose_interval lservercfgfile mapcyclefile metropolice_charge
-syn keyword sourceVar     metropolice_chase_use_follow metropolice_move_and_melee monk_headshot_freq
-syn keyword sourceVar     mortar_visualize motd_enabled motdfile motdfile_text mp_allowNPCs
-syn keyword sourceVar     mp_allowspectators mp_autocrosshair mp_autokick mp_autoteambalance
-syn keyword sourceVar     mp_blockstyle mp_bonusroundtime mp_c4timer mp_capdeteriorate_time mp_capstyle
-syn keyword sourceVar     mp_chattime mp_clan_ready_signal mp_clan_readyrestart mp_defaultteam
-syn keyword sourceVar     mp_disable_respawn_times mp_enableroundwaittime mp_facefronttime mp_fadetoblack
-syn keyword sourceVar     mp_falldamage mp_feetyawrate mp_flashlight mp_footsteps mp_forceautoteam
-syn keyword sourceVar     mp_forcecamera mp_forcerespawn mp_fraglimit mp_freezetime mp_friendlyfire
-syn keyword sourceVar     mp_highlander mp_holiday_nogifts mp_humans_must_join_team mp_humanteam
-syn keyword sourceVar     mp_idledealmethod mp_idlemaxtime mp_ik mp_limitteams mp_logdetail
-syn keyword sourceVar     mp_match_end_at_timelimit mp_maxrounds mp_respawnwavetime mp_restartgame
-syn keyword sourceVar     mp_restartgame_immediate mp_restartround mp_roundlimit mp_roundtime
-syn keyword sourceVar     mp_scrambleteams_auto mp_scrambleteams_auto_windifference mp_show_voice_icons
-syn keyword sourceVar     mp_slammoveyaw mp_spawnprotectiontime mp_stalemate_at_timelimit
-syn keyword sourceVar     mp_stalemate_enable mp_stalemate_meleeonly mp_stalemate_timelimit mp_startmoney
-syn keyword sourceVar     mp_teamlist mp_teamoverride mp_teamplay mp_teams_unbalance_limit
-syn keyword sourceVar     mp_time_between_capscoring mp_timelimit mp_tkpunish mp_tournament
-syn keyword sourceVar     mp_tournament_allow_non_admin_restart mp_tournament_blueteamname
-syn keyword sourceVar     mp_tournament_redteamname mp_tournament_stopwatch mp_tournament_whitelist
-syn keyword sourceVar     mp_waitingforplayers_cancel mp_waitingforplayers_restart
-syn keyword sourceVar     mp_waitingforplayers_time mp_weaponstay mp_windifference mp_windifference_min
-syn keyword sourceVar     mp_winlimit music_bank_max_duration music_bank_min_duration
-syn keyword sourceVar     nav_drag_selection_volume_zmax_offset nav_drag_selection_volume_zmin_offset
-syn keyword sourceVar     nav_save_history nb_avoid nb_avoid_interval nb_debug_history
-syn keyword sourceVar     nb_player_move_direct nb_stuck_dump_threshold nextlevel npc_barnacle_swallow
-syn keyword sourceVar     npc_blob_idle_speed_factor npc_blob_show_centroid npc_blob_sin_amplitude
-syn keyword sourceVar     npc_blob_straggler_dist npc_blob_think_interval npc_blob_use_model
-syn keyword sourceVar     npc_blob_use_orientation npc_blob_use_threading npc_citizen_auto_player_squad
-syn keyword sourceVar     npc_citizen_auto_player_squad_allow_use npc_citizen_dont_precache_all
-syn keyword sourceVar     npc_citizen_explosive_resist npc_citizen_insignia npc_citizen_medic_emit_sound
-syn keyword sourceVar     npc_citizen_squad_marker npc_create_equipment npc_go_do_run npc_height_adjust
-syn keyword sourceVar     npc_sentences npc_strider_height_adj npc_strider_shake_ropes_magnitude
-syn keyword sourceVar     npc_strider_shake_ropes_radius npc_vphysics obj_capture_damage
-syn keyword sourceVar     obj_sapper_amount obj_show_damage object_deterioration_time old_radiusdamage
-syn keyword sourceVar     option_duck_method phys2_shoot_speed phys_impactforcescale
-syn keyword sourceVar     phys_penetration_error_time phys_pushscale phys_shoot_torque phys_speeds
-syn keyword sourceVar     phys_stressbodyweights phys_timescale phys_upimpactforcescale
-syn keyword sourceVar     physcannon_ball_cone physcannon_chargetime physcannon_cone physcannon_dmg_glass
-syn keyword sourceVar     physcannon_maxforce physcannon_maxmass physcannon_mega_pullforce
-syn keyword sourceVar     physcannon_mega_tracelength physcannon_minforce physcannon_pullforce
-syn keyword sourceVar     physcannon_punt_cone physcannon_right_turrets physcannon_tracelength
-syn keyword sourceVar     physicsshadowupdate_render pipe_bomb_beep_interval_delta
-syn keyword sourceVar     pipe_bomb_beep_min_interval pipe_bomb_initial_beep_interval
-syn keyword sourceVar     pipe_bomb_shake_amplitude pipe_bomb_shake_radius pipe_bomb_timer_duration
-syn keyword sourceVar     pistol_use_new_accuracy player_limit_jump_speed player_old_armor
-syn keyword sourceVar     player_showpredictedposition player_showpredictedposition_timestep
-syn keyword sourceVar     player_squad_autosummon_debug player_squad_autosummon_move_tolerance
-syn keyword sourceVar     player_squad_autosummon_player_tolerance player_squad_autosummon_time
-syn keyword sourceVar     player_squad_autosummon_time_after_combat player_squad_double_tap_time
-syn keyword sourceVar     player_squad_transient_commands player_throwforce prop_active_gib_limit
-syn keyword sourceVar     prop_active_gib_max_fade_time props_break_max_pieces_perframe
-syn keyword sourceVar     replay_dofileserver_cleanup_on_start replay_fileserver_autocleanup
-syn keyword sourceVar     replay_fileserver_offload_aborttime replay_fileserver_offload_enable
-syn keyword sourceVar     replay_fileserver_offload_hostname replay_fileserver_offload_login
-syn keyword sourceVar     replay_fileserver_offload_maxuploads replay_fileserver_offload_password
-syn keyword sourceVar     replay_fileserver_offload_port replay_fileserver_offload_protocol
-syn keyword sourceVar     replay_fileserver_offload_proxy_host replay_fileserver_offload_proxy_port
-syn keyword sourceVar     replay_fileserver_offload_remotepath replay_fileserver_offload_useproxy
-syn keyword sourceVar     replay_max_publish_threads replay_name replay_record_voice
-syn keyword sourceVar     rpg_missle_use_custom_detonators rr_debug_qa rr_debugplayer
-syn keyword sourceVar     rr_debugresponseconcept rr_debugresponses rr_debugrule rr_dumpresponses
-syn keyword sourceVar     sb_allow_leading sb_melee_approach_victim sb_reachable_cache_paranoia sb_skill
-syn keyword sourceVar     sb_temp_health_consider_factor sb_toughness_buffer sb_transition
-syn keyword sourceVar     scene_async_prefetch_spew scene_clamplookat scene_clientflex
-syn keyword sourceVar     scene_clientplayback scene_flatturn scene_forcecombined scene_maxcaptionradius
-syn keyword sourceVar     scene_print scene_showfaceto scene_showlook scene_showmoveto scene_showunlock
-syn keyword sourceVar     script_attach_debugger_at_startup script_break_in_native_debugger_on_error
-syn keyword sourceVar     servercfgfile showhitlocation showsniperdist showsniperlines
-syn keyword sourceVar     sk_airboat_drain_rate sk_airboat_max_ammo sk_airboat_recharge_rate
-syn keyword sourceVar     sk_allow_autoaim sk_ally_regen_time sk_ammo_qty_scale1 sk_ammo_qty_scale2
-syn keyword sourceVar     sk_ammo_qty_scale3 sk_antlion_air_attack_dmg sk_antlion_health
-syn keyword sourceVar     sk_antlion_jump_damage sk_antlion_swipe_damage sk_antlionguard_dmg_charge
-syn keyword sourceVar     sk_antlionguard_dmg_shove sk_antlionguard_health sk_apc_health
-syn keyword sourceVar     sk_apc_missile_damage sk_auto_reload_time sk_autoaim_mode sk_autoaim_scale1
-syn keyword sourceVar     sk_autoaim_scale2 sk_barnacle_health sk_barney_health sk_battery
-syn keyword sourceVar     sk_bullseye_health sk_citizen_giveammo_player_delay sk_citizen_heal_ally
-syn keyword sourceVar     sk_citizen_heal_ally_delay sk_citizen_heal_ally_min_pct sk_citizen_heal_player
-syn keyword sourceVar     sk_citizen_heal_player_delay sk_citizen_heal_player_min_forced
-syn keyword sourceVar     sk_citizen_heal_player_min_pct sk_citizen_health sk_citizen_player_stare_dist
-syn keyword sourceVar     sk_citizen_player_stare_time sk_citizen_stare_heal_time
-syn keyword sourceVar     sk_combine_ball_search_radius sk_combine_guard_health sk_combine_guard_kick
-syn keyword sourceVar     sk_combine_s_health sk_combine_s_kick sk_combineball_guidefactor
-syn keyword sourceVar     sk_combineball_seek_angle sk_combineball_seek_kill sk_crow_health
-syn keyword sourceVar     sk_crow_melee_dmg sk_crowbar_lead_time sk_dmg_homer_grenade
-syn keyword sourceVar     sk_dmg_inflict_scale1 sk_dmg_inflict_scale2 sk_dmg_inflict_scale3
-syn keyword sourceVar     sk_dmg_pathfollower_grenade sk_dmg_sniper_penetrate_npc
-syn keyword sourceVar     sk_dmg_sniper_penetrate_plr sk_dmg_take_scale1 sk_dmg_take_scale2
-syn keyword sourceVar     sk_dmg_take_scale3 sk_dropship_container_health sk_dynamic_resupply_modifier
-syn keyword sourceVar     sk_env_headcrabcanister_shake_amplitude sk_env_headcrabcanister_shake_radius
-syn keyword sourceVar     sk_env_headcrabcanister_shake_radius_vehicle sk_fraggrenade_radius
-syn keyword sourceVar     sk_gunship_burst_dist sk_gunship_burst_min sk_gunship_burst_size
-syn keyword sourceVar     sk_gunship_health_increments sk_headcrab_fast_health sk_headcrab_health
-syn keyword sourceVar     sk_headcrab_melee_dmg sk_headcrab_poison_health sk_headcrab_poison_npc_damage
-syn keyword sourceVar     sk_healthcharger sk_healthkit sk_healthvial sk_helicopter_burstcount
-syn keyword sourceVar     sk_helicopter_drone_speed sk_helicopter_firingcone
-syn keyword sourceVar     sk_helicopter_grenade_puntscale sk_helicopter_grenadedamage
-syn keyword sourceVar     sk_helicopter_grenadeforce sk_helicopter_grenaderadius sk_helicopter_health
-syn keyword sourceVar     sk_helicopter_num_bombs1 sk_helicopter_num_bombs2 sk_helicopter_num_bombs3
-syn keyword sourceVar     sk_helicopter_roundsperburst sk_homer_grenade_radius sk_ichthyosaur_health
-syn keyword sourceVar     sk_ichthyosaur_melee_dmg sk_jeep_gauss_damage sk_manhack_health
-syn keyword sourceVar     sk_manhack_melee_dmg sk_manhack_v2 sk_max_357 sk_max_alyxgun sk_max_ar2
-syn keyword sourceVar     sk_max_ar2_altfire sk_max_buckshot sk_max_crossbow sk_max_gauss_round
-syn keyword sourceVar     sk_max_grenade sk_max_pistol sk_max_rpg_round sk_max_smg1 sk_max_smg1_grenade
-syn keyword sourceVar     sk_max_sniper_round sk_metropolice_health sk_metropolice_simple_health
-syn keyword sourceVar     sk_metropolice_stitch_along_hitcount sk_metropolice_stitch_at_hitcount
-syn keyword sourceVar     sk_metropolice_stitch_behind_hitcount sk_metropolice_stitch_distance
-syn keyword sourceVar     sk_metropolice_stitch_reaction sk_metropolice_stitch_tight_hitcount sk_npc_arm
-syn keyword sourceVar     sk_npc_chest sk_npc_dmg_357 sk_npc_dmg_airboat sk_npc_dmg_alyxgun
-syn keyword sourceVar     sk_npc_dmg_ar2 sk_npc_dmg_buckshot sk_npc_dmg_combineball sk_npc_dmg_crossbow
-syn keyword sourceVar     sk_npc_dmg_crowbar sk_npc_dmg_dropship sk_npc_dmg_fraggrenade
-syn keyword sourceVar     sk_npc_dmg_grenade sk_npc_dmg_gunship sk_npc_dmg_gunship_to_plr
-syn keyword sourceVar     sk_npc_dmg_helicopter sk_npc_dmg_helicopter_to_plr sk_npc_dmg_pistol
-syn keyword sourceVar     sk_npc_dmg_rpg_round sk_npc_dmg_smg1 sk_npc_dmg_smg1_grenade
-syn keyword sourceVar     sk_npc_dmg_sniper_round sk_npc_dmg_stunstick sk_npc_head sk_npc_leg
-syn keyword sourceVar     sk_npc_stomach sk_pathfollower_grenade_radius sk_player_arm sk_player_chest
-syn keyword sourceVar     sk_player_head sk_player_leg sk_player_stomach sk_plr_dmg_357
-syn keyword sourceVar     sk_plr_dmg_airboat sk_plr_dmg_alyxgun sk_plr_dmg_ar2 sk_plr_dmg_buckshot
-syn keyword sourceVar     sk_plr_dmg_crossbow sk_plr_dmg_crowbar sk_plr_dmg_fraggrenade
-syn keyword sourceVar     sk_plr_dmg_grenade sk_plr_dmg_pistol sk_plr_dmg_rpg_round sk_plr_dmg_smg1
-syn keyword sourceVar     sk_plr_dmg_smg1_grenade sk_plr_dmg_sniper_round sk_plr_dmg_stunstick
-syn keyword sourceVar     sk_plr_grenade_drop_time sk_plr_health_drop_time sk_plr_num_shotgun_pellets
-syn keyword sourceVar     sk_rollermine_shock sk_rollermine_stun_delay sk_rollermine_vehicle_intercept
-syn keyword sourceVar     sk_scanner_dmg_dive sk_scanner_health sk_smg1_grenade_radius sk_stalker_health
-syn keyword sourceVar     sk_stalker_melee_dmg sk_strider_health sk_strider_num_missiles1
-syn keyword sourceVar     sk_strider_num_missiles2 sk_strider_num_missiles3 sk_suitcharger
-syn keyword sourceVar     sk_suitcharger_citadel sk_suitcharger_citadel_maxarmor
-syn keyword sourceVar     sk_vortigaunt_armor_charge sk_vortigaunt_armor_charge_per_token
-syn keyword sourceVar     sk_vortigaunt_dmg_claw sk_vortigaunt_dmg_rake sk_vortigaunt_dmg_zap
-syn keyword sourceVar     sk_vortigaunt_health sk_vortigaunt_vital_antlion_worker_dmg
-syn keyword sourceVar     sk_vortigaunt_zap_range sk_weapon_ar2_alt_fire_duration
-syn keyword sourceVar     sk_weapon_ar2_alt_fire_mass sk_weapon_ar2_alt_fire_radius
-syn keyword sourceVar     sk_zombie_dmg_both_slash sk_zombie_dmg_one_slash sk_zombie_health
-syn keyword sourceVar     sk_zombie_poison_dmg_spit sk_zombie_poison_health smoke_trail smoothstairs
-syn keyword sourceVar     sniper_xbox_delay sniperspeak sniperviewdist soundpatch_captionlength
-syn keyword sourceVar     spec_filter spec_filter_infected spec_filter_survivors spit_scaling_min_scale
-syn keyword sourceVar     steamworks_sessionid_server step_spline strider_always_use_procedural_height
-syn keyword sourceVar     strider_ar2_altfire_dmg strider_distributed_fire strider_eyepositions
-syn keyword sourceVar     strider_free_knowledge strider_free_pass_after_escorts_dead
-syn keyword sourceVar     strider_free_pass_cover_dist strider_free_pass_duration
-syn keyword sourceVar     strider_free_pass_move_tolerance strider_free_pass_refill_rate
-syn keyword sourceVar     strider_free_pass_start_time strider_free_pass_tolerance_after_escorts_dead
-syn keyword sourceVar     strider_idle_test strider_immolate strider_missile_suppress_dist
-syn keyword sourceVar     strider_missile_suppress_time strider_pct_height_no_crouch_move
-syn keyword sourceVar     strider_peek_eye_dist strider_peek_eye_dist_z strider_peek_time
-syn keyword sourceVar     strider_peek_time_after_damage strider_show_cannonlos strider_show_focus
-syn keyword sourceVar     strider_show_weapon_los_condition strider_show_weapon_los_z strider_test_height
-syn keyword sourceVar     suitvolume survivor_death_anims survivor_incap_decay_rate survivor_incap_health
-syn keyword sourceVar     survivor_incap_hopeless_decay_rate survivor_incap_max_fall_damage
-syn keyword sourceVar     survivor_incap_tongued_decay_rate survivor_limit survivor_model_selection
-syn keyword sourceVar     survivor_respawn_with_guns sv__ragdoll_max_remove_per_frame sv_accelerate
-syn keyword sourceVar     sv_airaccelerate sv_allow_color_correction sv_allow_lobby_connect_only
-syn keyword sourceVar     sv_allow_voice_from_file sv_allow_votes sv_allow_wait_command sv_allowdownload
-syn keyword sourceVar     sv_allowupload sv_alltalk sv_alternateticks sv_autojump sv_autoladderdismount
-syn keyword sourceVar     sv_autosave sv_backspeed sv_banid_dev_enabled sv_banid_enabled
-syn keyword sourceVar     sv_benchmark_autovprofrecord sv_benchmark_freeroam sv_benchmark_numticks
-syn keyword sourceVar     sv_bonus_challenge sv_bounce sv_cacheencodedents sv_cheats
-syn keyword sourceVar     sv_client_cmdrate_difference sv_client_max_interp_ratio
-syn keyword sourceVar     sv_client_min_interp_ratio sv_client_predict sv_clockcorrection_msecs
-syn keyword sourceVar     sv_consistency sv_contact sv_debug_entity sv_debug_player_use
-syn keyword sourceVar     sv_debugmanualmode sv_debugtempentities sv_deltaprint sv_deltatime
-syn keyword sourceVar     sv_disable_glow_faritems sv_disable_glow_survivors sv_downloadurl
-syn keyword sourceVar     sv_enableoldqueries sv_extra_client_connect_time sv_filterban sv_footsteps
-syn keyword sourceVar     sv_forcepreload sv_friction sv_gameinstructor_disable sv_gametypes
-syn keyword sourceVar     sv_glowenable sv_gravity sv_hibernate_ms sv_hibernate_ms_vgui
-syn keyword sourceVar     sv_hibernate_postgame_delay sv_hibernate_when_empty sv_hosting_lobby
-syn keyword sourceVar     sv_hudhint_sound sv_ignore_hitboxes sv_infected_scale_max sv_infected_scale_min
-syn keyword sourceVar     sv_instancebaselines sv_ladder_useonly sv_ladderautomountdot
-syn keyword sourceVar     sv_lagflushbonecache sv_lagpushticks sv_lan sv_log_onefile sv_logbans
-syn keyword sourceVar     sv_logblocks sv_logdownloadlist sv_logecho sv_logfile sv_logflush sv_logsdir
-syn keyword sourceVar     sv_logsecret sv_lowedict_action sv_lowedict_threshold sv_massreport
-syn keyword sourceVar     sv_master_legacy_mode sv_master_share_game_socket sv_max_connects_sec
-syn keyword sourceVar     sv_max_connects_sec_global sv_max_connects_window sv_max_queries_sec
-syn keyword sourceVar     sv_max_queries_sec_global sv_max_queries_window sv_max_usercmd_future_ticks
-syn keyword sourceVar     sv_maxclientframes sv_maxcmdrate sv_maxplayers sv_maxrate sv_maxreplay
-syn keyword sourceVar     sv_maxroutable sv_maxspeed sv_maxunlag sv_maxupdaterate sv_maxvelocity
-syn keyword sourceVar     sv_mincmdrate sv_minrate sv_minupdaterate sv_multiplayer_maxtempentities
-syn keyword sourceVar     sv_multiplayer_sounds sv_music_debug sv_namechange_cooldown_seconds
-syn keyword sourceVar     sv_netspike_on_reliable_snapshot_overflow sv_new_delta_bits sv_noclipaccelerate
-syn keyword sourceVar     sv_noclipfriction sv_noclipspeed sv_npc_talker_maxdist sv_optimizedmovement
-syn keyword sourceVar     sv_parallel_packentities sv_parallel_sendsnapshot sv_password sv_pausable
-syn keyword sourceVar     sv_pausable_dev sv_pausable_dev_ds sv_player_max_separation_force
-syn keyword sourceVar     sv_playerperfhistorycount sv_proj_stunball_damage sv_pure_kick_clients
-syn keyword sourceVar     sv_pure_trace sv_pushaway_clientside sv_pushaway_clientside_size
-syn keyword sourceVar     sv_pushaway_force sv_pushaway_max_force sv_pushaway_min_force
-syn keyword sourceVar     sv_pushaway_min_player_speed sv_pvsskipanimation sv_pz_endgame_vote_period
-syn keyword sourceVar     sv_pz_endgame_vote_post_period sv_ragdoll_maxcount sv_ragdoll_maxcount_boss
-syn keyword sourceVar     sv_ragdoll_maxcount_generic sv_ragdoll_maxcount_gib sv_ragdoll_maxcount_special
-syn keyword sourceVar     sv_ragdoll_maxcount_survivor sv_ragdoll_version sv_rcon_banpenalty sv_rcon_log
-syn keyword sourceVar     sv_rcon_maxfailures sv_rcon_maxpacketbans sv_rcon_maxpacketsize
-syn keyword sourceVar     sv_rcon_minfailures sv_rcon_minfailuretime sv_regeneration_wait_time sv_region
-syn keyword sourceVar     sv_registration_message sv_registration_successful sv_rescue_disabled
-syn keyword sourceVar     sv_reservation_grace sv_reservation_timeout sv_restrict_aspect_ratio_fov
-syn keyword sourceVar     sv_robust_explosions sv_rollangle sv_rollspeed sv_runcmds
-syn keyword sourceVar     sv_script_think_interval sv_search_key sv_search_team_key sv_sendtables
-syn keyword sourceVar     sv_show_crosshair_target sv_show_whitelist_msg sv_showdamage
-syn keyword sourceVar     sv_showdebugtracers sv_showimpacts sv_showladders sv_showplayerhitboxes
-syn keyword sourceVar     sv_showprecachedsounds sv_skyname sv_sound_discardextraunreliable
-syn keyword sourceVar     sv_soundemitter_trace sv_specaccelerate sv_specnoclip sv_specspeed sv_stats
-syn keyword sourceVar     sv_steamblockingcheck sv_steamgroup sv_steamgroup_exclusive sv_stepsize
-syn keyword sourceVar     sv_stickysprint sv_stickysprint_default sv_stopspeed sv_stressbots
-syn keyword sourceVar     sv_strict_notarget sv_sync_client_updates sv_tags sv_test_scripted_sequences
-syn keyword sourceVar     sv_teststepsimulation sv_thinktimecheck sv_threaded_init sv_timeout
-syn keyword sourceVar     sv_tracereffects_limit_general sv_turbophysics sv_unlag sv_unlag_debug
-syn keyword sourceVar     sv_unlag_fixstuck sv_unlockedchapters sv_use_steam_voice sv_useexplicitdelete
-syn keyword sourceVar     sv_vehicle_autoaim_scale sv_visiblemaxplayers sv_voicecodec sv_voiceenable
-syn keyword sourceVar     sv_vote_allow_spectators sv_vote_command_delay sv_vote_creation_timer
-syn keyword sourceVar     sv_vote_failure_timer sv_vote_failure_timer_mvm
-syn keyword sourceVar     sv_vote_issue_change_difficulty_allowed sv_vote_issue_change_map_later_allowed
-syn keyword sourceVar     sv_vote_issue_change_map_now_allowed sv_vote_issue_change_mission_allowed
-syn keyword sourceVar     sv_vote_issue_changelevel_allowed sv_vote_issue_changelevel_allowed_mvm
-syn keyword sourceVar     sv_vote_issue_kick_allowed sv_vote_issue_kick_allowed_mvm
-syn keyword sourceVar     sv_vote_issue_kick_spectators_mvm sv_vote_issue_mvm_challenge_allowed
-syn keyword sourceVar     sv_vote_issue_nextlevel_allowed sv_vote_issue_nextlevel_allowextend
-syn keyword sourceVar     sv_vote_issue_nextlevel_choicesmode sv_vote_issue_nextlevel_prevent_change
-syn keyword sourceVar     sv_vote_issue_restart_game_allowed sv_vote_issue_scramble_teams_allowed
-syn keyword sourceVar     sv_vote_kick_ban_duration sv_vote_timer_duration
-syn keyword sourceVar     sv_vote_ui_hide_disabled_issues sv_wateraccelerate sv_waterdist
-syn keyword sourceVar     sv_waterfriction sv_zoo_model_filter sv_zoo_spacing sv_zoo_spacing_rows
-syn keyword sourceVar     sv_zoo_spacing_wrap sv_zoo_tint_clr sv_zoo_tint_loop sv_zoo_wrap_skin
-syn keyword sourceVar     tank_rock_overhead_percent target_scan_use_query_cache tauntfrequency
-syn keyword sourceVar     template_debug test_massive_dmg test_massive_dmg_clip tf_allow_player_use
-syn keyword sourceVar     tf_allow_taunt_switch tf_arena_first_blood tf_arena_max_streak
-syn keyword sourceVar     tf_arena_override_cap_enable_time tf_arena_override_team_size
-syn keyword sourceVar     tf_arena_preround_time tf_arena_round_time tf_arena_use_queue
-syn keyword sourceVar     tf_avoidteammates_pushaway tf_backstab_detection_method tf_birthday
-syn keyword sourceVar     tf_birthday_ball_chance tf_boost_drain_time tf_bot_auto_vacate tf_bot_count
-syn keyword sourceVar     tf_bot_difficulty tf_bot_force_class tf_bot_join_after_player
-syn keyword sourceVar     tf_bot_keep_class_after_death tf_bot_melee_only tf_bot_notice_gunfire_range
-syn keyword sourceVar     tf_bot_notice_quiet_gunfire_range tf_bot_offline_practice
-syn keyword sourceVar     tf_bot_path_lookahead_range tf_bot_prefix_name_with_difficulty tf_bot_quota
-syn keyword sourceVar     tf_bot_quota_mode tf_bot_sniper_allow_opportunistic tf_bot_taunt_victim_chance
-syn keyword sourceVar     tf_caplinear tf_clamp_airducks tf_clamp_back_speed tf_clamp_back_speed_min
-syn keyword sourceVar     tf_ctf_bonus_time tf_damage_disablespread tf_damage_events_track_for
-syn keyword sourceVar     tf_damage_lineardist tf_damage_range tf_demoman_charge_drain_time
-syn keyword sourceVar     tf_demoman_charge_regen_rate tf_dev_health_on_damage_recover_percentage
-syn keyword sourceVar     tf_dev_marked_for_death_lifetime tf_escort_recede_time
-syn keyword sourceVar     tf_escort_recede_time_overtime tf_flag_caps_per_round tf_force_holidays_off
-syn keyword sourceVar     tf_forced_holiday tf_gamemode_arena tf_gamemode_cp tf_gamemode_ctf
-syn keyword sourceVar     tf_gamemode_mvm tf_gamemode_payload tf_gamemode_sd
-syn keyword sourceVar     tf_grenadelauncher_min_contact_speed tf_highfive_debug tf_invuln_time
-syn keyword sourceVar     tf_max_health_boost tf_max_voice_speak_delay tf_medieval tf_medieval_autorp
-syn keyword sourceVar     tf_medigun_lagcomp tf_mm_player_reservation_timeout_seconds tf_mm_servermode
-syn keyword sourceVar     tf_mm_strict tf_mm_trusted tf_mvm_disconnect_on_victory
-syn keyword sourceVar     tf_mvm_min_players_to_start tf_mvm_missioncyclefile tf_mvm_popfile
-syn keyword sourceVar     tf_overtime_nag tf_player_movement_stun_time tf_playergib
-syn keyword sourceVar     tf_pressandhold_minduration tf_resolve_stuck_players tf_scout_bat_launch_delay
-syn keyword sourceVar     tf_scout_energydrink_activation tf_scout_energydrink_consume_rate
-syn keyword sourceVar     tf_scout_energydrink_regen_rate tf_scout_stunball_base_duration
-syn keyword sourceVar     tf_scout_stunball_base_speed tf_server_identity_account_id
-syn keyword sourceVar     tf_server_identity_disable_quickplay tf_server_identity_token tf_showspeed
-syn keyword sourceVar     tf_soldier_buff_pulses tf_spy_cloak_consume_rate tf_spy_cloak_no_attack_time
-syn keyword sourceVar     tf_spy_cloak_regen_rate tf_spy_invis_time tf_spy_invis_unstealth_time
-syn keyword sourceVar     tf_spy_max_cloaked_speed tf_stalematechangeclasstime tf_stats_nogameplaycheck
-syn keyword sourceVar     tf_teamtalk tf_tournament_classlimit_demoman tf_tournament_classlimit_engineer
-syn keyword sourceVar     tf_tournament_classlimit_heavy tf_tournament_classlimit_medic
-syn keyword sourceVar     tf_tournament_classlimit_pyro tf_tournament_classlimit_scout
-syn keyword sourceVar     tf_tournament_classlimit_sniper tf_tournament_classlimit_soldier
-syn keyword sourceVar     tf_tournament_classlimit_spy tf_tournament_hide_domination_icons
-syn keyword sourceVar     tf_use_fixed_weaponspreads tf_useparticletracers tf_weapon_criticals
-syn keyword sourceVar     tf_whip_speed_increase think_limit tongue_bullet_radius trace_report
-syn keyword sourceVar     training_can_build_dispenser training_can_build_sentry
-syn keyword sourceVar     training_can_build_tele_entrance training_can_build_tele_exit
-syn keyword sourceVar     training_can_destroy_buildings training_can_pickup_dispenser
-syn keyword sourceVar     training_can_pickup_sentry training_can_pickup_tele_entrance
-syn keyword sourceVar     training_can_pickup_tele_exit training_can_select_weapon_building
-syn keyword sourceVar     training_can_select_weapon_item1 training_can_select_weapon_item2
-syn keyword sourceVar     training_can_select_weapon_melee training_can_select_weapon_pda
-syn keyword sourceVar     training_can_select_weapon_primary training_can_select_weapon_secondary
-syn keyword sourceVar     training_class tutor tv_allow_camera_man tv_allow_static_shots tv_delay
-syn keyword sourceVar     tv_delaymapchange versus_force_start_time versus_marker_num
-syn keyword sourceVar     versus_round_restarttimer versus_round_restarttimer_finale voice_serverdebug
-syn keyword sourceVar     vprof_scope_entity_gamephys vprof_scope_entity_thinks vprof_think_limit
-syn keyword sourceVar     vs_score_pp_health vs_score_pp_healthbuffer weapon_showproficiency
-syn keyword sourceVar     witch_rage_ramp_duration xbox_autothrottle xbox_steering_deadzone
-syn keyword sourceVar     xbox_throttlebias xbox_throttlespoof xc_crouch_debounce xc_crouch_range
-syn keyword sourceVar     xc_uncrouch_on_jump xc_use_crouch_limiter z_attack_change_target_range
-syn keyword sourceVar     z_attack_interval z_attack_max_range z_attack_min_range
-syn keyword sourceVar     z_attack_movement_penalty z_attack_on_the_run_range z_bbq_min z_bbq_rate
-syn keyword sourceVar     z_burn_max z_burn_rate z_checkpoint_debug z_damage_screen_fade_alpha
-syn keyword sourceVar     z_damage_screen_fade_duration z_debug_infected_server_anim z_debug_stuck
-syn keyword sourceVar     z_door_pound_damage z_exploding_force z_exploding_inner_radius
-syn keyword sourceVar     z_exploding_outer_radius z_fatal_blast_incineration_probability
-syn keyword sourceVar     z_fatal_blast_max_ragdolls z_fatal_blast_min_ragdolls
-syn keyword sourceVar     z_finale_spawn_safety_range_override z_ghost_cooldown z_ghost_delay_minspawn
-syn keyword sourceVar     z_ghost_duration z_ghost_group_spawn z_ghost_line_of_scrimmage_far
-syn keyword sourceVar     z_ghost_line_of_scrimmage_near z_ghost_line_of_scrimmage_safety
-syn keyword sourceVar     z_ghost_line_of_scrimmage_threat_bonus z_ghost_los_expected_progress
-syn keyword sourceVar     z_ghost_offer_acceptance_time z_ghost_offer_spawn_safety_time
-syn keyword sourceVar     z_ghost_spawn_distance z_head_damage_causes_wounds z_hunter_lunge_distance
-syn keyword sourceVar     z_hunter_lunge_pitch z_max_survivor_damage z_minigun_atomize
-syn keyword sourceVar     z_non_head_damage_factor_multiplier z_population z_pounce_shake_amplitude
-syn keyword sourceVar     z_pounce_shake_duration z_pounce_shake_radius z_pounce_stumble_radius
-syn keyword sourceVar     z_ragdoll_discard_range z_scrimmage_sphere z_skip_wounds
-syn keyword sourceVar     z_survivor_respawn_health z_tank_footstep_shake_amplitude
-syn keyword sourceVar     z_tank_footstep_shake_duration z_tank_footstep_shake_interval
-syn keyword sourceVar     z_tank_footstep_shake_radius z_use_next_difficulty_damage_factor
-syn keyword sourceVar     z_witch_always_kills z_witch_tongue_range zombie_ambushdist zombie_basemax
-syn keyword sourceVar     zombie_basemin zombie_changemax zombie_changemin zombie_decaymax
-syn keyword sourceVar     zombie_decaymin zombie_moanfreq zombie_stepfreq
+syn keyword sourceVar           z_scrimmage_yardline_width z_skip_wounds z_spec_nightvision z_splatter_delay
+syn keyword sourceVar           z_splatter_delay_melee z_splatterdistance z_survivor_respawn_health
+syn keyword sourceVar           z_tank_footstep_shake_amplitude z_tank_footstep_shake_duration
+syn keyword sourceVar           z_tank_footstep_shake_interval z_tank_footstep_shake_radius z_tracer_particles
+syn keyword sourceVar           z_transitioning_player_addon_rebuild z_use_next_difficulty_damage_factor
+syn keyword sourceVar           z_witch_always_kills z_witch_rage_smoothing z_witch_tongue_range
+syn keyword sourceVar           z_wound_client_disabled zombie_ambushdist zombie_basemax zombie_basemin
+syn keyword sourceVar           zombie_changemax zombie_changemin zombie_decaymax zombie_decaymin
+syn keyword sourceVar           zombie_moanfreq zombie_stepfreq zoom_sensitivity_ratio
+syn keyword sourceVar           zoom_sensitivity_ratio_joystick zoom_sensitivity_ratio_mouse
 
 " Syntax: Cheats {{{1
 " syn keyword sourceCheat
