@@ -33,7 +33,7 @@ syn keyword sourceSpecialComment   contained TODO FIXME XXX DEBUG NOTE DEFAULT
 syn keyword sourceBindableKey   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 syn keyword sourceBindableKey   F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12
 syn keyword sourceBindableKey   SPACE ENTER ESCAPE PAUSE BACKSPACE
-syn keyword sourceBindableKey   TAB SEMICOLON SHIFT CTRL ALT
+syn keyword sourceBindableKey   TAB SEMICOLON SHIFT CTRL ALT CAPSLOCK
 syn keyword sourceBindableKey   UPARROW DOWNARROW LEFTARROW RIGHTARROW INS
 syn keyword sourceBindableKey   HOME PGUP PGDN DEL END
 syn keyword sourceBindableKey   KP_HOME KP_UPARROW KP_PGUP KP_LEFTARROW KP_5
